@@ -1,0 +1,412 @@
+/* pages/storeRecharge/storeRecharge.wxss */
+page {
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+.title {
+  text-align: left;
+  font-size: 28rpx;
+  color: #888;
+  letter-spacing: 3.05rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  padding-left: 29rpx;
+}
+
+/* .changeCoinContainer {
+  background: #fff;
+  box-shadow: 0 2rpx 4rpx 4rpx rgba(195, 195, 195, 0.50);
+} */
+
+.btnList {
+  padding: 30rpx;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.btnList:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.btn {
+  width: 296rpx;
+  height: 128rpx;
+  background: #fff;
+  border: 2rpx solid #dcdcdc;
+  border-radius: 4rpx;
+  float: left;
+  margin-right: 44rpx;
+  margin-bottom: 40rpx;
+  box-sizing: border-box;
+  margin-left: 30rpx;
+}
+
+.btn:nth-child(2n) {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.btn>view {
+  font-size: 32rpx;
+  color: #888;
+  letter-spacing: 0;
+}
+
+.btn image {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 11rpx;
+  position: relative;
+  top: 6rpx;
+}
+
+.btn>text {
+  font-size: 28rpx;
+  color: #fe7606;
+  letter-spacing: 1.16rpx;
+}
+
+.imgbox {
+  border: none;
+  position: relative;
+}
+
+.btnList .addimg {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  right: 50rpx;
+  top: 20rpx;
+}
+
+.rechargeBox {
+  border-top: 1rpx dashed #d0d0d0;
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 32rpx;
+  color: #888;
+  text-align: left;
+  padding-left: 28rpx;
+}
+
+.gotoVip {
+  text-align: right;
+  font-size: 28rpx;
+  color: #fe7606;
+  letter-spacing: 3.05rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  padding-right: 30rpx;
+  /* float: right; */
+}
+
+.hiddenrechargeTip {
+  width: 100%;
+  height: 88rpx;
+}
+
+.rechargeTip {
+  font-size: 24rpx;
+  color: #888;
+  text-align: left;
+  line-height: 66rpx;
+  height: 88rpx;
+  padding-left: 30rpx;
+}
+
+.rechargeBox text {
+  font-size: 40rpx;
+  color: #fe7606;
+}
+
+.notRecharge {
+  width: 670rpx;
+  height: 94rpx;
+  background: #f8f8f8;
+  border-radius: 10rpx;
+  margin-top: 7rpx;
+  margin-bottom: 95rpx;
+  font-size: 36rpx;
+  color: #fff;
+  letter-spacing: 3rpx;
+  line-height: 94rpx;
+}
+
+.notRecharge[disabled][type="default"], .notRecharge[disabled]:not([type]) {
+  background: #feac69;
+  color: #fff;
+}
+
+.canRecharge[disabled][type="default"], .canRecharge[disabled]:not([type]) {
+  background: #fe7606;
+}
+
+.notRecharge.button-hover {
+  background-color: #ddd;
+}
+
+.canRecharge[type="default"], .canRecharge {
+  width: 670rpx;
+  height: 94rpx;
+  background: #fe7606;
+  border-radius: 10rpx;
+  margin-top: 7rpx;
+  font-size: 36rpx;
+  color: #fff;
+  letter-spacing: 3rpx;
+  margin-bottom: 95rpx;
+  line-height: 94rpx;
+}
+
+.canRecharge.button-hover {
+  background-color: #f60;
+}
+
+/*modal*/
+
+.modalBg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  opacity: 0.5;
+  background: #000;
+  z-index: 100;
+}
+
+.modal {
+  position: absolute;
+  z-index: 500;
+  background: #fff;
+  opacity: 1;
+  border-radius: 8rpx;
+  width: 650rpx;
+  height: 557rpx;
+  top: 200rpx;
+  left: 50rpx;
+}
+
+.modalTit {
+  height: 136rpx;
+  width: 100%;
+  background: #fff7f0;
+  font-size: 36rpx;
+  color: #fe7606;
+  line-height: 136rpx;
+  border-radius: 17rpx;
+  font-weight: 600;
+}
+
+.modalBod {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  height: 128rpx;
+}
+
+.input label {
+  font-size: 32rpx;
+  color: #888;
+  letter-spacing: 2.61rpx;
+  position: absolute;
+  left: 0;
+  top: 58rpx;
+}
+
+#inputMoney {
+  margin-bottom: 57rpx;
+}
+
+.placeClass {
+  font-size: 32rpx;
+  color: #888;
+}
+
+.input input {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 30rpx;
+  padding-bottom: 25rpx;
+  border-bottom: 2rpx solid #e5e5e5;
+  text-align: left;
+  font-size: 32rpx;
+  color: #888;
+  width: 450rpx;
+  position: absolute;
+  top: 48rpx;
+  left: 106rpx;
+}
+
+.modalFot {
+  padding: 40rpx 30rpx 30rpx;
+}
+
+.modalFot button {
+  display: inline-block;
+  width: 275rpx;
+  height: 94rpx;
+}
+
+.modalFot .cancelBtn {
+  margin-right: 40rpx;
+  font-size: 36rpx;
+  color: #333;
+}
+
+.modalFot .sureBtn {
+  background: #fe7606;
+  font-size: 36rpx;
+  color: #fff;
+  letter-spacing: 2rpx;
+}
+
+.modalFot .sureBtn.button-hover {
+  background: #f60;
+}
+
+.couponMessage {
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  background: #fff6d8;
+  box-shadow: 0 2rpx 4rpx 2rpx rgba(0, 0, 0, 0.10);
+  white-space: nowrap;
+}
+
+.couponMessage image {
+  width: 32rpx;
+  height: 36rpx;
+  margin-left: 30rpx;
+  margin-right: 13rpx;
+}
+
+.couponMessage .coupon_list {
+  height: 40rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+  color: #888;
+  width: 80%;
+}
+
+.coupon_listdata {
+  text-align: left;
+  height: 40rpx;
+  font-size: 28rpx;
+  color: #f83;
+}
+
+.coupon_listdata text {
+  color: #fe7606;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+/*mine  */
+.box_top{
+  width: 750rpx;
+}
+.box_top image{
+  width: 100%;
+  height: 360rpx;
+}
+.btn_sure {
+  width: 100%;
+  height: 128rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.total_price{
+  float: left;
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  margin-top: 36rpx;
+  margin-left: 34rpx;
+}
+.purchase{
+  float:right;
+  margin-top: 22rpx;
+  margin-right: 28rpx;
+  width:320rpx;
+  height:88rpx;
+  line-height: 88rpx;
+  background: #FF812D;
+  border-radius: 4px;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color:#FFF;
+}
+
+.tip_bg_view {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #000;
+  opacity: 0.5;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.tip_alert_view {
+  background: white;
+  width: 590rpx;
+  height: 480rpx;
+  position: fixed;
+  font-size: 14px;
+  z-index: 101;
+  top: 360rpx;
+  left: 80rpx;
+  border-radius: 8rpx;
+  text-align: center;
+}
+
+.tip_alert_view>image {
+  width: 404rpx;
+  height: 234rpx;
+  position: fixed;
+  top: 270rpx;
+  left: 202rpx;
+}
+
+.tip_alert_view>button {
+  background-color: #4DA1FF;
+  color: white;
+  width: 540rpx;
+  height: 88rpx;
+  position: fixed;
+  font-size: 16px;
+  top: 720rpx;
+  left: 104rpx;
+}
+
+.text1 {
+  font-family: PingFang-SC-Semibold;
+  font-size: 18px;
+  color: #323C47;
+  margin-top: 192rpx;
+}
+
+.text2 {
+  font-size: 14px;
+  color: #323C47;
+  margin-top: 8rpx;
+}

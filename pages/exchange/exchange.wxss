@@ -1,0 +1,129 @@
+/* pages/exchange/exchange.wxss */
+page {
+  background-color: #f3f3f3;
+}
+
+.container {
+  padding-bottom: 30rpx;
+}
+
+.containerBox {
+  margin: 30rpx 30rpx 0;
+  border-radius: 8rpx;
+}
+
+.storeName {
+  padding-left: 31rpx;
+  font-size: 28rpx;
+  color: #fff;
+  line-height: 62rpx;
+}
+
+.containerBox:nth-child(4n+1) .storeName {
+  background: #f78d36;
+}
+
+.containerBox:nth-child(4n+2) .storeName {
+  background: #2eb494;
+}
+
+.containerBox:nth-child(4n+3) .storeName {
+  background: #d9ab1b;
+}
+
+.containerBox:nth-child(4n) .storeName {
+  background: #0ab0f9;
+}
+
+.listContainer {
+  background: url('https://metadata.zhutech.net/o_1bbnumdj03je1on6gb3112o1ua27.png') no-repeat center center;
+  background-size: 100%;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 132rpx;
+  padding: 0 30rpx 0 28rpx;
+}
+
+.headImg {
+  width: 77rpx;
+  height: 77rpx;
+  position: relative;
+  top: 11rpx;
+}
+
+.textInfo {
+  width: 401rpx;
+  margin-left: 28rpx;
+  line-height: 54rpx;
+  margin-top: 10rpx;
+}
+
+.textInfo>text {
+  font-size: 28rpx;
+  color: #555;
+  font-weight: 600;
+}
+
+.giftTickets {
+  font-size: 20rpx;
+  color: #999;
+  font-weight: 600;
+}
+
+.giftTickets>text {
+  font-size: 40rpx;
+  color: #111;
+  font-weight: bold;
+  position: relative;
+  top: 5rpx;
+}
+
+.giftTickets>.coin {
+  margin-left: 8rpx;
+  font-size: 30rpx;
+}
+
+.address {
+  padding-left: 139rpx;
+  font-size: 26rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  color: #888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 551rpx;
+}
+
+#exchangebox .exchangeBtn[plain] {
+  margin-top: 10rpx;
+  border: 2rpx solid #fe7606;
+  border-radius: 4rpx;
+  width: 120rpx;
+  height: 59rpx;
+  font-size: 26rpx;
+  color: #fe7606;
+  letter-spacing: 0.39rpx;
+  padding: 0;
+  line-height: 59rpx;
+  position: relative;
+  top: 11rpx;
+}
+
+#exchangebox .exchangeBtn[plain].button-hover {
+  border: 2rpx solid #fe7606;
+  color: #fff;
+  background-color: #fe7606;
+}
+
+.pageBottom {
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}

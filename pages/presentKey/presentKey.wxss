@@ -1,0 +1,145 @@
+/* pages/presentKey/presentKey.wxss */
+page {
+  background: #795941;
+}
+
+.txt {
+  font-size: 28rpx;
+  color: #242830;
+  text-align: center;
+  font-weight: 700;
+  line-height: 120rpx;
+}
+
+.out_box {
+  margin: 30rpx auto 0;
+  background-color: #fff;
+  width: 690rpx;
+  height: 450rpx;
+  position: relative;
+}
+
+.container {
+  justify-content: flex-start;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 690rpx;
+  height: 450rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.giftWarp{
+  width: 690rpx;
+  margin: 0 auto;
+  background: #fff;
+}
+.giftWarp image{
+  width: 100%;
+  height: 8rpx;
+  background: #000;
+  display: block;
+}
+
+.giftTitle{
+  line-height: 80rpx;
+  font-size: 24rpx;
+  width: 642rpx;
+  margin: auto;
+  color: #343434;
+ 
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.giftList{
+  height: 490rpx;
+  overflow: auto; 
+  width: 642rpx;
+  margin: auto;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  border-top: 2rpx solid #F5F5F5;
+}
+
+.giftList .list{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.giftList .list:last-child{
+  margin-bottom: 0;
+}
+.giftList .list image{
+  border: 2rpx solid #F5F5F5;
+  width: 76rpx;
+  height: 76rpx;
+}
+
+.giftList .list view{
+  margin-left: 12rpx;
+  margin-right: 8rpx;
+  font-size: 32rpx;
+  color: #343434;
+  width: 360rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.giftList .list text{
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.tier {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 690rpx;
+  height: 450rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.tiercanvs {
+  width: 690rpx;
+  height: 450rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container canvas {
+  height: 150rpx;
+  width: 600rpx;
+  margin-top: 50rpx;
+}
+
+.icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 156px;
+  height: 156px;
+}
+
+.code {
+  margin: 39rpx auto 0;
+  width: 600rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #000;
+  line-height: 50rpx;
+  font-weight: 700;
+  border-bottom: 2rpx dashed #d0d0d0;
+  padding-bottom: 40rpx;
+}
+
+.recordCss {
+  font-size: 28rpx;
+  color: #2b9ce9;
+  line-height: 60rpx;
+  margin: 50rpx auto 0;
+  display: block;
+  text-align: center;
+}

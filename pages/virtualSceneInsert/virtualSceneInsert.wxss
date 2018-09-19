@@ -1,0 +1,65 @@
+/* pages/virtualSceneInsert/virtualSceneInsert.wxss */
+.virtualWarp{
+  padding: 20rpx 40rpx;
+  box-sizing: border-box;
+}
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top .coins{
+  font-size: 32rpx;
+  color: #242830; 
+}
+.top .coins text{
+  color: #FE7606; 
+}
+.recharge[plain]{
+  width: 112rpx;
+  height: 56rpx;
+  border: 2rpx solid #3D93FD;
+  border-radius: 200rpx;
+  padding: 0;
+  line-height: 56rpx;
+  color: #3D93FD;
+  margin: 0;
+  font-size: 24rpx;
+}
+.rechargeHover[plain]{
+  background:  #3D93FD;
+  color: #fff;
+}
+
+.inputCoins{
+  margin-top: 208rpx;
+  border-bottom: 4rpx solid #FF8833;
+  display: flex;
+  justify-content: center;
+}
+.inputCoins input{
+  width: 350rpx;
+  height: 74rpx;
+  line-height: 74rpx;
+  text-align: center;
+  padding: 0 20rpx;
+  font-size: 52rpx;
+  color: #242830;
+}
+.inputPlace{
+  font-size: 52rpx;
+  color: #CDCDCD;
+  text-align: center;
+}
+.insertCoins,.insertCoins[disabled]:not([type]){
+  border-radius: 10rpx;
+  margin-top: 48rpx;
+  color: #fff;
+}
+.insertRecord{
+  font-size: 24rpx;
+  color: #319FEA;
+  letter-spacing: 0.92px;
+  text-align: center;
+  margin-top: 13rpx;
+}

@@ -1,0 +1,44 @@
+<!--pages/eggDraw/eggDraw.wxml-->
+
+<view class='head_view'>
+  <view class='user_view'>
+    <image class='head' src='{{headUrl}}'></image>
+    <view class='nick'>{{userName}}</view>
+    <view class='danpian'>蛋片：{{eggBalance}}</view>
+  </view>
+</view>
+
+<view class='null_view'>
+  <image src='/img/draw_null.png'></image>
+  <view>抱歉，该二维码已被使用！</view>
+</view>
+
+<view class='draw_view' hidden='{{drawViewHidden}}'>
+  <view class='draw_bg' style="margin-left:{{marginLeft}}px"></view>
+  <view class="canvas-container" style='left:{{marginLeftcontainer}}px'>
+    <view  animation="{{animationData}}" class="canvas-content" >
+      <canvas style="width: 250px; height: 250px; position: absolute;left: {{left}}px;top: {{top}}px;border-radius: 50%;" class="canvas-element" canvas-id="lotteryCanvas"></canvas>
+
+      <view class="canvas-list">
+        <view class="canvas-item" wx:for="{{awardsList}}" wx:key="unique">
+          <view class="canvas-item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">{{item.award}}</view>
+          <image src='/img/draw_danpian.png' style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})"></image>
+        </view>
+      </view>
+    </view>
+    
+    <view bindtap="getLottery" class="canvas-btn {{btnDisabled}}"></view>		
+  </view>
+</view>
+
+<image src='/img/draw_get_more.png' class='get_more' bindtap='getMore' hidden='{{!drawViewHidden}}'></image>
+<image src='/img/draw_toexchange.png' class='toexchange' bindtap='toExchange'></image>
+
+<view class='alert_view' hidden='{{alertHidden}}'>
+  <view class='alert'>
+    <image src='/img/draw_success.png' class='alert_img'></image>
+    <view class='alert_tip'>恭喜！获得蛋片</view>
+    <view class='alert_egg_num'>{{drawResult}}</view>
+    <button class='alert_btn' bindtap='closeAlert'>确定</button>
+  </view>
+</view>

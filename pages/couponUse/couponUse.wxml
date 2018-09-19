@@ -1,0 +1,36 @@
+<!--pages/couponUse/couponUse.wxml-->
+<view class="header">
+  <view class="surplusCoupon">
+    <image src="/img/exclamation.png"></image>您有
+    <text>{{couponsNum}}</text>张优惠券可用
+  </view>
+  <navigator url="../aboutCoupon/aboutCoupon" hover-class="none" hidden="{{fivepages}}">使用说明</navigator>
+</view>
+<view class="nouse" bindtap="noUseCoupon">
+  <text>不使用优惠券</text>
+  <image src="{{isUsedIconUrl}}"></image>
+</view>
+<view class="couponList" wx:for="{{couponlist}}" wx:for-item="data" wx:key="{{index}}">
+  <view class="validCouponList">
+    <view class="coupons_outbox" bindtap="selectCoupon" data-index="{{index}}">
+      <image src="/img/border.png" class="border"></image>
+      <view class="coupons_box">
+        <view class="coupons_money">
+          <view class="isnew" wx:if="{{data.isnew==1}}">NEW</view>
+          <view class="money">
+            ¥<text>{{data.price}}</text>
+          </view>
+          <view class="least_consume">满{{data.least_consume}}元可用</view>
+        </view>
+        <view class="coupons_details">
+          <view class="coupon_name">{{data.name}}</view>
+          <view class="coupons_details_2">
+            <view class="least_store" wx:if="{{data.least_store}}">{{data.least_store}}</view>
+            <view class="validity">{{data.start_time}}-{{data.end_time}}</view>
+          </view>
+        </view>
+        <image src="https://metadata.zhutech.net/o_1bf664gn81tbonumhlu84s7uvr.png" wx:if="{{data.select}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

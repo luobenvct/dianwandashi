@@ -1,0 +1,84 @@
+/* pages/personalCenter/personalCenter.wxss */
+page {
+  background: #f3f3f3;
+}
+
+.header {
+  width: 100%;
+  height: 553rpx;
+  background: url("https://metadata.zhutech.net/o_1bjmo4eh21pr51mg11nmsk4b5gfm.png") no-repeat 100% 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personalInfo {
+  text-align: center;
+}
+
+.personalInfo .userPhoto {
+  width: 130rpx;
+  height: 130rpx;
+  border: 8rpx solid #febf6f;
+  border-radius: 50%;
+  background: url("https://metadata.zhutech.net/o_1bjmp1fj6ec6r9b1kqf1r5ooo2r.png") no-repeat 100% 100%;
+  background-size: cover;
+}
+
+.personalInfo .userPhone, .personalInfo .userId {
+  font-size: 32rpx;
+  color: #fff;
+  letter-spacing: 1.72rpx;
+}
+
+.infoList {
+  width: 100%;
+}
+
+.infoListBlock:first-child {
+  margin-top: 0;
+}
+
+.infoListBlock {
+  margin-top: 30rpx;
+}
+
+.infoListBlock navigator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 34rpx;
+  background: #fff;
+  height: 92rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.infoListBlock navigator>view {
+  display: flex;
+  align-items: center;
+}
+
+.infoListBlock navigator view image {
+  width: 46rpx;
+  height: 46rpx;
+  vertical-align: middle;
+  margin-right: 54rpx;
+}
+
+.infoListBlock navigator view text {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #333;
+  letter-spacing: 0;
+}
+
+.infoListBlock navigator view {
+  display: flex;
+  align-items: center;
+}
+
+.infoListBlock navigator image {
+  width: 16rpx;
+  height: 26rpx;
+}

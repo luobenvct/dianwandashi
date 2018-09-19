@@ -1,0 +1,82 @@
+<!--pages/storeRecharge/storeRecharge.wxml-->
+<view wx:if="{{nulldata}}" style="min-height:1100rpx; padding-bottom:100rpx; background:#{{deviceCombosStyle.bg_color}}">
+  <view class="couponMessage" wx:if="{{show_coupon_list}}">
+    <image src="/img/redpack.png"></image>
+    <scroll-view class="coupon_list" scroll-y scroll-with-animation scroll-top="{{couponScrollTop}}">
+      <view class="coupon_listdata" wx:if="show_coupon_list" wx:for="{{coupon_list}}" wx:for-item="data" wx:key="{{data.coupon_id}}">{{data.message}}</view>
+    </scroll-view>
+  </view>
+  <!-- <view class="title">
+    请选充值套餐
+  </view> -->
+   <view class="box_top">
+      <image src="{{deviceCombosStyle.bg_url}}"></image>
+  </view>
+  <view class="changeCoinContainer">
+    <!-- wx:if="{{ index>0 }}" -->
+    <view class="btnList">
+      <view  wx:for="{{btnList}}" wx:for-item="data" wx:key="{{data.id}}" bindtap="checkSetMeal" data-coins="{{data.combosCoins}}" data-money="{{data.combosMoney}}" data-index="{{index}}" wx:if="{{ index>0 || showFirstComb }}" style="width: 296rpx;height: 128rpx; color:#{{data.btn_color_before}};background:url({{data.btn_url_before}});background-size: 100% 100%;float: left;margin-right: 10rpx;margin-bottom: 40rpx;margin-left: 34rpx;">
+        <block wx:if="{{data.remark}}">
+            <view style='margin-top:20rpx;'>
+              <view style='width:80%;margin-left:10%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'>{{data.combosName}}</view>
+            </view>
+            <view class="tip" style='width:60%;margin-left:20%;margin-top:2rpx;text-align:center; color:#{{deviceCombosStyle.btn_descript_color_before}}; font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'>{{data.remark}}</view>
+        </block>
+        <block wx:else>
+            <view style='margin-top:40rpx;'>
+               <view style='overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'>{{data.combosName}}</view>
+            </view>
+        </block>
+        
+       
+        
+      </view>
+      <view class="btn imgbox" bindtap="showModal" data-list="{{btnList}}" style="display:none">
+        <image src="{{addsrc}}" class=" addimg"></image>
+      </view>
+    </view>
+    <!-- <view class="rechargeBox">
+      充值
+      <text>¥{{rechargeMoney}}</text> (获得{{rechargeCoins}}币)
+    </view> -->
+
+  </view>
+  <!-- <view class="gotoVip" bindtap='gotoVip' wx:if="{{showVip}}">会员套餐更优惠，升级会员></view>
+  <view class="hiddenrechargeTip" hidden="{{showVip}}">
+  </view> -->
+  <view class="btn_sure" style="background:#{{deviceCombosStyle.bottom_bg_color}}" >
+    <view class="total_price" style="color:#{{deviceCombosStyle.bottom_amounts_color}}">总价：￥<text>{{rechargeMoney}}</text></view>
+    <view class="purchase" bindtap="goPayDetails" disabled="{{rechargeStatus}}">购买</view>
+  </view>
+  <!-- <button type="default" class="{{rechargeStyle}}" data-setmealdata="{{btnList}}" bindtap="goPayDetails" disabled="{{rechargeStatus}}">确定</button> -->
+</view>
+<!-- <view class="modalBg" hidden="{{modalstatus}}"></view>
+<view class="modal" hidden="{{modalstatus}}">
+  <view class="modalTit">自定义套餐</view>
+  <view class="modalBod">
+    <view class="input">
+      <label for="inputMoney">金额</label>
+      <input placeholder="请输入金额" id="inputMoney" placeholder-class="placeClass" bindinput="inputMoney" maxlength="5" data-setmealdata="{{sortList}}" data-unitprice="{{unitPrice}}" value="{{rechargeMoney}}" type="number" hidden="{{inputhidden}}" />
+    </view>
+    <view class="input">
+      <label for="inputcoins">币数</label>
+      <input placeholder="或输入币数" id="inputcoins" data-setmealdata="{{sortList}}" data-unitprice="{{unitPrice}}" placeholder-class="placeClass" type="number" maxlength="6" value="{{rechargeCoins}}" bindinput="inputcoins" hidden="{{inputhidden}}" />
+    </view>
+  </view>
+  <view class="modalFot">
+    <button type="default" size="default" class="cancelBtn" bindtap="cancelModal">取消</button>
+    <button type="default" size="default" class="sureBtn" type="number" bindtap="sureModal">确定</button>
+  </view>
+</view> -->
+<view class="nullData" hidden="{{nulldata}}" style="height:{{wheight}}px">
+  <import src="../nulldata/nulldata.wxml" />
+  <template is="nulldata" data="{{...pagenulldata}}" />
+</view>
+
+<view class='tip_bg_view' hidden='{{tipIsShow}}'></view>
+<view class='tip_alert_view' hidden='{{tipIsShow}}'>
+  <image src='/img/recharge_tip.png'></image>
+  <view class='text1'>支付完成后</view>
+  <view class='text2'>请主动投币哦!</view>
+  <button bindtap='closeTip'>我知道了</button>
+</view>

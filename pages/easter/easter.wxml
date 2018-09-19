@@ -1,0 +1,2 @@
+<!--pages/easter/easter.wxml-->
+<web-view src="{{url}}"></web-view>

@@ -1,0 +1,245 @@
+/* pages/couponList/couponList.wxss */
+page {
+  background: #f3f3f3;
+  padding-bottom: 20rpx;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 29rpx;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 2rpx 4rpx 0 #cacaca;
+  border-radius: 1rpx;
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 90rpx;
+  z-index: 999;
+}
+
+.surplusCoupon {
+  font-size: 28rpx;
+  color: #cacaca;
+}
+
+.surplusCoupon image {
+  width: 36rpx;
+  height: 36rpx;
+  position: relative;
+  top: 8rpx;
+  margin-right: 10rpx;
+}
+
+.surplusCoupon text {
+  font-size: 28rpx;
+  color: #fe7606;
+}
+
+.header navigator {
+  font-size: 24rpx;
+  color: #2b9ce9;
+}
+
+.couponList {
+  width: 92%;
+  margin: 120rpx auto 0;
+}
+
+.validCouponList {
+  width: 100%;
+}
+
+.coupons_outbox {
+  width: 100%;
+  height: 210rpx;
+  background: #f84f4f;
+  box-shadow: 0 2rpx 6rpx 0 rgba(0, 0, 0, 0.10);
+  border-radius: 6rpx;
+  margin-bottom: 20rpx;
+  padding-left: 12rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.coupons_outbox .border {
+  width: 4rpx;
+  height: 210rpx;
+}
+
+.coupons_box {
+  width: 674rpx;
+  height: 210rpx;
+  background: #fff;
+  background: #fff;
+  border-radius: 0 6rpx 6rpx 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.coupons_money {
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 182rpx;
+  margin-left: 64rpx;
+  flex-shrink: 0;
+}
+
+.coupons_money .money {
+  font-size: 42rpx;
+  color: #ff3e4a;
+  width: 180rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.coupons_money .money text {
+  font-size: 70rpx;
+  font-weight: 600;
+}
+
+.coupons_money .least_consume {
+  font-size: 24rpx;
+  color: #ff757d;
+  width: 180rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.isnew {
+  width: 56rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  background: #ff3e4a;
+  border-radius: 100rpx;
+  font-size: 18rpx;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 18rpx;
+  left: 14rpx;
+}
+
+.coupons_details {
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.coupon_name {
+  font-size: 32rpx;
+  color: #373737;
+  font-weight: 600;
+  width: 420rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.coupons_details_2 {
+  font-size: 24rpx;
+  color: #cacaca;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.historyCouponList {
+  width: 100%;
+}
+
+.historyCouponList .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title .border {
+  width: 33%;
+  border-top: 1px solid #e5e5e5;
+}
+
+.title text {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.coupons_outbox_old {
+  width: 100%;
+  margin-top: 20rpx;
+  height: 210rpx;
+  background: #cacaca;
+  box-shadow: 0 2rpx 6rpx 0 rgba(0, 0, 0, 0.10);
+  border-radius: 6rpx;
+  margin-bottom: 20rpx;
+  padding-left: 12rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.coupons_outbox_old .border {
+  width: 4rpx;
+  height: 210rpx;
+}
+
+.coupons_outbox_old .money, .coupons_outbox_old .least_consume,
+.coupons_outbox_old .coupon_name {
+  color: #cacaca;
+}
+
+.pastCoupon, .usedCoupon {
+  width: 674rpx;
+  height: 210rpx;
+  background: #fff;
+  background: #fff;
+  border-radius: 0 6rpx 6rpx 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.pastCoupon .tag {
+  position: absolute;
+  width: 124rpx;
+  height: 94rpx;
+  top: 0;
+  background: url('https://metadata.zhutech.net/o_1bn86lu031e481vik1ohn1bre1md0n.png') no-repeat center center;
+  background-size: cover;
+  right: 70rpx;
+}
+
+.usedCoupon .tag {
+  position: absolute;
+  width: 124rpx;
+  height: 94rpx;
+  top: 0;
+  background: url('https://metadata.zhutech.net/o_1bn86lu031k6j15hmu0frka1e2mo.png') no-repeat center center;
+  background-size: cover;
+  right: 70rpx;
+}
+
+.notValidCouponList {
+  text-align: center;
+  font-size: 28rpx;
+  color: #888;
+  line-height: 40rpx;
+  background: #f3f3f3;
+  margin-bottom: 50rpx;
+}
+
+.notValidCouponList image {
+  width: 360rpx;
+  height: 360rpx;
+}

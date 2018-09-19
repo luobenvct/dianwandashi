@@ -1,0 +1,249 @@
+/* pages/coinMachine/coinMachine.wxss */
+page, .box {
+  height: 100%;
+  overflow: hidden;
+}
+
+.box {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.buttonListBox {
+  max-height: 100%;
+  height: 640rpx;
+  overflow-y: auto;
+}
+button {
+  position: static;
+}
+.clickMe {
+  position: absolute;
+  bottom: 70rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 24rpx;
+  color: #888;
+  left: 184rpx;
+}
+
+.clickMe .againInsertBtn{
+  /* width: 144rpx;
+  height: 56rpx;
+  margin-top: -10rpx;
+  margin-left: 10rpx;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  color: #fff;
+  font-size: 28rpx; */
+}
+
+.clickMe .againInsertBtn image{
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 20rpx;
+}
+
+.btnDefault {
+  background: #f5f5f5;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+  font-size: 36rpx;
+  color: #242830;
+  height: 140rpx;
+  line-height: 140rpx;
+  letter-spacing: 4rpx;
+  padding: 0;
+  border: none;
+}
+
+.btnDefault::after {
+  border: none;
+}
+
+.checkBtn {
+  background: #fe7606;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+  font-size: 36rpx;
+  color: #fff;
+  height: 140rpx;
+  line-height: 140rpx;
+  letter-spacing: 4rpx;
+  padding: 0;
+  border: none;
+}
+
+.checkBtn::after {
+  border: none;
+}
+
+/*提示框  */
+
+.modalBox {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.box_top{
+  width: 750rpx;
+}
+.box_top image{
+  width: 100%;
+  height: 360rpx;
+}
+
+.blackbg{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #000;
+  opacity: 0.5;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.wapper_content{
+  position: fixed;
+  z-index: 101;
+  background: #FFF;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 564rpx;
+  height: 890rpx;
+  top: 160rpx;
+  left: 64rpx;
+  padding-left: 28rpx;
+  padding-right: 30rpx;
+  padding-top: 24rpx;
+}
+.wapper_content text{
+  font-family: PingFang-SC-Regular;
+  font-size: 13px;
+  color: #888888;
+  margin: 12rpx 0px;
+}
+.wapper_img{
+  width: 32rpx;
+  height: 32rpx;
+  float: left;
+}
+.wapper_img image{
+  width: 32rpx;
+  height: 32rpx;
+  background-size: 100%;
+}
+.texts{
+  float: left;
+}
+.wapper_img_two{
+  clear: both;
+  width: 32rpx;
+  height: 32rpx;
+  float: left;
+}
+.wapper_img_two image{
+  width: 32rpx;
+  height: 32rpx;
+  background-size: 100%;
+}
+.text_two{
+  float: left;
+  font-family: PingFang-SC-Medium;
+  font-size: 14px;
+  color: #343434;
+
+}
+.dot_agree{
+  clear: both;
+  float: left;
+  width: 246rpx;
+  text-align: center;
+  line-height: 96rpx;
+  height: 96rpx;
+  background: #F3F3F3;
+  border-radius: 4px;
+  margin-left: 2rpx;
+  font-family: PingFang-SC-Regular;
+  font-size: 16px;
+  color: #888888;
+  letter-spacing: 0;
+}
+.agree{
+  float: left;
+  width: 286rpx;
+  text-align: center;
+  line-height: 96rpx;
+  height: 96rpx;
+  background: #FE7606;
+  border-radius: 4px;
+  margin-left: 28rpx;
+  font-family: PingFang-SC-Regular;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+/*摇摇车  */
+.wapper_content_car{
+  position: fixed;
+  z-index: 101;
+  background: #FFF;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 560rpx;
+  height: 320rpx;
+  top: 400rpx;
+  left: 64rpx;
+  padding-left: 28rpx;
+  padding-right: 30rpx;
+  padding-top: 24rpx;
+}
+.car_title{
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #242830;
+  letter-spacing: 0;
+  text-align: center;
+}
+.text{
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #242830;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 24rpx;
+  margin-bottom: 68rpx;
+}
+.car_dot_agree{
+  clear: both;
+  float: left;
+  width: 228rpx;
+  text-align: center;
+  line-height: 68rpx;
+  height: 68rpx;
+  background: #F3F3F3;
+  border-radius: 4px;
+  margin-left: 32rpx;
+  font-family: PingFang-SC-Regular;
+  font-size: 16px;
+  color: #888888;
+  letter-spacing: 0;
+}
+.car_agree{
+  float: left;
+  width: 228rpx;
+  text-align: center;
+  line-height: 68rpx;
+  height: 68rpx;
+  background: #FE7606;
+  border-radius: 4px;
+  margin-left: 42rpx;
+  font-family: PingFang-SC-Regular;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}

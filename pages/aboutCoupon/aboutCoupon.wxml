@@ -1,0 +1,23 @@
+<!--pages/aboutCoupon/aboutCoupon.wxml-->
+<view class="explain">
+  <view class="box">
+    <view class="title">1. 如何获得优惠券？</view>
+    <view class="answer">用户在首次登录、平台发放、商户发放时可以获得优惠券。</view>
+  </view>
+  <view class="box">
+    <view class="title">2. 优惠券可以用来做什么？</view>
+    <view class="answer">优惠券可以在充值时使用。</view>
+  </view>
+  <view class="box">
+    <view class="title">3. 优惠券使用的规则是？</view>
+    <view class="answer">不拆分，一次一张，一个账号仅可用账号内的优惠券，不可提现。</view>
+  </view>
+  <view class="box">
+    <view class="title">4. 充值取消后优惠券会返还吗？</view>
+    <view class="answer">如果优惠券未失效则返回账户中；如果优惠券失效，则算已失效，不可再使用。</view>
+  </view>
+  <view class="box">
+    <view class="title">5. 其他？</view>
+    <view class="answer">通过第三方登录的用户绑定已注册的手机号码，实际优惠券数量已手机号为准。</view>
+  </view>
+</view>

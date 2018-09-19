@@ -1,0 +1,12 @@
+<!--pages/chosenPosition/chosenPosition.wxml-->
+<view>
+  <view class="choseP">
+    <view wx:for="{{positiondata}}" wx:for-item="data" wx:key="{{data}}" class="defaultStatus" bindtap="checkPosition" data-index="{{index}}" hover-class="checkStatus">
+      <image src="/img/weizhi_icon@1x.png" background="cover"></image>
+      <text> {{data}}号位</text>
+    </view>
+  </view>
+  <view class="checkposition">
+    当前位置：<text>{{machineName}}</text>
+  </view>
+</view>

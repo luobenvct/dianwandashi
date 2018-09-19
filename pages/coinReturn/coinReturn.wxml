@@ -1,0 +1,27 @@
+<!--pages/coinReturn/coinReturn.wxml-->
+<view wx:if="{{nulldata}}">
+  <view class="table">
+    <view class="thead">
+      <view>时间</view>
+      <view>币数</view>
+      <view>原因</view>
+    </view>
+    <view class="tbody">
+      <view class="tr" wx:for="{{coinreturndata}}" wx:for-item="listdata" wx:key="*this">
+        <view class="row">
+          <view>{{listdata.create_time}}</view>
+          <view>{{listdata.amount}}币</view>
+          <view>{{listdata.reason}}</view>
+        </view>
+        <view class="border"></view>
+      </view>
+    </view> 
+  </view>
+  <view class="footer">
+    <button type="default" class="coinReturn" bindtap="returnCoins">一键退币</button>
+  </view>
+</view>
+<view class="nullData" hidden="{{nulldata}}" style="height:{{wheight}}px">
+  <import src="../nulldata/nulldata.wxml" />
+  <template is="nulldata" data="{{...pagenulldata}}" />
+</view>

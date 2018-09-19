@@ -1,0 +1,254 @@
+page {
+  background-color: #412E50;
+}
+
+.head_view {
+  width: 750rpx;
+  height: 652rpx;
+  margin-top: -136rpx;
+  background: url('https://metadata.dianwandashi.com/draw_user_bg.png') no-repeat center center;
+  background-size: cover; 
+}
+
+.user_view {
+  position: absolute;
+  left: 150rpx;
+  top: 192rpx;
+  width: 454rpx;
+  height: 136rpx;
+}
+
+.head {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-left: 76rpx;
+  margin-top: 24rpx;
+  margin-right: 20rpx;
+  border-radius: 22px;
+  border: 2px solid #FFFFFF;
+  box-shadow: 2px 2px 0 0 #AC2B0D;
+}
+
+.nick {
+  font-family: PingFang-SC-Medium;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  margin-top: 24rpx;
+}
+
+.danpian {
+  font-family: PingFang-SC-Regular;
+  font-size: 28rpx;
+  color: #FFDB07;
+}
+
+.null_view {
+  width: 750rpx;
+  height: 328rpx;
+  text-align: center;
+}
+
+.null_view>image {
+  width: 268rpx;
+  height: 258rpx;
+}
+
+.null_view>view {
+  font-family: PingFang-SC-Semibold;
+  font-size: 28rpx;
+  color: #FED200;
+  letter-spacing: 0;
+  margin-top: 20rpx;
+}
+
+
+/* ------------------ 抽奖部分 ------------------- */
+.draw_view {
+  width: 375px;
+  height: 414px;
+  position: absolute;
+  left: 0;
+  top: 160px;
+}
+
+.draw_bg {
+  width: 375px;
+  height: 375px;
+  position: absolute;
+  background: url('https://metadata.dianwandashi.com/draw_bg.png') no-repeat center center;
+  background-size: cover; 
+}
+
+/* 转盘 */
+.canvas-container ul,
+.canvas-container li{
+  margin: 0 ;
+  padding: 0;
+  list-style: none;
+}
+
+.canvas-container{
+  margin: 0 auto;
+  position: fixed;
+  /* left: 61px; */
+  top: 212px;
+  width: 250px;
+  height: 250px;  
+}
+.canvas-content{
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: inherit;
+  background-clip: padding-box;
+}
+.canvas-element{
+  /* position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%; */
+}
+.canvas-list{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  z-index: 9999;
+}
+.canvas-item{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: PingFang-SC-Semibold;
+  font-size: 24px;
+}
+.canvas-item>image {
+  width: 41px;
+  height: 18px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center; 
+  -webkit-transform-origin: 50% 82px; 
+  transform-origin: 50% 82px;
+}
+.canvas-item-text{
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  margin: 0 auto;
+  text-align: center; 
+  -webkit-transform-origin: 50% 125px; 
+  transform-origin: 50% 125px;
+}
+
+.canvas-btn{
+  background: url('https://metadata.dianwandashi.com/draw_start.png') no-repeat center center;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 76px;
+  top: 66px;
+  z-index: 400;
+  width: 101px;
+  height: 111px;
+} 
+
+.canvas-btn.disabled{
+  background: url('https://metadata.dianwandashi.com/draw_start.png') no-repeat center center;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 76px;
+  top: 66px;
+  z-index: 400;
+  width: 101px;
+  height: 111px;
+}
+.gb-run{ 
+  -webkit-transition: all 6s ease;
+  transition: all 6s ease;
+}
+
+.get_more {
+  width: 412rpx;
+  height: 88rpx;
+  position: absolute;
+  left: 169rpx;
+  bottom: 180rpx;
+}
+
+.toexchange {
+  width: 412rpx;
+  height: 88rpx;
+  position: absolute;
+  left: 169rpx;
+  bottom: 60rpx;
+}
+
+/* ------------ 弹窗 ------------- */
+.alert_view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .2);
+  width: 100%;
+  height: 100%;
+}
+
+.alert {
+  width: 574rpx;
+  height: 560rpx;
+  background: #FFFFFF;
+  border-radius: 4px;
+  position: absolute; 
+  top: 0; 
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.alert_img {
+  width: 474rpx;
+  height: 210rpx;
+  margin-top: 20rpx;
+}
+
+.alert_tip {
+  font-family: PingFang-SC-Regular;
+  font-size: 32rpx;
+  color: #444444;
+  margin-top: 30rpx;
+}
+
+.alert_egg_num {
+  font-family: PingFang-SC-Semibold;
+  font-size: 64rpx;
+  color: #FE7606;
+}
+
+.alert_btn {
+  background: #FE7606;
+  border-radius: 4px;
+  width: 240rpx;
+  height: 88rpx;
+  font-family: PingFang-SC-Regular;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  line-height: 88rpx;
+  margin-top: 20rpx;
+}
+
+.alert_btn::after {
+  border: none;
+}

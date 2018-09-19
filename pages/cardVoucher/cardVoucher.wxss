@@ -1,0 +1,157 @@
+/* pages/cardVoucher/cardVoucher.wxss */
+page {
+  background: #f3f3f3;
+}
+
+.card_list {
+  width: 696rpx;
+  height: 376rpx;
+  background: url('https://metadata.dianwandashi.com/card_list_bg.png') no-repeat center center;
+  background-size: cover; 
+  margin: 28rpx auto 0;
+}
+
+.card_list:nth-last-child(1) {
+  margin-bottom: 60rpx;
+}
+
+.title_view {
+  height: 48rpx;
+  display: flex;
+  align-items: center;
+  padding-top: 38rpx;
+}
+
+.title_view>image {
+  width: 20px;
+  height: 14px;
+  margin-left: 36rpx;
+}
+
+.title_view>label {
+  height: 40rpx;
+  width: 420rpx;
+  margin-left: 16rpx;
+  margin-right: 16rpx;
+  font-size: 28rpx;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 40rpx;
+}
+
+.title_view>button {
+  width: 124rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  margin-right: 24rpx;
+  background-color: white;
+  color: #FE7606;
+  border-radius: 48rpx;
+  font-size: 24rpx;
+  border: none;
+}
+
+.bar_code_view {
+  width: 644rpx;
+  height: 188rpx;
+  margin: 84rpx auto 0;
+  background-color: white;
+  border-radius: 8rpx;
+  position: relative;
+}
+
+.bar_code_view>canvas {
+  position: absolute;
+  top: 18rpx;
+  left: 112rpx;
+  width: 420rpx;
+  height: 108rpx;
+}
+
+.bar_code_view>view {
+  position: absolute;
+  bottom: 6rpx;
+  height: 50rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.bar_code_view>view>text {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #343434;
+}
+
+.msgShow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.msgHide {
+  display: none;
+}
+
+.msg_alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 562rpx;
+  height: 386rpx;
+  background-color: white;
+  border-radius: 8rpx;
+  padding: 28rpx 32rpx 32rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.msg_alert>view:nth-child(1) {
+  text-align: center;
+  height: 44rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #343434;
+}
+
+.msg_alert>view:nth-child(2) {
+  margin-left: 14rpx;
+  margin-top: 42rpx;
+  font-size: 28rpx;
+  color: #343434;
+}
+
+.msg_alert>view:nth-child(3) {
+  margin-left: 14rpx;
+  margin-top: 12rpx;
+  font-size: 24rpx;
+  color: #888888;
+}
+
+.msg_alert>view:nth-child(4) {
+  margin-left: 14rpx;
+  font-size: 24rpx;
+  color: #888888;
+}
+
+.msg_alert>button {
+  margin-top: 50rpx;
+  background-color: #FE7606;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  color: white;
+}
+
+.pageBottom {
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}

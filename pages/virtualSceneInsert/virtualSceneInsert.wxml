@@ -1,0 +1,14 @@
+<!--pages/virtualSceneInsert/virtualSceneInsert.wxml-->
+<view class="virtualWarp">
+  <view class="top">
+    <view class="coins">
+      余币 <text wx-if="device_info.coins">{{device_info.coins}}</text>
+    </view>
+    <button plain='true' class="recharge" hover-class='rechargeHover' bindtap='goRecharge'>充值</button>
+  </view>
+  <view class="inputCoins">
+     <input placeholder='请输入投币数' focus  value='{{coinsCount}}' type='number' maxlength='5' placeholder-class="inputPlace" bindinput='inputCoins' bindconfirm='insertBuy' disabled='{{isDisabled}}'/>
+  </view>
+  <button class="insertCoins" style='background-color:{{insertColor}}' disabled='{{insertButtonDis}}' bindtap='insertBuy'>投币购买</button>
+  <navigator url="../myGameRecord/myGameRecord" hover-class="none" class="insertRecord">投币记录</navigator>
+</view>

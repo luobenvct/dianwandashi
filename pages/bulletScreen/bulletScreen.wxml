@@ -1,0 +1,9 @@
+<!--pages/bulletScreen/bulletScreen.wxml-->
+<view class="bulletWarp">
+  <view class="textareaView">
+    <textarea placeholder="现场大屏弹幕,来一发！" value="{{inputVal}}" placeholder-class="textareaPlaceHolder" maxlength="20" bindinput="inputBullet" />
+    <view>{{ textareaNum }} | 20</view>
+  </view>
+  <button class="{{bulletStyle}}" disabled='{{isSendBullet}}' bindtap='sendBullet'>发送</button>
+  
+</view>

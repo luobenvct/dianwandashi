@@ -1,0 +1,280 @@
+/**app.wxss**/
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/*加载动画UI*/
+
+.loading {
+  color: #888;
+  font-size: 24rpx;
+  line-height: 160rpx;
+  text-align: center;
+}
+
+.loading image {
+  width: 160rpx;
+  height: 160rpx;
+  vertical-align: middle;
+}
+
+/*没有数据UI*/
+
+.nullData {
+  text-align: center;
+  font-size: 28rpx;
+  color: #888;
+  line-height: 40rpx;
+  background: #f3f3f3;
+}
+
+.nullData image {
+  width: 360rpx;
+  height: 360rpx;
+  margin-top: 145rpx;
+}
+
+.nullData navigator, .goNearGame {
+  width: 274rpx;
+  height: 94rpx;
+  line-height: 94rpx;
+  text-align: center;
+  border: 2rpx solid #fe7606;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+  color: #fe7606;
+  letter-spacing: 2rpx;
+  margin: 44rpx auto;
+}
+
+.checkBtn {
+  background: #fe7606;
+  color: #fff;
+}
+
+/*请求错误UI*/
+
+.nullData .reloadBtn {
+  width: 274rpx;
+  height: 94rpx;
+  line-height: 94rpx;
+  text-align: center;
+  border: 2rpx solid #fe7606;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+  color: #fe7606;
+  letter-spacing: 2rpx;
+  margin: 44rpx auto 0;
+}
+
+.nullData .checkBtn {
+  background: #fe7606;
+  color: #fff;
+}
+
+.coupon_head {
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  background: #fff;
+  line-height: 90rpx;
+}
+
+.coupom_txt {
+  font-size: 28rpx;
+  color: #888;
+}
+
+.coupom_txt text {
+  color: #fe7606;
+}
+
+.coupon_a {
+  font-size: 24rpx;
+  color: #2b9ce9;
+}
+
+.insert_success {
+  position: absolute;
+  top: 290rpx;
+  left: 108rpx;
+  width: 535rpx;
+  height: 663rpx;
+  background-image: url(http://metadata.zhutech.net/o_1bfr1n8991mfh145b9igch31judm.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  text-align: center;
+  z-index: 999;
+}
+
+.insert_success>text {
+  display: block;
+}
+
+.insert_success>text:first-child {
+  margin-top: 47rpx;
+  line-height: 45rpx;
+  font-size: 32rpx;
+  color: #fe7606;
+  letter-spacing: 2.44rpx;
+}
+
+.insert_success>text:nth-child(2) {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.insert_success image {
+  width: 258rpx;
+  height: 258rpx;
+}
+
+.btn[type=default] {
+  width: 364rpx;
+  height: 94rpx;
+  line-height: 94rpx;
+  background: #fe7606;
+  border: 2rpx solid rgba(5, 5, 5, 0.10);
+  border-radius: 10rpx;
+  position: absolute;
+  left: 85.5rpx;
+  bottom: 52rpx;
+  color: #fff;
+}
+
+.insert_success text:nth-child(4) {
+  font-size: 60rpx;
+  color: #fe7606;
+}
+
+.selectbtn {
+  width: 364rpx;
+  height: 94rpx;
+  line-height: 94rpx;
+  background: #fe7606;
+  border: 2rpx solid rgba(5, 5, 5, 0.10);
+  border-radius: 10rpx;
+  position: absolute;
+  left: 85.5rpx;
+  bottom: 52rpx;
+  color: #fff;
+}
+
+/*modal*/
+
+.modalBg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  opacity: 0.5;
+  background: #000;
+  z-index: 100;
+}
+
+.modal {
+  position: absolute;
+  z-index: 500;
+  background: #fff;
+  opacity: 1;
+  border-radius: 8rpx;
+  width: 650rpx;
+  height: 557rpx;
+  top: 200rpx;
+  left: 50rpx;
+}
+
+.modalTit {
+  height: 136rpx;
+  width: 100%;
+  background: #fff7f0;
+  font-size: 36rpx;
+  color: #fe7606;
+  line-height: 136rpx;
+  border-radius: 17rpx;
+  font-weight: 600;
+}
+
+.modalBod {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+/*充值抽奖UI  */
+
+.drawBox {
+  width: 562rpx;
+  height: 674rpx;
+  background: url('https://metadata.zhutech.net/o_1bvbj0o9gss0cruqg94j3u6hm.png') no-repeat center center;
+  background-size: cover;
+  border-radius: 8rpx;
+  position: absolute;
+  top: 200rpx;
+  left: 94rpx;
+  z-index: 99999;
+}
+
+.drawBox .drawImg {
+  width: 562rpx;
+}
+
+.drawBox .drawClose {
+  position: absolute;
+  left: 44rpx;
+  bottom: 66rpx;
+  height: 88rpx;
+  width: 160rpx;
+}
+
+.drawBox .drawGo {
+  position: absolute;
+  bottom: 66rpx;
+  right: 44rpx;
+  width: 272rpx;
+  height: 88rpx;
+}
+
+.drawBox .topClose {
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  top: 0;
+  right: 0;
+}
+
+.drawBoxBg {
+  background: rgba(0, 0, 0, 0.40);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.drawBox .title {
+  width: 440rpx;
+  height: 112rpx;
+  position: absolute;
+  top: 26rpx;
+  left: 61rpx;
+}

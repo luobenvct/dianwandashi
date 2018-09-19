@@ -1,0 +1,2 @@
+<!--pages/drawRecordBox/drawRecordBox.wxml-->
+<web-view src="{{url}}"></web-view>

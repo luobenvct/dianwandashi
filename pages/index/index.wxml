@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="warp">
+  <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+  <navigator url="/pages/cardVoucher/cardVoucher" hover-class='none' class="couponLink">
+    <!-- <view class="hasNewCoupon" wx:if="{{isCouponRead}}"></view> -->
+    <image src="/img/home_vip.png"></image>
+    <text>我的卡券</text>
+    <!-- <view class="expireCouponCount" hidden="{{isHidden}}">
+      您有{{expireCouponCount}}张优惠券即将过期
+    </view> -->
+  </navigator>
+  <view class="newCouponCome" hidden="{{scrollStatus}}">
+    <view class="coupon_box_bg"></view>
+    <view class="coupon_container">
+      <image src="/img/closeCopon.png" class="closeCopon" bindtap="closeCouponBox"></image>
+      <view class="border"></view>
+      <view class="coupon_box">
+        <view class="couponhead">
+          <text>您有新优惠券啦</text>
+          <text>赶快来使用吧！</text>
+        </view>
+        <view class="{{coupon_list_box_style}}">
+          <view class="coupon_list" wx:for="{{newCoupons}}" wx:for-item="data" wx:key="{{data.coupon_id}}">
+            <view class="coupon_left">
+              <view class="money">¥
+                <text>{{data.price}}</text>
+              </view>
+              <text class="condition">满{{data.least_consume}}元可用</text>
+            </view>
+            <view class="coupon_right">
+              <view class="store_name">{{data.name}}</view>
+              <text>有效期：{{data.start_time}}-{{data.end_time}}</text>
+            </view>
+          </view>
+        </view>
+        <view class="couponbtn_box">
+          <view class="pull_down" bindtap="goToCoupon"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="pageImg">
+    <image src="https://metadata.zhutech.net/o_1ca7bvohipb6jb71nnu1pd119q4q.png" class="playBg"></image>
+    <image src="https://metadata.zhutech.net/o_1ca7bvohi1plbd9jodmvo911evp.png" class="bg"></image>
+    <image src="https://metadata.zhutech.net/o_1ca7bvohi119o8bh12ia1kvqsneo.png" class="scanCode" bindtap="scanCode"></image>
+  </view>
+</view>

@@ -1,0 +1,63 @@
+<!--pages/storeExchange/storeExchange.wxml-->
+<view class="container" wx:if="{{nulldata}}">
+  <view wx:for="{{giftList}}" wx:for-item="data" class="giftList" wx:key="{{data.id}}">
+    <image src="{{data.photo_url}}" class="giftPhoto" background="cover"></image>
+    <view class="giftInfo">
+      <view class="giftName">{{data.name}}</view>
+      <view class="giftNum">
+        <text>{{data.score_req}}</text> 礼票
+      </view>
+    </view>
+    <view class="addContainer">
+      <view class="jian" wx:if="{{data.initialnum>0}}" bindtap="subtract" data-popstatus="0" data-score_req="{{data.score_req}}" data-giftid="{{data.gift_id}}">
+        <image src="../../img/subtract.png"></image>
+      </view>
+      <text wx:if="{{data.initialnum>0}}">{{data.initialnum}}</text>
+      <view class="jia" bindtap="add" data-score_req="{{data.score_req}}" data-giftid="{{data.gift_id}}">
+        <image src="../../img/add.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="pageBottom" hidden="{{pageBottom}}">已经到底啦</view>
+</view>
+<view class="exchangeBar" catchtap="togglelist" wx:if="{{nulldata}}">
+  <view class="shape">
+    <image src="../../img/shape.png" background="cover"></image>
+    <text class="selectnum" wx:if="{{total}}">{{total}}</text>
+  </view>
+  <view class="{{surplus}}">您剩余
+    <text class="totalTicket">{{surplusExchange}}</text>礼票</view>
+  <view class="selticket" wx:if="{{selticket>0}}">已选{{selticket}}礼票</view>
+  <button type="default" id="exchange" catchtap="exchange" disabled="{{exchangeBtnSta}}" class="{{exchangeBtn}}" hover-start-time="30" hover-stay-time="50">兑换</button>
+</view>
+<view class="shopCar" hidden="{{exchangeHidden}}">
+  <view class="checkGift">
+    <view class="delete" catchtap="emptyAll">
+      <image src="../../img/delete.png"></image>清空</view>
+    <scroll-view scroll-y="true" style="height:{{popHeight}}rpx">
+      <view wx:for="{{actionSheetItems}}" wx:for-item="popdata" class="giftList" wx:key="{{popdata.gift_id}}" wx:if="{{popdata.initialnum>0}}">
+        <view>
+          <text class="giftName">{{popdata.name}}</text>
+        </view>
+        <view class="giftInfo">
+          <view class="giftNum">
+            <text>{{popdata.score_req}}</text> 礼票</view>
+        </view>
+        <view class="addContainer">
+          <view class="jian" wx:if="{{popdata.initialnum>0}}" bindtap="subtract" data-popstatus="1" data-score_req="{{popdata.score_req}}" data-giftid="{{popdata.gift_id}}">
+            <image src="../../img/subtract.png"></image>
+          </view>
+          <text wx:if="{{popdata.initialnum>0}}">{{popdata.initialnum}}</text>
+          <view class="jia" bindtap="add" data-score_req="{{popdata.score_req}}" data-giftid="{{popdata.gift_id}}">
+            <image src="../../img/add.png"></image>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="actionBg" bindtap="togglelist"></view>
+</view>
+<view class="nullData" hidden="{{nulldata}}" style="height:{{wheight}}px">
+  <import src="../nulldata/nulldata.wxml" />
+  <template is="nulldata" data="{{...pagenulldata}}" />
+</view>

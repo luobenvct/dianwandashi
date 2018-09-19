@@ -1,0 +1,89 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/storeRecharge/storeRecharge",
+    "pages/coinMachine/coinMachine",
+    "pages/insertCoin/insertCoin",
+    "pages/presentKey/presentKey",
+    "pages/exchange/exchange",
+    "pages/recharge/recharge",
+    "pages/storeExchange/storeExchange",
+    "pages/coinReturn/coinReturn",
+    "pages/chosenPosition/chosenPosition",
+    "pages/nulldata/nulldata",
+    "pages/aboutCoupon/aboutCoupon",
+    "pages/couponList/couponList",
+    "pages/payDetails/payDetails",
+    "pages/couponUse/couponUse",
+    "pages/personalCenter/personalCenter",
+    "pages/callCenter/callCenter",
+    "pages/myGameRecord/myGameRecord",
+    "pages/myRechargeRecord/myRechargeRecord",
+    "pages/myExchargeRecord/myExchargeRecord",
+    "pages/contactUs/contactUs",
+    "pages/gotoVip/gotoVip",
+    "pages/jackpot/jackpot",
+    "pages/priorJackpot/priorJackpot",
+    "pages/easter/easter",
+    "pages/exchangeMethod/exchangeMethod",
+    "pages/onlineExchange/onlineExchange",
+    "pages/rechargeDraw/rechargeDraw",
+    "pages/drawBox/drawBox",
+    "pages/drawRecordBox/drawRecordBox",
+    "pages/shareAward/shareAward",
+    "pages/accpetShare/accpetShare",
+    "pages/shakingMachineRecharge/shakingMachineRecharge",
+    "pages/bulletScreen/bulletScreen",
+    "pages/virtualSceneInsert/virtualSceneInsert",
+    "pages/virtualInsertSucc/virtualInsertSucc",
+    "pages/cardVoucher/cardVoucher",
+    "pages/cardVoucherDetail/cardVoucherDetail",
+    "pages/cardVoucherHistory/cardVoucherHistory",
+    "pages/cardRecharge/cardRecharge",
+    "pages/remoteControl/remoteControl",
+    "pages/eggDraw/eggDraw",
+    "pages/eggShop/eggShop",
+    "pages/contactCustomer/contactCustomer"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FE7606",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "color": "#979797",
+    "selectedColor": "#fe7606",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/Home_default.png",
+        "selectedIconPath": "img/Home_selected.png"
+      },
+      {
+        "pagePath": "pages/recharge/recharge",
+        "text": "商铺",
+        "iconPath": "img/Recharge_default.png",
+        "selectedIconPath": "img/Recharge_selected.png"
+      },
+      {
+        "pagePath": "pages/exchange/exchange",
+        "text": "兑换",
+        "iconPath": "img/Exchange_default.png",
+        "selectedIconPath": "img/Exchange_selected.png"
+      },
+      {
+        "pagePath": "pages/personalCenter/personalCenter",
+        "text": "我的",
+        "iconPath": "img/personal_default.png",
+        "selectedIconPath": "img/personal.png"
+      }
+    ]
+  }
+}

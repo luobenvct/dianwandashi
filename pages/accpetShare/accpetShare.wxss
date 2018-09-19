@@ -1,0 +1,224 @@
+/* pages/accpetShare/accpetShare.wxss */
+page {
+  height: 100%;
+}
+
+.acceptContainer {
+  width: 100%;
+  height: 100%;
+  background: url('https://metadata.zhutech.net/o_1bvmdgps71dns1gmugqp62stcb1c.png');
+  background-size: 25px 25px;
+  overflow: hidden;
+}
+
+.acceptContainer::before {
+  content: '';
+  display: table;
+}
+
+image.head {
+  width: 132rpx;
+  height: 132rpx;
+  border: 4rpx solid #fff;
+  border-radius: 50%;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  margin: 60rpx 0;
+}
+
+.userInfo .title {
+  width: 120rpx;
+  height: 20rpx;
+}
+
+.shareFri>view, .storeInfo>view {
+  font-size: 32rpx;
+  color: #fe7606;
+  letter-spacing: 0;
+}
+
+.userInfo>view {
+  width: 33%;
+  text-align: center;
+}
+
+.userInfo>view::before {
+  content: '';
+  display: table;
+}
+
+.icon-1 {
+  width: 108rpx;
+  height: 108rpx;
+  display: block;
+  margin: 25rpx auto 55rpx;
+}
+
+.icon-2 {
+  width: 190rpx;
+  height: 96rpx;
+  display: block;
+  margin: auto;
+}
+
+.addr {
+  width: 500rpx;
+  height: 88rpx;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.addr .title {
+  font-size: 24rpx;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.addr .mainaddr {
+  position: relative;
+  z-index: 99;
+  margin-top: 10rpx;
+  font-size: 32rpx;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.addr .top {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 0;
+  left: -33rpx;
+}
+
+.addr .bottom {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  bottom: 0;
+  right: -33rpx;
+}
+
+.shareSucc {
+  position: absolute;
+  left: 40rpx;
+  bottom: 0;
+  width: 670rpx;
+  height: 668rpx;
+  background: #fff;
+  box-shadow: 0 6rpx 10rpx 0 rgba(0, 0, 0, 0.20);
+  border-radius: 20rpx 20rpx 0 0;
+  padding: 60rpx 32rpx 32rpx;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 99;
+}
+
+.shareSucc .storeName {
+  font-size: 48rpx;
+  color: #fe7606;
+}
+
+.shareSucc .tips {
+  font-size: 28rpx;
+  color: #cdcdcd;
+  margin-top: 18rpx;
+  margin-bottom: 40rpx;
+}
+
+.goIndex {
+  background: #fe7606;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.shareContent {
+  width: 400rpx;
+  margin: 0 auto 100rpx;
+  font-size: 24rpx;
+  color: #242830;
+  font-weight: 600;
+  padding-top: 36rpx;
+}
+
+.shareContent text {
+  font-size: 36rpx;
+  color: #fe7606;
+  letter-spacing: 0;
+}
+
+.shareContent image {
+  width: 84rpx;
+  height: 84rpx;
+  margin-right: 28rpx;
+}
+
+.roly, .coupons {
+  display: flex;
+  align-items: center;
+}
+
+.roly {
+  padding-bottom: 20rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+}
+
+.goIndexTab {
+  opacity: 0.8;
+}
+
+.cloud-icon {
+  width: 68rpx;
+  height: 68rpx;
+  position: absolute;
+}
+
+.cloud-icon-1 {
+  bottom: 200rpx;
+  left: 10rpx;
+}
+
+.cloud-icon-2 {
+  width: 134rpx;
+  height: 154rpx;
+  bottom: 566rpx;
+  left: -7rpx;
+}
+
+.cloud-icon-3 {
+  width: 122rpx;
+  height: 75rpx;
+  top: 500rpx;
+  right: -19rpx;
+}
+
+.cloud-icon-4 {
+  width: 74rpx;
+  height: 84rpx;
+  top: 800rpx;
+  right: -31rpx;
+}
+
+.hasShare {
+  font-size: 28rpx;
+  color: #242830;
+  text-align: center;
+  font-weight: 600;
+}
+
+.hasShare image {
+  width: 224rpx;
+  height: 218rpx;
+  margin: 50rpx 0 0;
+}
+
+.hasShare view {
+  margin: 52rpx 0 122rpx;
+}

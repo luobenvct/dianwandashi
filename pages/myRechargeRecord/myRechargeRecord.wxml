@@ -1,0 +1,21 @@
+<!--pages/myRechargeRecord/myRechargeRecord.wxml-->
+<view class="recordContainer" wx:if="{{nulldata}}">
+  <view class="dataBox" wx:for="{{rechargeRecords}}" wx:key="index" wx:for-item="data">
+    <view class="box1">
+      <text>{{data.name}}</text>
+      <text>充值¥{{data.real_pay_sum}}</text>
+    </view>
+    <view class="box2">
+      <text>{{data.chargetime}}</text>
+      <text>获得{{data.for_coins}}币</text>
+    </view>
+  </view>
+  <view class="loading" hidden="{{loading}}">
+    <image src="/img/loading.png" background="cover"></image>努力加载中...
+  </view>
+  <view class="pageBottom" hidden="{{pageBottom}}">已经到底啦</view>
+</view>
+<view class="nullData" hidden="{{nulldata}}" style="height:{{wheight}}px">
+  <import src="../nulldata/nulldata.wxml" />
+  <template is="nulldata" data="{{...pagenulldata}}" />
+</view>

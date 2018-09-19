@@ -1,0 +1,22 @@
+<!--pages/shakingMachineRecharge/shakingMachineRecharge.wxml-->
+<view class="box">
+  <button wx:for="{{buttonData}}" wx:for-item="data" wx:key="index" class="{{data.btnStyle}}" data-money="{{data.money}}" bindtap='insert' data-coins="{{leastCoins*(index+1)}}" data-index="{{index}}">{{data.money}}元玩{{index+1}}次</button>
+  <view class="clickMe">
+    <text>机器没反应？</text>
+    <view class="againInsertBtn" bindtap='againInsert'>
+      <image src='/img/againInsert.png'></image>
+      <text>点我试试</text> 
+    </view>
+  </view>
+  <view class="modalBox" wx:if="{{showModal}}">
+    <view class="modalBg"></view>
+    <view class="modal">
+      <view class="modalTitle">请坐稳扶好！</view>
+      <view class="modalBody">支付成功后，机器将直接启动。</view>
+      <view class="modalFoot">
+        <button type="button" plain class="neverTip" bindtap='neverTipInsert'>不再提示</button>
+        <button type="button" class="knowBtn" bindtap='tipKnowInsert'>知道了</button>
+      </view>
+    </view>
+  </view>
+</view>

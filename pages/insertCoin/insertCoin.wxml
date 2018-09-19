@@ -1,0 +1,110 @@
+<!--pages/insertCoin/insertCoin.wxml-->
+<view class="wapper" style="background:#{{deviceCombosStyle.bg_color}}">
+  <view class="box_top">
+      <image src="{{deviceCombosStyle.bg_url}}"></image>
+  </view>
+  <view class="header">
+      <view style="color:#{{deviceCombosStyle.content_font_color}}; font-size:32rpx;">
+        余币: {{gameCoin}}币
+      </view>
+      <view class="urlBtn">
+        <view style="display:inline-block; margin-right:20rpx; width: 112rpx;height: 56rpx;background:url({{deviceCombosStyle.btn_recharge_url_before}}); background-size: 100% 100%;" bindtap="goRecharge"></view>
+        <view style="display:inline-block; width: 112rpx;height: 56rpx;background:url({{deviceCombosStyle.btn_exchange_url_before}}); background-size: 100% 100%;" bindtap="goExchange"></view>
+        <!-- <button plain="true" size="mini" class="rechargeUrlBtn" bindtap="goExchange">兑换</button> -->
+      </view>
+  </view>
+  <!-- <view style="width: 610rpx;height: 2rpx;margin-left: 68rpx;background:#{{deviceCombosStyle.content_line_color}};margin-top: 24rpx;"></view> -->
+  <view class="insertBox">
+    <view class="btnContainerNew">
+      <view style=" width: 296rpx; height: 128rpx;  color:#{{deviceCombosStyle.btn_color_before}}; background:url({{deviceCombosStyle.btn_url_before}}); background-size: 100% 100%;" wx:for="{{btnList}}" wx:for-item="coinCredits" data-coin="{{coinCredits}}" wx:key="{{index}}" bindtap="goInsertCoins">
+        <block wx:if="{{coinCredits.remark}}">
+            <view style='margin-top:20rpx;'>
+               {{deviceType==0?'投':'兑'}} 
+              <text>{{coinCredits}} 币</text> 
+            </view>
+            <view class="tip" style='color:#{{deviceCombosStyle.btn_descript_color_before}}; font-size:12px;'>{{coinCredits.remark}}</view>
+        </block>
+        <block wx:else>
+            <view style='margin-top:30rpx;'>
+                 {{deviceType==0?'投':'兑'}} 
+                <text>{{coinCredits}} 币</text> 
+            </view>
+        </block>
+      </view>
+      
+    </view>
+    <!-- <view class="returnCoins">
+      投了币但机器故障？
+      <navigator url="{{returncoinurl}}" hover-class="none" class="giveYourIcon">点我退币</navigator>
+    </view> -->
+    <!-- <view class="everyActivity" style="background:#{{deviceCombosStyle.bottom_bg_color}}">
+      <view class="jackPotActivity" wx:if="{{showJackPot}}" bindtap='goToJackpot'>
+        <image src="https://metadata.zhutech.net/o_1bu860667q1td2jcdjcog1v61n.png"></image>
+        含奖池
+      </view>
+      <view class="border" wx:if="{{showJackPot && showEaster}}"></view>
+      <view class="easterActivity" wx:if="{{showEaster}}" bindtap="goToEaster">
+        <image src="https://metadata.zhutech.net/o_1bu860668kei7ep20i1fkm80no.png"></image>
+        有彩蛋
+        <text>×{{easterNum}}</text>
+      </view>
+    </view> -->
+  </view>
+  <view class="insert_success" wx:if="{{getTicket}}">
+    <view>获得礼票</view>
+    <view>
+      <text>{{getTicketNum}}</text>张
+    </view>
+    <view>可兑换礼品</view>
+    <button type="default" hover-class="selectbtn" class="btn" bindtap="hiddenModal">确定(
+      <text>{{timerNow}}</text>秒)</button>
+  </view>
+  <view class="modalBg" wx:if="{{getTicket||showEasterBox}}" bindtap='closeEaster'></view>
+  <view class="easterBox" wx:if="{{showEasterBox}}">
+    <view class="num">{{easterNum}}</view>
+    <view class="closeEaster" bindtap='closeEaster'></view>
+    <view class="drawBox">
+      <view class="drawNum">
+        {{drawNumber[0]}}
+      </view>
+      <view class="drawNum">
+        {{drawNumber[1]}}
+      </view>
+      <view class="drawNum">
+        {{drawNumber[2]}}
+      </view>
+      <view class="drawNum">
+        {{drawNumber[3]}}
+      </view>
+      <view class="drawNum">
+        {{drawNumber[4]}}
+      </view>
+      <image src="https://metadata.zhutech.net/o_1bugh1afap8d1b4b17g8c69u5n10.png" class="draw" bindtap="drawStart" data-status="{{drawEasterStatus}}" wx:if="{{easterNum>0}}"></image>
+      <image src="https://metadata.zhutech.net/o_1c1rekn1n1emk1g0j1j2u66f66am.png" class="draw" wx:if="{{easterNum==0}}" bindtap="goExchange"></image>
+    </view>
+    <image src="https://metadata.zhutech.net/o_1bughhq6bslo168ejpl1nla1571a.png" class="drawHand"></image>
+  </view>
+  <view class="drawBox" wx:if="{{rechargeDrawInfo.rechargeDrawStatus}}">
+    <import src="../drawBox/drawBox.wxml" />
+    <template is="drawBox" data="{{...rechargeDrawInfo}}" />
+  </view>
+  <view class="drawBoxBg" wx:if="{{rechargeDrawInfo.rechargeDrawStatus}}"></view>
+  <view class="returnCoins">
+      1分钟机器未启动自动退款
+      <navigator url="{{returncoinurl}}" hover-class="none" class="giveYourIcon">联系客服</navigator>
+    </view>
+  <!-- <view class="everyActivity" style="background:#{{deviceCombosStyle.bottom_bg_color}}">
+      <view class="jackPotActivity" wx:if="{{showJackPot}}" bindtap='goToJackpot'>
+        <image src="https://metadata.zhutech.net/o_1bu860667q1td2jcdjcog1v61n.png"></image>
+        含奖池
+      </view>
+      <view class="border" wx:if="{{showJackPot && showEaster}}"></view>
+      <view class="easterActivity" wx:if="{{showEaster}}" bindtap="goToEaster">
+        <image src="https://metadata.zhutech.net/o_1bu860668kei7ep20i1fkm80no.png"></image>
+        有彩蛋
+        <text>×{{easterNum}}</text>
+      </view>
+    </view> -->
+    <ad unit-id="adunit-063facbd762b2d41" class="ad"></ad>
+</view>
+

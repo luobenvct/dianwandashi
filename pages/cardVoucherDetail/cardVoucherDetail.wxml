@@ -1,0 +1,52 @@
+<!--pages/cardVoucherDetail/cardVoucherDetail.wxml-->
+<view class='body'>
+  <view class='tip'>
+    <text>提示：请向营业员出示该条形码</text>
+  </view>
+  <view class='detail_view'>
+    <view class='store_name'>
+      <text>{{card_info.name?card_info.name:store_name}}</text>
+    </view>
+    <view class='bar_code_view' hidden='{{!card_info.card_id || card_info.card_id == 0}}'>
+      <canvas canvas-id="barcode" hidden='{{showMsg}}'></canvas>
+      <view>
+        <text>{{card_info.new_virtual_no}}</text>
+      </view>
+    </view>
+    <view class='null_card_view' hidden='{{card_info.card_id > 0}}'>
+      <image src='/img/card_null.png'></image>
+      <view>暂无卡券</view>
+    </view>
+    <view class='price'>
+      <text>总消费金额：¥{{card_info.total_cash?card_info.total_cash:0}}</text>
+    </view>
+    <button class='recharge_btn' bindtap='toRecharge'>{{product_list.length > 0?'再次购买':'购买'}}</button>
+    <image src='/img/card_border.png' class='card_border'></image>
+  </view>
+  <view class='title_view'>
+    <text>我的商品({{product_list.length}})</text>
+    <navigator url='/pages/cardVoucherHistory/cardVoucherHistory?store_id={{store_id}}'>历史记录></navigator>
+  </view>
+  <view class='product_list' wx:for="{{product_list}}" wx:for-item="data" wx:key="{{data.goods_id}}">
+    <view>
+      <text class='name'>{{data.card_name}}</text>
+    </view>
+    <view>
+      <text class='number'>剩余次数：{{data.res_times==-1?'不限':data.res_times}}</text>
+      <text class='time' hidden='{{data.last_update==null}}'>有效期至: {{data.days==-1?'不限':data.end_time}}</text>
+      <view class='not_active' hidden='{{data.last_update!=null}}'>未激活</view>
+    </view>
+  </view>
+
+  <view class="pageBottom" hidden="{{pageBottom}}"></view>
+</view>
+
+<view class="{{showMsg?'msgShow':'msgHide'}}" catchtouchmove='true'>
+  <view class='msg_alert'>
+    <view>确认成功</view>
+    <view>{{cardName}}</view>
+    <view>剩余次数：{{restTimes==-1?'不限':restTimes+'次'}}</view>
+    <view>到期时间：{{endTime}}</view>
+    <button bindtap='confirm'>确认</button>
+  </view>
+</view>

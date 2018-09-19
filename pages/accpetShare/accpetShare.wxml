@@ -1,0 +1,56 @@
+<!--pages/accpetShare/accpetShare.wxml-->
+<view class="acceptContainer">
+  <view class="userInfo" hidden="{{activityFinish}}">
+    <view class="shareFri">
+      <image src="{{firend.photo}}" class="head"></image>
+      <image src="https://metadata.zhutech.net/o_1bvmeaq0ehqieti1h1i1pi61kfl21.png" class="title"></image>
+      <view>{{firend.name}}</view>
+    </view>
+    <view class="icon">
+      <image src="https://metadata.zhutech.net/o_1bvme4gk1148l15es8d69851otc1n.png" class="icon-1"></image>
+      <image src="https://metadata.zhutech.net/o_1bvme4gk11o791fh17crid816uv1o.png" class="icon-2"></image>
+    </view>
+    <view class="storeInfo">
+      <image src="{{videoGame.photo}}" class="head"></image>
+      <image src="https://metadata.zhutech.net/o_1bvmeaq0e1coh1lkn1n4e2que2d22.png" class="title"></image>
+      <view>{{videoGame.name}}</view>
+    </view>
+  </view>
+  <view class="addr">
+    <image src="https://metadata.zhutech.net/o_1bvmf8r1ebbksqo1t6q1hq21tcb3d.png" class="top"></image>
+    <image src="https://metadata.zhutech.net/o_1bvmf8r1e19ck19441hip1tsa1f203e.png" class="bottom"></image>
+    <view class="title">请前往以下地址使用哦</view>
+    <view class="mainaddr">{{addr}}</view>
+  </view>
+  <view class="shareSucc">
+    <view class="storeName" wx:if="{{hasShare==false}}">
+      {{videoGame.name}}
+    </view>
+    <view class="tips" wx:if="{{hasShare==false}}">送您</view>
+    <view class="shareContent" wx:if="{{hasShare==false}}">
+      <view class="roly" wx:if="{{coins}}">
+        <image src="https://metadata.zhutech.net/o_1bvjtg0qrfcj1v3vaa5oql119417.png"></image>
+        <view>
+          获得
+          <text>{{coins}}</text>个游戏币
+        </view>
+      </view>
+      <view class="coupons" wx:if="{{coupons}}">
+        <image src="https://metadata.zhutech.net/o_1bvjtg0qr1d6gc9o1jmb1ofm1sj919.png"></image>
+        <view>
+          获得
+          <text>{{coupons}}</text>元优惠券
+        </view>
+      </view>
+    </view>
+    <view wx:else class="hasShare">
+      <image src="https://metadata.zhutech.net/o_1bvmn71gc10sl12fr1pc3c3n17ie1p.png"></image>
+      <view>{{acceptMessage}}</view>
+    </view>
+    <button class="goIndex" hover-class='goIndexTab' bindtap='gotoIndex'>进入小程序</button>
+  </view>
+  <image src="https://metadata.zhutech.net/o_1bvmla189b0c3u31bjr17on1dkkv.png" class="cloud-icon cloud-icon-1"></image>
+  <image src="https://metadata.zhutech.net/o_1bvmla1891jnrkvs15gr1u5c1asru.png" class="cloud-icon cloud-icon-2"></image>
+  <image src="https://metadata.zhutech.net/o_1bvmla188177f1p6v14v96d8s1tt.png" class="cloud-icon cloud-icon-3"></image>
+  <image src="https://metadata.zhutech.net/o_1bvmlkki61habt954291stc159o1a.png" class="cloud-icon cloud-icon-4"></image>
+</view>

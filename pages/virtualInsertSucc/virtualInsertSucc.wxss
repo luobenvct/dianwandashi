@@ -1,0 +1,39 @@
+/* pages/virtualInsertSucc/virtualInsertSucc.wxss */
+page, .successBox {
+  height: 100%;
+  text-align: center;
+}
+
+.successBox image {
+  width: 140rpx;
+  height: 140rpx;
+  margin: 216rpx auto 20rpx;
+}
+
+.successBox .hasSuccess {
+  font-size: 36rpx;
+  color: #fe7606;
+  margin-bottom: 66rpx;
+}
+
+.successBox .coins {
+  font-size: 76rpx;
+  color: #242830;
+}
+
+.successBox .coins text {
+  font-size: 36rpx;
+  color: #242830;
+}
+
+.successBox button {
+  width: 670rpx;
+  height: 94rpx;
+  line-height: 94rpx;
+  background: #fe7606;
+  border-radius: 10rpx;
+  color: #fff;
+  position: absolute;
+  bottom: 41rpx;
+  left: 40rpx;
+}

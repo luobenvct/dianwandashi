@@ -1,0 +1,62 @@
+<!--pages/couponList/couponList.wxml-->
+<view class="header">
+  <view class="surplusCoupon">
+    <image src="/img/exclamation.png"></image>您有<text>{{fall_due_coupons}}</text>张优惠券即将过期
+  </view>
+  <navigator url="../aboutCoupon/aboutCoupon" hover-class="none">关于优惠券</navigator>
+</view>
+<view class="couponList">
+  <view class="validCouponList" wx:if="{{avalibleCouponNum>0}}" wx:for="{{avalibleCouponList}}" wx:for-item="data" wx:key="{{data.coupon_id}}">
+    <view class="coupons_outbox">
+      <image src="/img/border.png" class="border"></image>
+      <view class="coupons_box">
+        <view class="coupons_money">
+          <view class="isnew" wx:if="{{data.isnew==1}}">NEW</view>
+          <view class="money">
+            ¥<text>{{data.price}}</text>
+          </view>
+          <view class="least_consume">满{{data.least_consume}}元可用</view>
+        </view>
+        <view class="coupons_details">
+          <view class="coupon_name">{{data.name}}</view>
+          <view class="coupons_details_2">
+            <view class="least_store" wx:if="{{data.least_store}}">{{data.least_store}}</view>
+            <view class="validity">{{data.start_time}}-{{data.end_time}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="notValidCouponList" wx:if="{{avalibleCouponNum==0}}">
+    <image src="/img/nullexcharge.png"></image>
+    <view class="txt">暂无可用的优惠券</view>
+  </view>
+  <view class="historyCouponList" wx:if="{{couponListNum>0}}">
+    <view class="title">
+      <view class="border"></view>
+      <text>历史优惠券</text>
+      <view class="border"></view>
+    </view>
+    <view wx:for="{{disCouponList}}" wx:for-item="data" wx:key="{{data.coupon_id}}">
+      <view class="coupons_outbox_old">
+        <image src="/img/border.png" class="border"></image>
+        <view class="{{data.isused == 1?'usedCoupon':'pastCoupon'}}">
+          <view class="coupons_money">
+            <view class="money">
+              ¥<text>{{data.price}}</text>
+            </view>
+            <view class="least_consume">满{{data.least_consume}}元可用</view>
+          </view>
+          <view class="coupons_details">
+            <view class="coupon_name">{{data.name}}</view>
+            <view class="coupons_details_2">
+              <view class="least_store" wx:if="{{data.least_store}}">{{data.least_store}}</view>
+              <view class="validity">{{data.start_time}}-{{data.end_time}}</view>
+            </view>
+          </view>
+          <view class="tag"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,213 @@
+/* pages/cardRecharge/cardRecharge.wxss */
+
+page {
+  background-color: #8153C0;
+}
+
+.body_bg {
+  width: 100%;
+  height: 392rpx;
+}
+
+.null_data {
+  width: 100%;
+  height: 100rpx;
+}
+
+.null_data>view {
+  width: 406rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: white;
+  color: #8153C0;
+  font-size: 40rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.product_view {
+  position: relative;
+  margin-top: -120rpx;
+  margin-bottom: 168rpx;
+  padding-bottom: 128rpx;
+  z-index: 1;
+}
+
+.product_list_view {
+  margin: 28rpx 30rpx;
+  overflow: hidden;
+  border-radius: 8rpx;
+  background-color: white;
+  padding-bottom: 30rpx;
+}
+
+.product_title{
+  font-family: PingFang-SC-Medium;
+  font-size: 14px;
+  color: #FE7606;
+  margin-left: 28rpx;
+  margin-top: 20rpx;
+}
+
+.product_time{
+  font-size: 12px;
+  color: #616161;
+  margin-left: 28rpx;
+  margin-top: 12rpx;
+}
+
+.title_view {
+  width: 100%;
+  height: 88rpx;
+  background-image: url('https://metadata.dianwandashi.com/recharge_title_bg.png');
+  background-size: cover; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title_view>image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 20rpx;
+}
+
+.title_view>text {
+  height: 40rpx;
+  margin-left: 18rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: white;
+}
+
+.title_view>button {
+  height: 48rpx;
+  line-height: 48rpx;
+  margin-right: 30rpx;
+  color: white;
+  border-radius: 24rpx;
+  border: 1px solid #F8F8F8;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 24rpx;
+}
+
+.checkedHide:nth-child(odd),.checkedShow:nth-child(odd){
+  margin-left: 32rpx;
+  margin-top: 42rpx;
+  
+}
+.checkedShow{
+  width: 296rpx;
+  height: 128rpx;
+  background: url('https://metadata.dianwandashi.com/recharge_checked_bg.png') no-repeat center;
+  background-size:100% 100%;
+  float: left;
+}
+.checkedHide{
+  width: 296rpx;
+  height: 128rpx;
+  background: url('https://metadata.dianwandashi.com/recharge_nochecked_bg.png') no-repeat center;
+  background-size:100% 100%;
+  float: left;
+}
+
+
+.foot_view {
+  position: fixed;
+  width: 100%;
+  height: 128rpx;
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 -1px 6px 0 #8153C0;
+}
+
+.foot_view>text:nth-child(1) {
+  color: #343434;
+  margin-left: 34rpx;
+  height: 44rpx;
+  font-size: 32rpx;
+}
+
+.foot_view>text:nth-child(2) {
+  color: #FE7606;
+  height: 56rpx;
+  font-size: 40rpx;
+}
+
+.foot_view>button {
+  margin-right: 28rpx;
+  width: 320rpx;
+  height: 88rpx;
+  background-color: #FF812D;
+  border-radius: 8rpx;
+  color: white;
+  font-size: 36rpx;
+}
+
+.msgShow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+
+.msgHide {
+  display: none;
+}
+
+.msg_alert {
+  position: fixed;
+  z-index: 4;
+  /* top: 0;
+  left: 0;
+  right: 0;
+  margin: auto; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 562rpx;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 8rpx;
+  padding: 28rpx 32rpx 32rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.msg_alert>view:nth-child(1) {
+  text-align: center;
+  height: 44rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #343434;
+}
+
+.msg_alert>view:nth-child(2) {
+  margin-left: 14rpx;
+  margin-top: 26rpx;
+  font-size: 24rpx;
+  color: #343434;
+}
+
+.msg_alert>view:nth-child(3) {
+  margin: 8rpx 14rpx 0 14rpx;
+  font-size: 24rpx;
+  overflow: hidden;
+  color: #888888;
+  word-break: break-all;
+}
+
+.msg_alert>button {
+  margin-top: 60rpx;
+  background-color: #FE7606;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  color: white;
+}

@@ -1,0 +1,188 @@
+/* pages/onlineExchange/onlineExchange.wxss */
+page {
+  background: #f3f3f3;
+}
+
+.container {
+  background: #f3f3f3;
+}
+
+.giftList {
+  display: flex;
+  flex-direction: row;
+  width: 690rpx;
+  height: 136rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  margin: 0 auto 20rpx;
+  box-shadow: 0 1px 4px 4px rgba(195, 195, 195, 0.50);
+}
+
+.pageBottom {
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-bottom: 100rpx;
+}
+
+.giftList:first-child {
+  margin-top: 30rpx;
+}
+
+.giftPhoto {
+  width: 100rpx;
+  height: 100rpx;
+  background: url('https://metadata.zhutech.net/o_1bbqjevng2211uc98rc6ki1b727.png') no-repeat center center;
+  background-size: cover;
+}
+
+.giftInfo {
+  margin-left: 20rpx;
+  width: 373rpx;
+}
+
+.giftName {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.giftNum {
+  font-weight: 600;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.giftNum text {
+  font-size: 40rpx;
+  color: #ff7605;
+}
+
+.addContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.addContainer button.canBtn[size=mini] {
+  background: #fe7606;
+  border: 1px solid #fe7606;
+  border-radius: 2px;
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0;
+  margin: 0;
+  font-size: 28rx;
+  color: #fff;
+  letter-spacing: 1.16rpx;
+}
+
+.addContainer button.disabledBtn[size=mini] {
+  background: #dcdcdc;
+  border: 1px solid #dcdcdc;
+  border-radius: 2px;
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0;
+  margin: 0;
+  font-size: 28rx;
+  color: #fff;
+  letter-spacing: 1.16rpx;
+}
+
+.exchangeBar {
+  width: 100%;
+  height: 98rpx;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  border-top: 1px solid #e5e5e5;
+}
+
+.shape {
+  width: 98rpx;
+  height: 98rpx;
+  position: absolute;
+  bottom: 35rpx;
+  left: 30rpx;
+  background: #fe7606;
+  border-radius: 50%;
+}
+
+.shape image {
+  margin-top: 16.5rpx;
+  margin-left: 16.5rpx;
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.surplusbefore {
+  position: absolute;
+  top: 25rpx;
+  left: 150rpx;
+  font-size: 34rpx;
+  color: #343434;
+  line-height: 48rpx;
+}
+
+.totalTicket {
+  color: #fe7606;
+}
+
+.exchangeAlert {
+  width: 562rpx;
+  height: 330rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  position: absolute;
+  top: 374rpx;
+  left: 94rpx;
+  z-index: 9999;
+}
+
+.exchangeAlert view:nth-child(1) {
+  font-size: 36rpx;
+  color: #242830;
+  letter-spacing: 4.5rpx;
+  text-align: center;
+  height: 120rpx;
+  line-height: 120rpx;
+  border-bottom: 2rpx solid #ebebeb;
+  font-weight: bold;
+}
+
+.exchangeAlert view:nth-child(2) {
+  font-size: 32rpx;
+  color: #f85844;
+  letter-spacing: 1.6rpx;
+  text-align: center;
+  height: 110rpx;
+  padding-top: 48rpx;
+}
+
+.exchangeAlert view:nth-child(3) {
+  background: #fe7606;
+  border-radius: 0 0 16rpx 16rpx;
+  font-size: 36rpx;
+  color: #fff;
+  letter-spacing: 0;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.40);
+}

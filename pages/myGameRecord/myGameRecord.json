@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "游戏记录",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#f3f3f3"
+}

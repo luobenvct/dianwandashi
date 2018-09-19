@@ -1,0 +1,14 @@
+<!--pages/rechargeMethod/rechargeMethod.wxml-->
+<view class="methodContainer" wx:if="{{nulldata}}">
+  <view class="exchangeMethodBox" bindtap='nav' wx:for="{{navArr}}" wx:for-item="data" wx:key="index" data-gopage="{{data.targetPage}}">
+    <view class="exchangeMethodBoxLeft">
+      <image src="{{data.icon}}" class="icon"></image>
+      <text>{{data.text}}</text>
+    </view>
+    <image src="/img/btn_left.png" class="rightIcon"></image>
+  </view>
+</view>
+<view class="nullData" hidden="{{nulldata}}" style="height:{{wheight}}px">
+  <import src="../nulldata/nulldata.wxml" />
+  <template is="nulldata" data="{{...pagenulldata}}" />
+</view>

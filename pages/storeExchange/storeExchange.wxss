@@ -1,0 +1,293 @@
+/* pages/storeExchange/storeExchange.wxss */
+page {
+  background: #f3f3f3;
+}
+
+.container {
+  background: #f3f3f3;
+}
+
+.gifttitle {
+  width: 100%;
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 28rpx;
+  color: #888;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+
+.recordConversion {
+  font-size: 24rpx;
+  color: #2b9ce9;
+  position: absolute;
+  right: 30rpx;
+  top: 0rpx;
+}
+
+.giftList {
+  display: flex;
+  flex-direction: row;
+  width: 690rpx;
+  height: 136rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  margin: 0 auto 20rpx;
+  box-shadow: 0 1px 4px 4px rgba(195, 195, 195, 0.50);
+}
+
+.pageBottom {
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-bottom: 100rpx;
+}
+
+.giftList:first-child {
+  margin-top: 30rpx;
+}
+
+.giftPhoto {
+  width: 100rpx;
+  height: 100rpx;
+  background: url('https://metadata.zhutech.net/o_1bbqjevng2211uc98rc6ki1b727.png') no-repeat center center;
+  background-size: cover;
+}
+
+.giftInfo {
+  margin-left: 20rpx;
+  width: 373rpx;
+}
+
+.giftName {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  width:100%;
+}
+
+.giftNum {
+  font-weight: 600;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.giftNum text {
+  font-size: 40rpx;
+  color: #ff7605;
+}
+
+.addContainer {
+  width: 130rpx;
+  height: 46rpx;
+  margin-top: 6rpx;
+  position: relative;
+}
+
+.addContainer text {
+  position: absolute;
+  width: 48rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  text-align: center;
+  left: 44rpx;
+}
+
+.jia, .jian {
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: absolute;
+  width: 88rpx;
+  height: 88rpx;
+  top: -20rpx;
+}
+
+.jia {
+  right: -44rpx;
+}
+
+.jian {
+  left: -44rpx;
+}
+
+.jia image, .jian image {
+  margin-top: 21rpx;
+  margin-left: 21rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+
+.exchangeBar {
+  width: 100%;
+  height: 98rpx;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  border-top: 1px solid #e5e5e5;
+}
+
+.shape {
+  width: 98rpx;
+  height: 98rpx;
+  position: absolute;
+  bottom: 35rpx;
+  left: 30rpx;
+  background: #fe7606;
+  border-radius: 50%;
+}
+
+.selectnum {
+  position: absolute;
+  left: 73rpx;
+  bottom: 67rpx;
+  background: #f12c20;
+  width: 36rpx;
+  height: 36rpx;
+  text-align: center;
+  line-height: 36rpx;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 26rpx;
+  box-sizing: border-box;
+}
+
+.shape image {
+  margin-top: 16.5rpx;
+  margin-left: 16.5rpx;
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.surplusafter {
+  position: absolute;
+  top: 15rpx;
+  left: 150rpx;
+  font-size: 34rpx;
+  color: #343434;
+  line-height: 48rpx;
+}
+
+.surplusbefore {
+  position: absolute;
+  top: 25rpx;
+  left: 150rpx;
+  font-size: 34rpx;
+  color: #343434;
+  line-height: 48rpx;
+}
+
+.selticket {
+  position: absolute;
+  top: 60rpx;
+  left: 150rpx;
+  font-size: 24rpx;
+  color: #999;
+  line-height: 30rpx;
+}
+
+.surplus text {
+  color: #ff7605;
+}
+
+.btnDisClick[disabled][type="default"], .btnDisClick[disabled]:not([type]) {
+  background: #feac69;
+  color: #fff;
+}
+
+.btnCanClick[disabled][type="default"], .btnCanClick[disabled]:not([type]) {
+  background: #fe7606;
+  color: #fff;
+}
+
+.btnCanClick[type="default"], .btnDisClick[type="default"], .btnCanClick,
+.btnDisClick {
+  position: absolute;
+  right: 30rpx;
+  top: 19rpx;
+  height: 59rpx;
+  width: 120rpx;
+  padding: 0;
+  line-height: 59rpx;
+  font-size: 26rpx;
+  color: #fff;
+  letter-spacing: 0.39rpx;
+  background: #fe7606;
+  border-radius: 4rpx;
+}
+
+#exchange.button-hover {
+  background: #f60;
+}
+
+.checkGift {
+  position: fixed;
+  width: 100%;
+  padding: 80rpx 0 0;
+  bottom: 98rpx;
+  z-index: 50;
+  background-color: #f3f3f3;
+}
+
+.checkGift .addContainer {
+  position: absolute;
+  right: 80rpx;
+}
+
+.checkGift .giftInfo {
+  position: absolute;
+  right: 260rpx;
+  width: 180rpx;
+  text-align: right;
+}
+
+.checkGift .giftList:first-child {
+  margin-top: 0;
+}
+
+.shapepop {
+  top: -37rpx;
+}
+
+.actionBg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.delete {
+  position: absolute;
+  width: 100rpx;
+  height: 37rpx;
+  font-size: 28rpx;
+  color: #888;
+  letter-spacing: 2.16rpx;
+  right: 85rpx;
+  top: 20rpx;
+  z-index: 50;
+}
+
+.delete image {
+  width: 21rpx;
+  height: 24rpx;
+  margin-right: 7rpx;
+}
+
+.totalTicket {
+  color: #fe7606;
+}
+
+.checkGift .giftList {
+  height: 92rpx;
+}

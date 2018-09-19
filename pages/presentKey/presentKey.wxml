@@ -1,0 +1,23 @@
+<!--pages/presentKey/presentKey.wxml-->
+<view>
+  <view class="out_box">
+    <view class="container" style="{{hasexchange}}">
+      <canvas canvas-id="barcode"></canvas>
+      <view class="code">{{code}}</view>
+      <view class="txt">请持兑换码，前往服务台兑换礼品</view>
+    </view> 
+    <canvas canvas-id='tier' class="tiercanvs" wx:if="{{isExchange}}"></canvas>
+  </view>
+  <view class="giftWarp">
+      <image src="/img/line.png"></image>
+      <view class="giftTitle">本次兑换</view>
+      <view class="giftList">
+        <view class="list" wx:for="{{giftList}}" wx:for-item="data" wx:key="{{data.gift_id}}">
+          <image src="{{data.photo_url}}"></image>
+          <view>{{data.name}}</view>
+          <text>x{{data.initialnum}}</text>
+        </view>
+      </view>
+    </view>
+  <navigator url="{{recordUrl}}" hover-class="none" class="recordCss">查看兑换记录></navigator>
+</view>

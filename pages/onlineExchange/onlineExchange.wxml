@@ -1,0 +1,32 @@
+<!--pages/onlineExchange/onlineExchange.wxml-->
+<view class="container" wx:if="{{nulldata}}">
+  <view wx:for="{{giftList}}" wx:for-item="data" class="giftList" wx:key="{{data.id}}">
+    <image src="{{data.photo_url}}" class="giftPhoto" background="cover"></image>
+    <view class="giftInfo">
+      <text class="giftName">{{data.name}}</text>
+      <view class="giftNum">
+        <text>{{data.coupons}}</text> 礼票</view>
+    </view>
+    <view class="addContainer">
+      <button size="mini" bindtap='excharge' data-giftid="{{data.gift_id}}" data-coupons="{{data.coupons}}" disabled="{{data.btnStatus}}" class="{{data.btnStyle}}" data-url="{{data.link_url}}">兑换</button>
+    </view>
+  </view>
+  <view class="pageBottom" hidden="{{pageBottom}}">已经到底啦</view>
+  <view class="exchangeAlert" wx:if="{{exchangeSucc}}">
+    <view>兑换成功</view>
+    <view>复制链接后在浏览器打开领取</view>
+    <view bindtap='copyUrl'>复制</view>
+  </view>
+  <view class="bg" style="height:{{wheight}}px" wx:if="{{exchangeSucc}}"></view>
+  <view class="exchangeBar">
+    <view class="shape">
+      <image src="../../img/shape.png" background="cover"></image>
+    </view>
+    <view class="surplusbefore">您剩余
+      <text class="totalTicket">{{surplusExchange}}</text>礼票</view>
+  </view>
+</view>
+<view class="nullData" hidden="{{nulldata}}" style="height:{{wheight}}px">
+  <import src="../nulldata/nulldata.wxml" />
+  <template is="nulldata" data="{{...pagenulldata}}" />
+</view>

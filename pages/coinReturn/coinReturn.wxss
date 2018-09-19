@@ -1,0 +1,111 @@
+/* pages/coinReturn/coinReturn.wxss */
+page {
+  background-color: #f3f3f3;
+}
+
+.footer {
+  position: fixed;
+  height: 130rpx;
+  background: #fff;
+  width: 100%;
+  bottom: 0;
+}
+
+.coinReturn[type="default"] {
+  width: 670rpx;
+  margin-top: 22rpx;
+  background: #fe7606;
+  color: #fff;
+  font-size: 36rpx;
+  letter-spacing: 5rpx;
+}
+
+.coinReturn.button-hover {
+  background: #f60;
+}
+
+.table {
+  background: #fff;
+  box-shadow: 0 2rpx 4rpx 4rpx rgba(195, 195, 195, 0.50);
+  border-radius: 8rpx;
+  width: 690rpx;
+  margin: 30rpx;
+}
+
+.thead {
+  width: 100%;
+  border-radius: 8rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.thead view {
+  box-sizing: border-box;
+  padding-left: 31rpx;
+  font-size: 28rpx;
+  background: #c1c1c1;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.thead view:first-child {
+  width: 48.7%;
+}
+
+.thead view:nth-child(2) {
+  width: 25.6%;
+  text-align: center;
+}
+
+.thead view:nth-child(3) {
+  width: 25.7%;
+  text-align: center;
+}
+
+.tbody{
+    max-height: 928rpx;
+    overflow-y: auto;
+}
+
+.row {
+  border-radius: 8rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.border {
+  width: 610rpx;
+  margin: 0 auto;
+  border-top: 1px solid #e5e5e5;
+}
+
+.tr:last-child .border {
+  border: none;
+}
+
+.row view {
+  box-sizing: border-box;
+  padding-left: 31rpx;
+  font-size: 28rpx;
+}
+
+.row view:first-child {
+  width: 48.7%;
+  color: #888;
+}
+
+.row view:nth-child(2) {
+  width: 25.6%;
+  color: #888;
+  text-align: center;
+}
+
+.row view:nth-child(3) {
+  width: 25.7%;
+  color: #f12c20;
+  text-align: center;
+}

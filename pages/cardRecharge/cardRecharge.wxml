@@ -1,0 +1,42 @@
+<!--pages/cardRecharge/cardRecharge.wxml-->
+
+<view>
+  <image src='/img/recharge_head_bg.png' class='body_bg'></image>
+  <view class='product_view' hidden='{{product_list.length == 0}}'>
+    <view class='product_list_view' wx:for="{{product_list}}" wx:for-item="data" wx:key="{{data.card_id}}">
+        <view class='title_view'>
+          <image src='/img/recharge_title_icon.png'></image>
+          <text>{{data.card_name}}</text>
+          <button bindtap='showMsg' data-note='{{data.note}}' data-name='{{data.card_name}}'>商品说明</button>
+        </view>
+        <view class='product' data-cardId="{{data.card_id}}" wx:for="{{data.detail}}" wx:for-item="product" wx:key="{{product.combo_id}}" bindtap='check'
+          data-detailId="{{product.combo_id}}"
+          data-price="{{product.price}}"
+          data-checked="{{product.checked}}"
+          >
+          <view class='checked' class="{{product.checked?'checkedShow':'checkedHide'}}">
+            <view class='product_title'><text>{{product.price}}元</text><text> {{product.times==-1?'不限次数':product.times+'次'}}</text></view>
+            <view class='product_time'>{{product.days==-1?'不限时间':'有效期'+product.days+'天'}}</view>
+          </view>
+        </view>
+    </view>
+  </view> 
+  <view class='null_data' hidden='{{product_list.length > 0}}'>
+    <view>暂无套餐</view>
+  </view>
+</view>
+<view class='foot_view'>
+  <text>总价：</text>
+  <text>¥{{price}}</text>
+  <button bindtap='buy'>购买</button>
+</view>
+
+<view class="{{showMsg?'msgShow':'msgHide'}}" catchtouchmove='true'>
+  <view class='msg_alert'>
+    <view>商品说明</view>
+    <view>{{name}}</view>
+    <view><text>{{note}}</text></view>
+    <button bindtap='confirm'>确定</button>
+  </view>
+</view>
+

@@ -1,0 +1,740 @@
+/* pages/insertCoin/insertCoin.wxss */
+page {
+  height: 100%;
+  text-align: center;
+}
+
+.gameCoin {
+  height: 88rpx;
+  font-size: 34rpx;
+  color: #888;
+  font-weight: 500;
+  line-height: 88rpx;
+}
+
+.gameCoin>view {
+  float: left;
+  text-align: left;
+  padding-left: 40rpx;
+}
+
+.gameCoin>.rechargeUrl {
+  float: right;
+  font-size: 28rpx;
+  color: #2b9ce9;
+  text-align: right;
+  padding-left: 29rpx;
+  padding-right: 29rpx;
+}
+
+.gameCoin text {
+  color: #f60;
+}
+
+.title {
+  font-size: 40rpx;
+  color: #343434;
+  letter-spacing: 3.05rpx;
+  padding: 8rpx 0 21rpx;
+  font-weight: 700;
+}
+
+.changeCoinContainer {
+  background: #fff;
+  box-shadow: 0 2rpx 4rpx 4rpx rgba(195, 195, 195, 0.50);
+}
+
+.btnContainer {
+  padding-top: 70rpx;
+  padding-bottom: 12rpx;
+}
+
+.btnStyle[plain][type="default"], .btnStyle[plain] {
+  width: 200rpx;
+  height: 80rpx;
+  display: inline-block;
+  padding: 0;
+  margin-right: 44rpx;
+  margin-bottom: 70rpx;
+  border-radius: 4rpx;
+  font-size: 32rpx;
+  letter-spacing: 0.5rpx;
+  background-color: #fff;
+  color: #fe7606;
+  border: 2rpx solid #fe7606;
+  line-height: 80rpx;
+}
+
+#insertBtn .btnStyle[plain].button-hover {
+  color: #fff;
+  background-color: #fe7606;
+  border: 2rpx solid #fe7606;
+}
+
+.btnStyle[plain][type="default"]:nth-child(3n), .btnStyle[plain]:nth-child(3n) {
+  margin-right: 0;
+}
+
+.coinInput {
+  height: 141rpx;
+  border-bottom: 1rpx dashed #d0d0d0;
+  padding: 38rpx 0 43rpx 40rpx;
+  box-sizing: border-box;
+  text-align: left;
+  position: relative;
+}
+
+.coinInput picker-view {
+  font-size: 34rpx;
+  color: #888;
+  letter-spacing: 2.59rpx;
+  display: inline-block;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-right: 39rpx;
+}
+
+.insertCoinBtn[type="default"], .insertCoinBtn {
+  width: 670rpx;
+  height: 94rpx;
+  background: #f8f8f8;
+  border-radius: 10rpx;
+  margin-top: 95rpx;
+  font-size: 36rpx;
+  color: #999;
+  letter-spacing: 3rpx;
+  line-height: 94rpx;
+}
+
+.insertCoinBtn.button-hover {
+  background-color: #ddd;
+}
+
+.insertCoinInput {
+  display: inline-block;
+  width: 300rpx;
+  height: 60rpx;
+  vertical-align: middle;
+  text-align: left;
+  position: absolute;
+  font-size: 40rpx;
+  color: #333;
+}
+
+.focusInsertCoinBtn[type="default"], .focusInsertCoinBtn {
+  width: 670rpx;
+  height: 94rpx;
+  background: #fe7606;
+  border-radius: 10rpx;
+  margin-top: 95rpx;
+  font-size: 36rpx;
+  color: #fff;
+  letter-spacing: 3rpx;
+}
+
+.insertCoinBtn[disabled][type=default], .insertCoinBtn[disabled]:not([type]) {
+  background-color: #feac69;
+  color: #fff;
+}
+
+.focusInsertCoinBtn[disabled][type="default"],
+.focusInsertCoinBtn[disabled]:not([type]) {
+  background: #fe7606;
+  color: #fff;
+}
+
+.focusInsertCoinBtn.button-hover {
+  background-color: #f60;
+}
+
+.insertCoinHint {
+  margin-top: 64rpx;
+  font-size: 24rpx;
+  color: #888;
+}
+
+.insertCoinHint navigator {
+  display: inline-block;
+  color: #2b9ce9;
+}
+
+.gameOver[type="default"] {
+  margin-top: 41rpx;
+}
+
+.clear {
+  width: 88rpx;
+  height: 88rpx;
+  position: absolute;
+  right: 50rpx;
+  top: 24rpx;
+  z-index: 999;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.insert_success {
+  position: absolute;
+  top: 86rpx;
+  left: 56rpx;
+  width: 640rpx;
+  height: 920rpx;
+  background-image: url(https://metadata.zhutech.net/o_1c1rb9mfc2a0i8c5f2j41agao.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  text-align: center;
+  z-index: 999;
+}
+
+.insert_success>view {
+  text-align: center;
+  color: #fff;
+  font-size: 36rpx;
+  line-height: 50rpx;
+}
+
+.insert_success>view:first-child {
+  margin-top: 390rpx;
+}
+
+.insert_success>view:nth-child(2) text {
+  font-size: 92rpx;
+  line-height: 130rpx;
+  margin-right: 16rpx;
+}
+
+.btn[type=default] {
+  width: 592rpx;
+  height: 94rpx;
+  line-height: 94rpx;
+  border: none;
+  position: absolute;
+  left: 24rpx;
+  bottom: 52rpx;
+  color: #fff;
+  background-image: linear-gradient(-180deg, #ffd417 0%, #ff9822 100%);
+  box-shadow: 0 4rpx 8rpx 0 rgba(144, 82, 5, 0.50);
+  border-radius: 60rpx;
+  background-size: cover;
+}
+
+.selectbtn[type=default] {
+  background-image: linear-gradient(-1deg, #ffc017 0%, #ff8422 100%);
+}
+
+/*modal*/
+
+.modalBg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  opacity: 0.5;
+  background: #000;
+  z-index: 100;
+}
+
+.modal {
+  position: absolute;
+  z-index: 500;
+  background: #fff;
+  opacity: 1;
+  border-radius: 8rpx;
+  width: 650rpx;
+  height: 557rpx;
+  top: 200rpx;
+  left: 50rpx;
+}
+
+.modalTit {
+  height: 136rpx;
+  width: 100%;
+  background: #fff7f0;
+  font-size: 36rpx;
+  color: #fe7606;
+  line-height: 136rpx;
+  border-radius: 17rpx;
+  font-weight: 600;
+}
+
+.modalBod {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+/*.input{
+    position: relative;
+    width: 100%;
+    height: 128rpx;
+}
+.input label{
+    font-size: 32rpx;
+    color: #888;
+    letter-spacing: 2.61rpx;
+    position: absolute;
+    left: 0;
+    top: 58rpx;
+}
+#inputMoney{
+    margin-bottom: 57rpx;
+}
+.placeClass{
+    font-size: 32rpx;
+    color: #888;
+}*/
+
+.input {
+  margin: 100rpx 0 30rpx;
+}
+
+.defaultStyle {
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.97;
+  background: #fff;
+  border: 2rpx solid #b9b9b9;
+  box-shadow: inset 0 1rpx 3rpx 0 rgba(151, 151, 151, 0.50);
+  border-radius: 4rpx;
+  text-align: center;
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 46rpx;
+  color: #fe7606;
+}
+
+.selectStyle {
+  background: #fff;
+  border: 2rpx solid #fe7606;
+  box-shadow: inset 0 1rpx 3rpx 0 rgba(151, 151, 151, 0.50);
+  border-radius: 4rpx;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.97;
+  background: #fff;
+  text-align: center;
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 46rpx;
+  color: #fe7606;
+}
+
+.input input:nth-child(2) {
+  margin: 0 50rpx;
+}
+
+.modalFot {
+  padding: 40rpx 30rpx 30rpx;
+}
+
+.modalFot button {
+  display: inline-block;
+  width: 275rpx;
+  height: 94rpx;
+}
+
+.modalFot .cancelBtn {
+  margin-right: 40rpx;
+  font-size: 36rpx;
+  color: #333;
+}
+
+.modalFot .sureBtn {
+  background: #fe7606;
+  font-size: 36rpx;
+  color: #fff;
+  letter-spacing: 2rpx;
+}
+
+.modalFot .sureBtn.button-hover {
+  background: #f60;
+}
+/*********************************** yym  *************************/
+.wapper{
+  width: 750rpx;
+  height: 100%;
+  overflow: hidden;
+}
+.box_top{
+  width: 750rpx;
+}
+.box_top image{
+  width: 100%;
+  height: 360rpx;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 56rpx 0;
+  box-sizing: border-box;
+}
+.line{
+  width: 610rpx;
+  height: 2rpx;
+  margin-left: 68rpx;
+  background: #DCDCDC;
+  margin-top: 24rpx;
+}
+.insertBox {
+  width: 750rpx;
+  position: relative;
+}
+.btnContainerNew .tip{
+  font-size: 12px;
+  margin-top: -24rpx;
+}
+
+
+
+
+.header .myCoins {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+}
+
+.header .rechargeUrlNew {
+  background: #0ab0f9;
+  border-radius: 100rpx 0 0 100rpx;
+  width: 132rpx;
+  line-height: 56rpx;
+  height: 56rpx;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.header .urlBtn .rechargeUrlBtn:first-child {
+  margin-right: 30rpx;
+}
+
+.btnContainerNew {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 18rpx 53rpx;
+}
+
+.btnContainerNew view {
+  margin-bottom: 24rpx;
+  font-size: 20px;
+  letter-spacing: 0;
+  /* line-height: 128rpx; */
+}
+
+.btnContainerNew view:nth-child(5), .btnContainerNew view:nth-child(6) {
+  margin-bottom: 0;
+}
+
+/* .insertBtnStyle {
+  width: 296rpx;
+  height: 128rpx;
+   background: url('https://metadata.dianwandashi.com/insertcoin_bg_one.png') no-repeat center; 
+  background-size: 100% 100%;
+} */
+
+.insertBtnStyle:active {
+  background: #ffefd9;
+}
+
+/* .insertBtnStyle text {
+  font-size: 64rpx;
+  color: #fe7606;
+  letter-spacing: 1.06rpx;
+  margin: 0 20rpx;
+} */
+
+.inputCoinsDefault {
+  position: relative;
+  display: flex;
+  align-content: space-between;
+  width: 580rpx;
+  height: 88rpx;
+  margin: 0 auto;
+  line-height: 88rpx;
+  background: #f8f8f8;
+  border: 3rpx solid rgba(5, 5, 5, 0.10);
+  border-radius: 8rpx;
+}
+
+.inputCoinsSelect {
+  position: relative;
+  display: flex;
+  align-content: space-between;
+  width: 580rpx;
+  height: 88rpx;
+  margin: 0 auto;
+  line-height: 88rpx;
+  background: #fff;
+  border: 3rpx solid #fe7606;
+  border-radius: 8rpx;
+}
+
+.inputCoinsDefault input {
+  background: #f8f8f8;
+  height: 88rpx;
+  width: 430rpx;
+  text-align: left;
+  padding-left: 21rpx;
+  font-size: 28rpx;
+  color: #888;
+  letter-spacing: 0;
+}
+
+.inputCoinsSelect input {
+  background: #f8f8f8;
+  height: 88rpx;
+  width: 430rpx;
+  text-align: left;
+  padding-left: 21rpx;
+  font-size: 28rpx;
+  letter-spacing: 0;
+  color: #fe7606;
+}
+
+.inputCoinsDefault button[type=default].insertSureBtn {
+  width: 150rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #dcdcdc;
+  border-radius: 0 4rpx 4rpx 0;
+  font-size: 36rpx;
+  color: #888;
+}
+
+.inputCoinsSelect button[type=default].insertSureBtn {
+  width: 150rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-radius: 0 4rpx 4rpx 0;
+  font-size: 36rpx;
+  color: #fff;
+  background: #fe7606;
+}
+
+.placeCSS {
+  font-size: 28rpx;
+  color: #888;
+  letter-spacing: 0;
+}
+
+.checkDefaultStyle {
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.97;
+  background: #fff;
+  border: 2rpx solid #b9b9b9;
+  box-shadow: inset 0 1rpx 3rpx 0 rgba(151, 151, 151, 0.50);
+  border-radius: 4rpx;
+  text-align: center;
+  width: 300rpx;
+  height: 100rpx;
+  font-size: 46rpx;
+  color: #fe7606;
+}
+
+.checkSelectStyle {
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.97;
+  background: #fff;
+  border: 2rpx solid #fe7606;
+  box-shadow: inset 0 1rpx 3rpx 0 rgba(151, 151, 151, 0.50);
+  border-radius: 4rpx;
+  text-align: center;
+  width: 300rpx;
+  height: 100rpx;
+  font-size: 46rpx;
+  color: #fe7606;
+}
+
+.gotojackpot {
+  background: #ec7d31;
+  border-radius: 100rpx;
+  width: 140rpx;
+  line-height: 56rpx;
+  height: 56rpx;
+  color: #fff;
+  font-size: 24rpx;
+  position: absolute;
+  right: 150rpx;
+  top: 22rpx;
+}
+/* 
+.rechargeUrlBtn[size="mini"] {
+  border: 2rpx solid #3d93fd;
+  border-radius: 152rpx;
+  width: 112rpx;
+  height: 56rpx;
+  line-height: 50rpx;
+  padding: 0;
+  font-size: 24rpx;
+  color: #3d93fd;
+} */
+
+.returnCoins {
+  font-size: 24rpx;
+  color: #999;
+  padding-bottom: 20rpx;
+}
+
+.giveYourIcon {
+  width: 144rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  background: #FE7606;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.everyActivity {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #888;
+  background: #f5f5f5;
+  height: 120rpx;
+  border-radius: 0 0 8rpx 8rpx;
+}
+
+.everyActivity image {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+  margin-right: 16rpx;
+}
+
+.everyActivity .border {
+  width: 2rpx;
+  height: 32rpx;
+  margin: 0 76rpx;
+  background: #cdcdcd;
+}
+
+.easterActivity{
+  margin-top: 8rpx;
+}
+.easterActivity text {
+  display: inline-block;
+  width: 52rpx;
+  height: 32rpx;
+  text-align: center;
+  line-height: 32rpx;
+  background-image: linear-gradient(-90deg, #fc9179 0%, #f85844 100%);
+  border-radius: 100rpx;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.easterBox {
+  width: 642rpx;
+  height: 754rpx;
+  background: url('https://metadata.zhutech.net/o_1bvbjdtm91bin1it11p4gouod3gr.png') no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  z-index: 99999;
+  left: 54rpx;
+  top: 200rpx;
+  border-radius: 8rpx;
+}
+
+.easterBox .num {
+  position: absolute;
+  top: 100rpx;
+  left: 250rpx;
+  font-size: 40rpx;
+  color: #f85844;
+  width: 70rpx;
+}
+
+.easterBox .closeEaster {
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  top: 16rpx;
+  right: 16rpx;
+  background: url('https://metadata.zhutech.net/o_1buggjs5q1r7uu8q1asf1bil1meor.png') no-repeat center center;
+  background-size: cover;
+}
+
+.easterBox .drawBox {
+  width: 540rpx;
+  height: 490rpx;
+  background: url('https://metadata.zhutech.net/o_1bughabo54et9mqlrd1ieu1bis15.png') no-repeat center center;
+  background-size: cover;
+  top: 204rpx;
+  left: 52rpx;
+  position: absolute;
+  perspective: 150;
+}
+
+.drawHand {
+  width: 66rpx;
+  height: 196rpx;
+  position: absolute;
+  top: 300rpx;
+  right: 0;
+  z-index: 99999;
+}
+
+.easterBox .draw {
+  position: absolute;
+  width: 288rpx;
+  height: 72rpx;
+  left: 124rpx;
+  top: 380rpx;
+}
+
+.drawNum {
+  width: 82.8rpx;
+  height: 118.8rpx;
+  position: absolute;
+  line-height: 118.8rpx;
+  top: 154rpx;
+  font-size: 81rpx;
+  color: #3b3b3b;
+}
+
+.drawNum:nth-child(1) {
+  left: 42rpx;
+}
+
+.drawNum:nth-child(2) {
+  left: 132rpx;
+}
+
+.drawNum:nth-child(3) {
+  left: 222rpx;
+}
+
+.drawNum:nth-child(4) {
+  left: 314rpx;
+}
+
+.drawNum:nth-child(5) {
+  left: 404rpx;
+}
+
+.drawNum swiper {
+  height: 100%;
+}
+
+.ad {
+  position: absolute;
+  bottom: 0;
+}

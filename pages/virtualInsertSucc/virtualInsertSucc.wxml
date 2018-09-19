@@ -1,0 +1,7 @@
+<!--pages/virtualInsertSucc/virtualInsertSucc.wxml-->
+<view class="successBox">
+  <image src="/img/paySucc.png"></image>
+  <view class="hasSuccess">投币成功</view>
+  <view class="coins">{{coins}}<text>个</text></view>
+  <button bindtap='back'>返回</button>
+</view>

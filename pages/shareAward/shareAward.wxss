@@ -1,0 +1,190 @@
+/* pages/shareAward/shareAward.wxss */
+.shareContainer {
+  font-family: '微软雅黑';
+  background: #ffc800;
+  padding-top: 32rpx;
+  padding-bottom: 16rpx;
+}
+
+.shareContainer .title {
+  width: 698rpx;
+  height: 198rpx;
+  margin: 0 auto;
+  display: block;
+}
+
+.shareContainer .content {
+  width: 710rpx;
+  background: #ffe06e;
+  border: 8rpx solid #ffab00;
+  border-radius: 40rpx;
+  margin: 25rpx auto 0;
+  position: relative;
+  padding: 50rpx 40rpx;
+  box-sizing: border-box;
+}
+
+.shareContainer .content .cloud {
+  position: absolute;
+  top: -50rpx;
+  left: -6rpx;
+  width: 124rpx;
+  height: 98rpx;
+}
+
+.pro .proImg {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 40rpx;
+}
+
+.pro {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #242830;
+  padding-bottom: 30rpx;
+  padding-top: 30rpx;
+  border-bottom: 4rpx dashed #ffab00;
+}
+
+.pro.fst {
+  padding-top: 0;
+}
+
+.pro:last-child {
+  border: 0;
+  padding-bottom: 0;
+}
+
+.pro .txt view:first-child {
+  margin-bottom: 14rpx;
+}
+
+.pro .txt view text {
+  font-size: 44rpx;
+  color: #fe7606;
+  margin: 0 12rpx;
+}
+
+.mountain {
+  width: 104rpx;
+  height: 88rpx;
+  bottom: -20rpx;
+  right: -10rpx;
+  position: absolute;
+}
+
+#shareShop {
+  width: 670rpx;
+  margin: 40rpx auto 54rpx;
+  font-size: 36rpx;
+  color: #fff;
+  letter-spacing: 2rpx;
+  background: #fe7606;
+  border-radius: 10rpx;
+}
+
+.shareShopHover {
+  opacity: 0.8;
+}
+
+.shareCode {
+  width: 670rpx;
+  height: 352rpx;
+  background: url('https://metadata.zhutech.net/o_1bvjvvtf01o3g12rv1g8h1ff81vja2a.png') no-repeat center center;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+}
+
+#scanCode {
+  position: absolute;
+  width: 206rpx;
+  height: 206rpx;
+  left: 232rpx;
+  top: 28rpx;
+  background: #ccc;
+  border-radius: 8rpx;
+}
+
+.rules {
+  width: 710rpx;
+  height: 660rpx;
+  border: 8rpx solid #ffab00;
+  border-radius: 40rpx;
+  box-sizing: border-box;
+  margin: 100rpx auto 0;
+  position: relative;
+  padding: 94rpx 40rpx 80rpx;
+}
+
+.rules .title {
+  width: 462rpx;
+  height: 80rpx;
+  position: absolute;
+  top: -40rpx;
+  left: 124rpx;
+}
+
+.rules .p {
+  font-size: 28rpx;
+  color: #363a44;
+  letter-spacing: 4rpx;
+  margin-bottom: 40rpx;
+  padding-left: 50rpx;
+  position: relative;
+  font-weight: 600;
+}
+
+.rules .p:last-child {
+  margin: 0;
+}
+
+.rules .p text {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 40rpx;
+  background: #ff8826;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20rpx;
+  font-weight: 400;
+}
+
+.finish {
+  height: 100%;
+}
+
+.finish .box {
+  position: absolute;
+  text-align: center;
+  width: 218rpx;
+  top: 292rpx;
+  left: 266rpx;
+  font-size: 32rpx;
+  color: #111;
+  font-weight: 600;
+}
+
+.finish image {
+  width: 218rpx;
+  height: 234rpx;
+  display: block;
+  margin-bottom: 52rpx;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}

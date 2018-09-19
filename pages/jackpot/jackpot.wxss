@@ -1,0 +1,456 @@
+/* pages/jackpot/jackpot.wxss */
+.outContainer, page {
+  background: #3c6af6;
+  position: relative;
+}
+
+.topImg {
+  width: 750rpx;
+  height: 362rpx;
+}
+
+.duringPot {
+  padding: 32rpx 24rpx 20rpx;
+}
+
+.duringPot .title {
+  font-size: 24rpx;
+  color: #2a3791;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx 0 40rpx;
+}
+
+.timer .timeBox {
+  width: 46rpx;
+  height: 64rpx;
+  margin-right: 8rpx;
+  line-height: 64rpx;
+  text-align: center;
+  font-size: 48rpx;
+  color: #fff;
+  background: #2e3a83;
+  border-radius: 4rpx;
+}
+
+.timer .character {
+  font-size: 28rpx;
+  background: transparent;
+  border-radius: 0;
+}
+
+.timeBox:last-child {
+  margin-right: 0;
+}
+
+.jackPotScore {
+  width: 100%;
+  height: 104rpx;
+  line-height: 104rpx;
+  padding: 0 16rpx;
+  box-sizing: border-box;
+  background: #2e3a83;
+  border-radius: 4rpx;
+  color: #fff;
+  margin-top: 34rpx;
+  margin-bottom: 40rpx;
+}
+
+.jackPotScore text {
+  font-size: 48rpx;
+  color: #f85844;
+  font-weight: 600;
+}
+
+.jackPotScore .unit {
+  font-size: 32rpx;
+  color: #f85844;
+  margin-right: 8rpx;
+}
+
+.overPot {
+  padding: 32rpx 24rpx 20rpx;
+}
+
+.overTitle {
+  width: 100%;
+  height: 52px;
+  line-height: 52px;
+  background: #2e3a83;
+  border-radius: 2px;
+  font-size: 24px;
+  color: #f85844;
+  font-weight: 600;
+  text-align: center;
+}
+
+.rank {
+  padding: 0 24rpx 20rpx;
+}
+
+.rank .title {
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.rank .title text:first-child {
+  padding: 6rpx 16rpx;
+  font-size: 24rpx;
+  color: #fff;
+  background: #2e3a83;
+  border-radius: 12rpx;
+  font-weight: 600;
+  line-height: 48rpx;
+}
+
+.rankContentOut {
+  margin-top: 20rpx;
+  padding: 32rpx;
+  box-sizing: border-box;
+  background: #2e3a83;
+  border-radius: 12rpx;
+}
+
+.rankContent .li:first-child .part1 {
+  color: #ff4600;
+}
+
+.rankContent .li:nth-child(2) .part1 {
+  color: #ff6502;
+}
+
+.rankContent .li:nth-child(3) .part1 {
+  color: #ffa300;
+}
+
+.rankContent .li:first-child .part3 {
+  color: #ff4600;
+}
+
+.rankContent .li:nth-child(2) .part3 {
+  color: #ff6502;
+}
+
+.rankContent .li:nth-child(3) .part3 {
+  color: #ffa300;
+}
+
+.rankContent .li {
+  padding-bottom: 6rpx;
+  margin-bottom: 6rpx;
+  border-bottom: 2rpx solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.rankContent .li:last-child {
+  border: none;
+}
+
+.rankContent .li .part1 {
+  width: 5%;
+  font-size: 32rpx;
+}
+
+.rankContent .li .part2 {
+  width: 25%;
+}
+
+.rankContent .li .part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.rankContent .li .part2 image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.rankContent .li .part2 .headBg {
+  position: absolute;
+}
+
+.rankContent .li .part3 {
+  width: 15%;
+  margin-right: 31%;
+  font-size: 28rpx;
+}
+
+.rankContent .li .part4 {
+  width: 24%;
+  font-size: 24rpx;
+  color: #ffb608;
+  text-align: center;
+}
+
+.rankContent .li .part3 text {
+  line-height: 40rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rankContent .li .part3 image {
+  display: block;
+  width: 44rpx;
+  height: 28rpx;
+  margin-top: 8rpx;
+}
+
+.rankContent .li .part4 image {
+  display: block;
+  width: 36rpx;
+  height: 30rpx;
+  margin: 0 auto 8rpx;
+}
+
+.resultContent {
+  background: #35418e;
+  border: 2rpx solid #37459b;
+  border-radius: 6rpx;
+  padding: 28rpx 40rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  color: #fe7606;
+}
+
+.rulesContent {
+  padding: 20rpx;
+  box-sizing: border-box;
+  line-height: 36rpx;
+  text-align: justify;
+  font-size: 24rpx;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.rulesContent text {
+  color: #fe7606;
+}
+
+.activityRules {
+  padding: 32rpx;
+  box-sizing: border-box;
+}
+
+.activityRules .title {
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.activityRules .title text {
+  padding: 6rpx 16rpx;
+  font-size: 24rpx;
+  color: #fff;
+  background: #2e3a83;
+  border-radius: 12rpx;
+  font-weight: 600;
+  line-height: 48rpx;
+}
+
+.loginBox {
+  position: absolute;
+  z-index: 999;
+  width: 690rpx;
+  left: 30rpx;
+  top: 150rpx;
+  text-align: center;
+  background-image: linear-gradient(-180deg, #489ceb 0%, #3858f9 100%);
+  border-radius: 16rpx;
+  padding: 160rpx 44rpx 60rpx;
+  box-sizing: border-box;
+}
+
+.ticket {
+  font-size: 32rpx;
+  color: #fe7606;
+}
+
+.loginBox .title {
+  width: 602rpx;
+  height: 230rpx;
+  position: absolute;
+  left: 44rpx;
+  top: -100rpx;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.activityTime, .prizePool {
+  text-align: left;
+  font-size: 24rpx;
+  color: #fff;
+  line-height: 34rpx;
+}
+
+.activityTime text, .prizePool text {
+  color: #fe7606;
+}
+
+.informTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40rpx 0;
+}
+
+.informTitle .border {
+  width: 92rpx;
+  height: 2rpx;
+  background: #cdcdcd;
+}
+
+.informTitle .txt {
+  font-size: 28rpx;
+  color: #fff;
+  line-height: 40rpx;
+  margin: 0 40rpx;
+}
+
+.inputPhone {
+  padding: 20rpx;
+  border-bottom: 2rpx solid #fff;
+  overflow: hidden;
+}
+
+.inputPhone label image {
+  width: 42rpx;
+  height: 46rpx;
+  vertical-align: middle;
+  position: relative;
+  top: -4rpx;
+}
+
+#phone {
+  width: 470rpx;
+  text-align: left;
+  padding: 0 20rpx;
+  height: 44rpx;
+  font-size: 32rpx;
+  color: #fff;
+  letter-spacing: 4.88rpx;
+  line-height: 44rpx;
+}
+
+.phonePlaceHolder {
+  height: 44rpx;
+  font-size: 32rpx;
+  color: #eaeaea;
+  letter-spacing: 4.88rpx;
+  line-height: 44rpx;
+}
+
+.inputCode {
+  padding: 20rpx;
+  border-bottom: 2rpx solid #fff;
+  overflow: hidden;
+}
+
+.inputPhone label, .inputPhone input {
+  float: left;
+}
+
+.inputCode label image {
+  width: 42rpx;
+  height: 46rpx;
+  vertical-align: middle;
+  position: relative;
+  top: -4rpx;
+}
+
+.inputCode .right {
+  width: 530rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputCode label, .inputCode button, .inputCode input {
+  float: left;
+}
+
+#code {
+  width: 350rpx;
+  text-align: left;
+  padding: 0 20rpx;
+  height: 44rpx;
+  font-size: 32rpx;
+  color: #fff;
+  letter-spacing: 4.88rpx;
+  line-height: 44rpx;
+  box-sizing: border-box;
+}
+
+.inputCode .right {
+  padding-left: 2%;
+}
+
+#sendCode {
+  border: 2rpx solid #fff;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #fff;
+  padding: 10rpx 20rpx;
+  line-height: 34rpx;
+  margin: 0;
+}
+
+#sureBtn {
+  margin-top: 150rpx;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.disableBtn {
+  background: #feac69;
+}
+
+.normalBtn {
+  background: #fe7606;
+}
+
+.closeBox {
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  bottom: -100rpx;
+  left: 321rpx;
+}
+
+.rulesContent>view {
+  margin-bottom: 24rpx;
+  line-height: 36rpx;
+}
+
+.rulesContent>view:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width:320px) {
+  .inputCode .right {
+    padding-left: 3%;
+  }
+}

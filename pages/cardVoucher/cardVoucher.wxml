@@ -1,0 +1,33 @@
+<!--pages/cardVoucher/cardVoucher.wxml-->
+<view class='body'>
+  <view class='card_list' bindtap='toCardDetail' data-storeid='{{data.store_id}}' wx:for="{{card_list}}" wx:for-item="data" wx:key="{{data.card_id}}">
+    <view class='title_view'>
+      <image src='/img/card_list_title_icon.png'></image>
+      <label>{{data.name}}</label>
+      <button>详情</button>
+    </view>
+    <view class='bar_code_view'>
+      <canvas canvas-id="barcode{{data.card_id}}" hidden='{{showMsg}}'></canvas>
+      <view>
+        <text>{{data.new_virtual_no}}</text>
+      </view>
+    </view>
+  </view>
+  
+  <view class="pageBottom" hidden="{{pageBottom}}"></view>
+</view>
+
+<view class="nullData" hidden="{{nulldata}}" style="height:{{wheight}}px">
+  <import src="../nulldata/nulldata.wxml" />
+  <template is="nulldata" data="{{...pagenulldata}}" />
+</view>
+
+<view class="{{showMsg?'msgShow':'msgHide'}}" catchtouchmove='true'>
+  <view class='msg_alert'>
+    <view>确认成功</view>
+    <view>{{cardName}}</view>
+    <view>剩余次数：{{restTimes==-1?'不限':restTimes+'次'}}</view>
+    <view>到期时间：{{endTime}}</view>
+    <button bindtap='confirm'>确认</button>
+  </view>
+</view>

@@ -1,0 +1,2 @@
+<!--pages/rechargeDraw/rechargeDraw.wxml-->
+<web-view src="{{url}}"></web-view>

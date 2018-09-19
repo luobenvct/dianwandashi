@@ -1,0 +1,303 @@
+/**index.wxss**/
+
+page {
+  background: #ffecd1;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.warp {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.warp .playBg {
+  width: 682rpx;
+  height: 587rpx;
+  position: absolute;
+  top: 44rpx;
+  left: 32rpx;
+}
+
+.warp .bg {
+  position: absolute;
+  left: 0;
+  bottom: -96rpx;
+  width: 750rpx;
+  height: 488rpx;
+}
+
+.warp .scanCode {
+  position: absolute;
+  width: 378rpx;
+  height: 378rpx;
+  left: 184rpx;
+  bottom: 150rpx;
+  border-radius: 50%;
+  box-shadow: 0 14px 20px 0 rgba(247, 222, 183, 1);
+}
+
+.couponLink {
+  position: absolute;
+  left: 0;
+  top: 44rpx;
+  width: 232rpx;
+  height: 80rpx;
+  border: 2rpx solid #fe7606;
+  border-radius: 0 100px 100px 0;
+  border-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  background: #fff;
+}
+
+.couponLink text {
+  color: #fe7606;
+  font-size: 32rpx;
+}
+
+.couponLink image {
+  width: 50rpx;
+  height: 34rpx;
+  margin-right: 16rpx;
+}
+
+.couponLink .hasNewCoupon {
+  position: absolute;
+  width: 24rpx;
+  height: 24rpx;
+  background: #f94141;
+  border-radius: 50%;
+  right: 8rpx;
+  top: -4rpx;
+}
+
+.couponLink .expireCouponCount {
+  position: absolute;
+  width: 284rpx;
+  height: 47rpx;
+  background: url('https://metadata.zhutech.net/o_1ca786f6u1drq1nn106lvfa6rq1r.png') no-repeat center center;
+  background-size: cover;
+  font-size: 20rpx;
+  top: 16rpx;
+  right: -300rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+  line-height: 47rpx;
+  color: #fff;
+  -webkit-animation: fadeOut 3s linear 1 normal;
+  -moz-animation: fadeOut 3s linear 1 normal;
+  -ms-animation: fadeOut 3s linear 1 normal;
+  animation: fadeOut 3s linear 1 normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.coupon_box_bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  opacity: 0.5;
+  background: #000;
+  z-index: 100;
+}
+
+.coupon_container {
+  position: absolute;
+  width: 640rpx;
+  top: 20rpx;
+  left: 55rpx;
+  z-index: 200;
+}
+
+.coupon_container .closeCopon {
+  position: absolute;
+  top: 0rpx;
+  width: 49rpx;
+  height: 49rpx;
+  right: 0;
+}
+
+.coupon_container .border {
+  position: absolute;
+  right: 24.5rpx;
+  top: 49rpx;
+  height: 30rpx;
+  width: 2rpx;
+  background: #ccc;
+}
+
+.coupon_container .coupon_box {
+  position: absolute;
+  top: 79rpx;
+  width: 640rpx;
+  max-height: 920rpx;
+  box-sizing: border-box;
+  background-image: linear-gradient(-180deg, #f84244 11%, #ee2b3f 100%);
+  border-radius: 20rpx;
+}
+
+.coupon_container .coupon_box .couponhead {
+  width: 640rpx;
+  height: 206rpx;
+  background: url('https://metadata.zhutech.net/o_1bm0t9nm3cbsvuu1pe4rnf12l2m.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+.coupon_container .coupon_box .couponhead text:first-child {
+  font-size: 48rpx;
+  color: #fff;
+  letter-spacing: 12.63rpx;
+  line-height: 67rpx;
+  margin-bottom: 5.2rpx;
+}
+
+.coupon_container .coupon_box .couponhead text:last-child {
+  font-size: 28rpx;
+  color: #fff;
+  letter-spacing: 2rpx;
+  line-height: 40rpx;
+}
+
+.coupon_container .coupon_list_box {
+  max-height: 550rpx;
+  overflow-y: scroll;
+  width: 596rpx;
+  margin: 0 auto;
+}
+
+.coupon_container .coupon_list_box_full {
+  max-height: 465rpx;
+  overflow-y: scroll;
+  width: 596rpx;
+  margin: 0 auto;
+}
+
+.coupon_container .coupon_list {
+  background: url('https://metadata.zhutech.net/o_1bm104ies1q08192g1v4js7qdtqm.png') no-repeat center center;
+  background-size: 100% 100%;
+  height: 170rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+}
+
+.coupon_container .coupon_list .coupon_left {
+  width: 179rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coupon_container .coupon_left .money {
+  font-size: 28rpx;
+  color: #ff3e4a;
+  line-height: 60rpx;
+}
+
+.coupon_container .coupon_left .money text {
+  font-size: 54rpx;
+  color: #ff3e4a;
+  font-weight: 600;
+}
+
+.coupon_container .coupon_left .condition {
+  font-size: 24rpx;
+  color: #ff757d;
+  line-height: 33rpx;
+}
+
+.coupon_container .coupon_list .coupon_right {
+  width: 415rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coupon_container .coupon_right .store_name {
+  line-height: 45rpx;
+  font-size: 32rpx;
+  color: #373737;
+  width: 320rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  margin-bottom: 14rpx;
+}
+
+.coupon_container .coupon_right text {
+  font-size: 24rpx;
+  color: #cacaca;
+  line-height: 33rpx;
+}
+
+.coupon_container .coupon_list:last-child {
+  margin: 0;
+}
+
+.coupon_container .couponbtn_box {
+  width: 100%;
+  height: 158rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coupon_container .pull_down {
+  width: 188rpx;
+  height: 88rpx;
+  background: url('https://metadata.zhutech.net/o_1bm11c0ef1a6f13l93ftggr10q5o.png') no-repeat center center;
+  background-size: cover;
+}
+
+.coupon_container .pull_down:active {
+  background: url('https://metadata.zhutech.net/o_1bm11c0ef1pbhf5iuup1eth1akjn.png') no-repeat center center;
+  background-size: cover;
+}

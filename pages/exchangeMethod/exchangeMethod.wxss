@@ -1,0 +1,92 @@
+/* pages/rechargeMethod/rechargeMethod.wxss */
+page {
+  background: #f3f3f3;
+}
+
+.methodContainer {
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 690rpx;
+  height: 350rpx;
+  background: #fff;
+  box-shadow: 0 4rpx 10rpx 4rpx rgba(196, 196, 196, 0.50);
+  border-radius: 8rpx;
+  box-sizing: border-box;
+  margin-bottom: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box:last-child {
+  margin-bottom: 0;
+}
+
+.box image {
+  width: 244rpx;
+  height: 244rpx;
+  margin-left: 120rpx;
+}
+
+.box text {
+  font-size: 52rpx;
+  color: #242830;
+  font-weight: 600;
+}
+
+.box button[plain] {
+  width: 212rpx;
+  height: 76rpx;
+  margin: 0;
+  padding: 0;
+  border: 2rpx solid #fe7606;
+  border-radius: 216rpx;
+  box-sizing: border-box;
+  line-height: 76rpx;
+  color: #fe7606;
+  font-size: 28rpx;
+  margin-top: 48rpx;
+}
+
+/*exchangeMethodBox  */
+
+.exchangeMethodBox {
+  width: 690rpx;
+  height: 156rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50rpx;
+  box-sizing: border-box;
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #242830;
+  letter-spacing: 0;
+  margin-bottom: 30rpx;
+}
+
+.exchangeMethodBox:last-child {
+  margin-bottom: 0;
+}
+
+.exchangeMethodBox .rightIcon {
+  width: 16rpx;
+  height: 26rpx;
+}
+
+.exchangeMethodBox .exchangeMethodBoxLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exchangeMethodBox .icon {
+  width: 64rpx;
+  height: 64rpx;
+  margin-right: 38rpx;
+}

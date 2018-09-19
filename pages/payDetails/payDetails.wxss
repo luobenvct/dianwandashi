@@ -1,0 +1,124 @@
+/* pages/payDetails/payDetails.wxss */
+page {
+  background: #f3f3f3;
+}
+
+.rechargeMoney {
+  width: 100%;
+  height: 198rpx;
+  background: url('https://metadata.zhutech.net/o_1bf45kmearc21f53bhn1tucqch1c.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.money {
+  font-size: 80rpx;
+  color: #fe7606;
+  font-weight: bold;
+}
+
+.payMethod {
+  height: 90rpx;
+  width: 100%;
+  padding-left: 30rpx;
+  font-size: 28rpx;
+  color: #888;
+  line-height: 90rpx;
+}
+
+.coupon_box, .noues_coupon_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin: 26rpx 0;
+  padding: 30rpx 27rpx;
+}
+
+.noues_coupon_box .couponContent text:first-child {
+  font-size: 28rpx;
+  color: #fe7606;
+  font-weight: bold;
+}
+
+.noues_coupon_box .couponContent text:nth-child(2) {
+  font-size: 24rpx;
+  color: #888;
+  margin: 0 19rpx 0 10rpx;
+}
+
+.couponOrder text:first-child {
+  display: block;
+  font-size: 32rpx;
+  color: #343434;
+}
+
+.couponOrder text:last-child {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.couponContent {
+  font-size: 28rpx;
+  color: #fe7606;
+  letter-spacing: 0;
+  line-height: 40rpx;
+}
+
+.couponContent image {
+  width: 16rpx;
+  height: 26rpx;
+  margin-left: 5rpx;
+  position: relative;
+  top: 4rpx;
+}
+
+.payMethodDetial {
+  display: flex;
+  padding: 10rpx 40rpx;
+  background: #fff;
+  align-items: center;
+}
+
+.payMethodDetial image {
+  width: 46rpx;
+  height: 46rpx;
+  margin-right: 25rpx;
+}
+
+.payWX text:first-child {
+  display: block;
+  font-size: 32rpx;
+  color: #343434;
+  line-height: 45rpx;
+}
+
+.payWX text:last-child {
+  font-size: 24rpx;
+  color: #888;
+  line-height: 33rpx;
+}
+
+.rechargeDetail[type="default"], .rechargeDetail {
+  width: 670rpx;
+  height: 94rpx;
+  background: #fe7606;
+  border-radius: 10rpx;
+  margin-top: 95rpx;
+  font-size: 36rpx;
+  color: #fff;
+  letter-spacing: 3rpx;
+  margin-bottom: 323rpx;
+  line-height: 94rpx;
+}
+
+.rechargeDetail[disabled][type="default"], .rechargeDetail[disabled]:not([type]) {
+  background: #fe7606;
+}
+
+.rechargeDetailHover[type="default"] {
+  background: #f60;
+}

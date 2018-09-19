@@ -1,0 +1,24 @@
+<!--pages/myExchargeRecord/myExchargeRecord.wxml-->
+<view class="recordContainer" wx:if="{{nulldata}}">
+  <view class="dataBox" wx:for="{{exchargeRecords}}" wx:key="index" wx:for-item="data">
+    <view class="name">
+      <text>{{data.store_name}}</text>
+    </view>
+    <view class="time">
+      <text>{{data.exchange_time}}</text>
+      <text class="exchange_type">{{data.exchange_type==0?'前台兑换':'在线兑换'}}</text>
+    </view>
+    <view class="exchargeBox" wx:for="{{data.info}}" wx:for-item="infodata" wx:key="index">
+      <view class="exchargeName">{{infodata.name}}×{{infodata.exchange_amount}}</view>
+      <view class="ticket">{{infodata.cost}}礼票</view>
+    </view>
+  </view>
+  <view class="loading" hidden="{{loading}}">
+    <image src="/img/loading.png" background="cover"></image>努力加载中...
+  </view>
+  <view class="pageBottom" hidden="{{pageBottom}}">已经到底啦</view>
+</view>
+<view class="nullData" hidden="{{nulldata}}" style="height:{{wheight}}px">
+  <import src="../nulldata/nulldata.wxml" />
+  <template is="nulldata" data="{{...pagenulldata}}" />
+</view>

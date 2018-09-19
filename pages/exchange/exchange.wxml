@@ -1,0 +1,29 @@
+<!--pages/exchange/exchange.wxml-->
+<view class="container" id="exchangebox" wx:if="{{nulldata}}">
+  <view wx:for="{{exchangeList}}" wx:for-item="data" wx:key="data.store_id" class="containerBox">
+    <view bindtap="gotoExchange" data-index="{{index}}">
+      <view class="storeName">{{data.name}}</view>
+      <view class="listContainer">
+        <view class="top">
+          <image src="https://metadata.zhutech.net/o_1b9gbbf84lt95of1i011btv10m77.png" background="cover" class="headImg"></image>
+          <view class="textInfo">
+            <view class="giftTickets">
+              礼票数<text class="coin">×</text>
+              <text>{{data.coupons}}</text>
+            </view>
+          </view>
+          <button type="default" plain="true" class="exchangeBtn">兑换</button>
+        </view>
+        <view class="address">{{data.addr}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="loading" hidden="{{loading}}">
+    <image src="/img/loading.png" background="cover"></image>努力加载中...
+  </view>
+  <view class="pageBottom" hidden="{{pageBottom}}">已经到底啦</view>
+</view>
+<view class="nullData" hidden="{{nulldata}}" style="height:{{wheight}}px">
+  <import src="../nulldata/nulldata.wxml" />
+  <template is="nulldata" data="{{...pagenulldata}}" />
+</view>

@@ -1,0 +1,55 @@
+/* pages/myExchargeRecord/myExchargeRecord.wxss */
+page {
+  background: #f3f3f3;
+}
+
+.recordContainer {
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.dataBox {
+  padding: 30rpx;
+  padding-bottom: 22rpx;
+  border-bottom: 1px solid #efefef;
+}
+
+.exchargeBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+
+.name {
+  font-size: 32rpx;
+  color: #343434;
+}
+
+.time {
+  font-size: 24rpx;
+  color: #888;
+  margin-bottom: 11rpx;
+}
+
+.exchargeName {
+  font-size: 28rpx;
+  color: #fe7606;
+}
+
+.ticket {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.pageBottom {
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.exchange_type {
+  float: right;
+}

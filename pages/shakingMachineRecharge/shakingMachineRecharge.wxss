@@ -1,0 +1,140 @@
+/* pages/shakingMachineRecharge/shakingMachineRecharge.wxss */
+page, .box {
+  height: 100%;
+}
+
+.box {
+  padding: 30rpx 30rpx 70rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.clickMe {
+  position: absolute;
+  bottom: 70rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 24rpx;
+  color: #888;
+  left: 0;
+}
+
+
+.clickMe .againInsertBtn{
+  width: 292rpx;
+  height: 104rpx;
+  margin: 20rpx auto 0;
+  background: #FE7606;
+  box-shadow: 0 3px 6px 0 rgba(254,118,6,0.40);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.clickMe .againInsertBtn image{
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 20rpx;
+}
+
+.btnDefault {
+  background: #f5f5f5;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+  font-size: 36rpx;
+  color: #242830;
+  height: 140rpx;
+  line-height: 140rpx;
+  letter-spacing: 4rpx;
+  padding: 0;
+  border: none;
+}
+
+.btnDefault::after {
+  border: none;
+}
+
+.checkBtn {
+  background: #fe7606;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+  font-size: 36rpx;
+  color: #fff;
+  height: 140rpx;
+  line-height: 140rpx;
+  letter-spacing: 4rpx;
+  padding: 0;
+  border: none;
+}
+
+.checkBtn::after {
+  border: none;
+}
+
+/*提示框  */
+
+.modalBox {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  left: 94rpx;
+  height: 300rpx;
+  width: 562rpx;
+  top: 388rpx;
+}
+
+.modalTitle {
+  padding: 20rpx 32rpx;
+  box-sizing: border-box;
+  font-size: 36rpx;
+  color: #242830;
+  letter-spacing: 0;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50rpx;
+  border: 2rpx solid #eaeaea;
+  border-radius: 8rpx 8rpx 0 0;
+}
+
+.modalBody {
+  font-size: 28rpx;
+  color: #242830;
+  padding: 32rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.modalFoot {
+  padding: 0 38rpx 16rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modalFoot button {
+  width: 228rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+}
+
+.modalFoot .neverTip {
+  border: 2rpx solid #eaeaea;
+  color: #999;
+}
+
+.modalFoot .knowBtn {
+  background: #f83;
+  color: #fff;
+}

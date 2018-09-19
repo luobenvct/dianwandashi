@@ -1,0 +1,54 @@
+/* pages/bulletScreen/bulletScreen.wxss */
+
+page {
+  background: #f3f3f3;
+  height: 100%;
+}
+
+.bulletWarp {
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.textareaView {
+  position: relative;
+}
+.bulletWarp button{
+  font-size: 36rpx;
+  color: #FFFFFF;
+  letter-spacing: 5rpx;
+  margin: 40rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.textareaView view {
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+  font-size: 28rpx;
+  color: #cdcdcd;
+}
+
+.bulletWarp textarea {
+  background: #fff;
+  border-radius: 8rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #242830;
+  width: 100%;
+}
+
+.textareaPlaceHolder {
+  color: #cdcdcd;
+}
+
+
+.canSendBullet{
+  background: #FE7606;
+}
+
+button.disSendBullet[disabled][type="default"], wx-button[disabled]:not([type]){
+  background: #FEAC69;
+  color: #fff;
+}

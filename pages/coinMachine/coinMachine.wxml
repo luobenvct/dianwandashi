@@ -1,0 +1,61 @@
+<!--pages/coinMachine/coinMachine.wxml-->
+<!-- class="{{data.btnStyle}}" -->
+ <!-- wx:if="{{ index>0 || showFirstComb }}" -->
+<view class="box" style="background:#{{deviceCombosStyle.bg_color}}">
+  <view class="box_top">
+      <image src="{{deviceCombosStyle.bg_url}}"></image>
+  </view>
+  <view class="buttonListBox">
+    <view wx:for="{{buttonData}}" wx:for-item="data" wx:key="index" style="width:628rpx; height:148rpx; color:#{{deviceCombosStyle.btn_color_before}}; background:url({{deviceCombosStyle.btn_url_before}}); background-size: 100% 100%; margin-bottom:24rpx; margin-left:60rpx; text-align:center"  data-money="{{data.money}}" bindtap='insert' data-coins="{{data.coins}}" data-comboid="{{data.comboId}}" data-index="{{index}}">
+    <block wx:if="{{data.remark}}">
+      <view  style='width:80%;margin-left:10%;padding-top:38rpx;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'>{{data.combosName}}</view>
+      <view style='width:60%;margin-left:20%;margin-top:2rpx;text-align:center;color:#{{deviceCombosStyle.btn_descript_color_before}}; font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'>{{data.remark}}</view>
+    </block>
+    <block wx:else>
+      <view style='width:80%;margin-left:10%;padding-top:48rpx;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'>{{data.combosName}}</view>
+    </block>
+    </view>
+  </view>
+  <view class="clickMe">
+    <text style='color:#{{deviceCombosStyle.prompt_color}}; float: left;'>1分钟机器未启动自动退款</text>
+    <navigator url="../contactCustomer/contactCustomer" class="againInsertBtn" style=' width: 144rpx;height: 56rpx; margin-top: -10rpx;margin-left: 10rpx;float: left;display: flex;align-items: center;justify-content:center;color: #fff; background:url({{deviceCombosStyle.prompt_url_before}});background-size:100% 100%;font-size: 28rpx;'></navigator>
+  </view>
+  <view class="blackbg" hidden="{{tipShow}}"></view>
+  <view class="wapper_content" hidden="{{tipShow}}">
+    <scroll-view scroll-y="{{true}}" style="height: 780rpx;">
+        <text class="texts">使用前请仔细阅读“用户服务申明”并正确使用按摩椅，避免发生意外。</text>
+      <view class="wapper_img">
+        <image src="https://metadata.dianwandashi.com/game_warning1.png " mode="" />
+      </view>
+      <view class="text_two">不宜使用人群</view>
+      <text class="texts">1.残障人士、感官或神经有缺陷人士、未成年人士使用时必须在监护人或专业人士的监督与指导下使用。</text>
+      <text class="texts">2.具有心脏问题以及佩戴心脏起搏器等一用电子仪器者</text>
+      <text class="texts">3.正在接受医生治疗者，经医生嘱咐需要休养或感觉身体不适者、在使用期间感到身体异常请立即停止使用</text>
+      <text class="texts">4.患有恶性肿瘤、急性疾病、心脏病、严重高血压等患者</text>
+      <text class="texts">5.孕妇或正处于经期者；处于发热期并且体温38度以上的人士</text>
+      <text class="texts">6.骨质疏松、颈椎骨折等患者，身体有创伤或体表患病者</text>
+      <text class="texts">7.年满60岁以上人士，请慎重使用</text>
+      <view class="wapper_img_two">
+        <image src="https://metadata.dianwandashi.com/game_warning2.png " mode="" />
+      </view>
+      <view class="text_two">禁止事项</view>
+      <text class="texts">1.残障人士、感官或神经有缺陷人士、未成年人士使用时必须在监护人或专业人士的监督与指导下使用。</text>
+      <text class="texts">2.具有心脏问题以及佩戴心脏起搏器等一用电子仪器者</text>
+      <text class="texts">3.正在接受医生治疗者，经医生嘱咐需要休养或感觉身体不适者、在使用期间感到身体异常请立即停止使用</text>
+      <text class="texts">4.患有恶性肿瘤、急性疾病、心脏病、严重高血压等患者</text>
+      <text class="texts">5.孕妇或正处于经期者；处于发热期并且体温38度以上的人士</text>
+      <text class="texts">6.骨质疏松、颈椎骨折等患者，身体有创伤或体表患病者</text>
+      <text class="texts">7.年满60岁以上人士，请慎重使用</text>
+    </scroll-view>
+    <view class="dot_agree" bindtap='dotAgree'>不同意</view>
+    <view class="agree" bindtap='Agree'>我已阅读并同意</view>
+  </view>
+  <!--hidden="{{childCar}}"  -->
+  <!-- <view class="blackbg" hidden="{{childCar}}"></view>
+  <view class="wapper_content_car" hidden="{{childCar}}">
+    <view class='car_title'>请坐稳扶好！</view>
+    <view class='text'>支付成功后，机器将直接启动。</view>
+    <view class="car_dot_agree" bindtap='doReminder'>不再提示</view>
+    <view class="car_agree" bindtap='GotIt'>知道了</view>
+  </view> -->
+</view>

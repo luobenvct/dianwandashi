@@ -1,0 +1,275 @@
+/* pages/cardVoucherDetail/cardVoucherDetail.wxss */
+
+page {
+  background-color: #6B5546;
+  height: 100%;
+  width: 100%;
+}
+
+.body {
+  height: 100%;
+  margin: 0 30rpx 0;
+}
+
+.tip {
+  margin-top: 10rpx;
+  height: 34rpx;
+  text-align: center;
+}
+
+.tip>text {
+  color: white;
+  font-size: 24rpx;
+}
+
+.detail_view {
+  height: 594rpx;
+  background-color: white;
+  border-radius: 8rpx 8rpx 0 0;
+  margin-top: 34rpx;
+  position: relative;
+  padding: 24rpx 24rpx 58rpx 24rpx;
+  box-sizing: border-box;
+}
+
+.store_name {
+  height: 50rpx;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.store_name>text {
+  color: #343434;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.bar_code_view {
+  margin-top: 20rpx;
+  height: 256rpx;
+  border-radius: 8rpx;
+  border: 1px solid #F5F5F5;
+  position: relative;
+}
+
+.bar_code_view>canvas {
+  position: absolute;
+  top: 32rpx;
+  left: 40rpx; 
+  width: 562rpx;
+  height: 148rpx;
+}
+
+.bar_code_view>view {
+  position: absolute;
+  bottom: 16rpx;
+  height: 50rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.bar_code_view>view>text {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #343434;
+}
+
+.null_card_view {
+  margin-top: 20rpx;
+  height: 256rpx;
+  border-radius: 8rpx;
+  border: 1px solid #F5F5F5;
+  text-align: center;
+}
+
+.null_card_view>image {
+  width: 94rpx;
+  height: 94rpx;
+  margin-top: 50rpx;
+}
+
+.null_card_view>view {
+  margin-top: 20rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  color: #888888;
+}
+
+.price {
+  margin-top: 40rpx;
+  height: 40rpx;
+  text-align: center;
+}
+
+.price>text {
+  margin-top: 40rpx;
+  height: 40rpx;
+  color: #888888;
+  font-size: 28rpx;
+}
+
+.recharge_btn {
+  margin-top: 42rpx;
+  width: 196rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  border-radius: 8rpx;
+  background-color: #FE7606;
+  font-size: 32rpx;
+  color: white;
+}
+
+.card_border {
+  width: 100%;
+  height: 10rpx;
+  position: absolute;
+  bottom: -6rpx;
+  left: 0;
+}
+
+.title_view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32rpx;
+}
+
+.title_view>text {
+  color: white;
+  font-size: 28rpx;
+  display: inline-block;
+  margin-left: 8rpx;
+}
+
+.title_view>navigator {
+  color: white;
+  font-size: 28rpx;
+}
+
+.product_list {
+  height: 174rpx;
+  width: 100%;
+  margin-top: 20rpx;
+  background: url('https://metadata.dianwandashi.com/card_detail_list.png') no-repeat center center;
+  background-size: cover; 
+  padding:24rpx 36rpx; 
+  box-sizing:border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.product_list:nth-last-child(1){
+  margin-bottom: 60rpx;
+}
+
+.product_list>view:nth-child(1) {
+  text-align: left;
+}
+
+.product_list>view:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  height: 44rpx;
+  color: white;
+  font-size: 32rpx;
+}
+
+.number,.time {
+  height: 34rpx;
+  color: white;
+  font-size: 24rpx;
+}
+
+.not_active {
+  position: absolute;
+  width: 152rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  right: 2rpx;
+  bottom: 22rpx;
+  background-color: #FE7606;
+  font-size: 24rpx;
+  color: white;
+  border-radius: 20rpx 0 0 20rpx;
+  text-align: center;
+}
+
+.msgShow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.msgHide {
+  display: none;
+}
+
+.msg_alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 562rpx;
+  height: 386rpx;
+  background-color: white;
+  border-radius: 8rpx;
+  padding: 28rpx 32rpx 32rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.msg_alert>view:nth-child(1) {
+  text-align: center;
+  height: 44rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #343434;
+}
+
+.msg_alert>view:nth-child(2) {
+  margin-left: 14rpx;
+  margin-top: 42rpx;
+  font-size: 28rpx;
+  color: #343434;
+}
+
+.msg_alert>view:nth-child(3) {
+  margin-left: 14rpx;
+  margin-top: 12rpx;
+  font-size: 24rpx;
+  color: #888888;
+}
+
+.msg_alert>view:nth-child(4) {
+  margin-left: 14rpx;
+  font-size: 24rpx;
+  color: #888888;
+}
+
+.msg_alert>button {
+  margin-top: 50rpx;
+  background-color: #FE7606;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  color: white;
+}
+
+.pageBottom {
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}

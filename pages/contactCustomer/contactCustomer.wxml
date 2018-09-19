@@ -1,0 +1,35 @@
+<!--pages/contactCustomer/contactCustomer.wxml-->
+<view class='picker_view'>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      {{array[index]}}
+      <image class='down_arrow' src='/img/down_arrow.png'></image>
+    </view>
+  </picker>
+</view>
+
+<view class='coins_view'>
+  <view class='coins_title'>请填写退款/币数：</view>
+  <input class='coins' type="number" bindinput='coinsInput' placeholder='0' maxlength='10'></input>
+</view>
+
+<view class='coins_view'>
+  <view class='coins_title'>请输入设备编号(位于二维码下方的数字)</view>
+  <input class='coins' type="number" bindinput='deviceNoInput' placeholder='0' maxlength='10'></input>
+</view>
+
+<view class='coins_view'>
+  <view class='coins_title'>请输入您的手机号(选填）</view>
+  <input class='coins' type="number" bindinput='mobileInput' placeholder='0' maxlength='11'></input>
+</view>
+
+<view class='img_view'>
+  <view class='img_title'>请上传机器图片(选填）</view>
+  <image class='img' src='{{image}}' bindtap='uploadImg'></image>
+</view>
+
+<view class='tip'>
+  <text>注:客服人员会在1个工作日之内处理</text>
+</view>
+
+<button class='submit' bindtap='submit'>提交</button>

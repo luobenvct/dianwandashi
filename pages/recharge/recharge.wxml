@@ -1,0 +1,50 @@
+<!--pages/recharge/recharge.wxml-->
+<view class="coupon_head">
+  <view class="coupom_txt">
+    您有<text>{{couponCount}}</text>张优惠券</view>
+  <navigator url="../couponList/couponList" class="coupon_a" hover-class="none">查看</navigator>
+</view>
+<!-- bindtap="gotoRecharge"  -->
+<view class="container" id="rechargebox" wx:if="{{nulldata}}">
+  <view wx:for="{{rechargeList}}" wx:for-item="data" wx:key="data.store_id" class="containerBox">
+    <view class="listContainer" data-index="{{index}}">
+      <view class="top">
+        <image src="https://metadata.zhutech.net/o_1b8tt4oth1oh31cr91gk31rhb13o67.png" background="cover" class="headImg"></image>
+        <view class="textInfo">
+          <text>{{data.name}}</text>
+          <view class="gameCoins">
+            游戏币×<text class="coin"></text>
+            <text>{{data.coins}}</text>
+          </view>
+        </view>
+        <!-- <button type="default" plain="true" class="rechargeBtn" data-index="{{index}}">充值</button> -->
+      </view>
+      <view class="address">{{data.addr}}</view>
+      <view class="activity" wx:if="{{data.money!=null}}" data-storeid="{{data.store_id}}" data-activityid="{{data.activity_id}}" catchtap="gotoActivityPage">
+        <image src="https://metadata.zhutech.net/o_1btb973d81thj3lu13na9aejvjm.png" class="activityIcon"></image>
+        <image src="https://metadata.zhutech.net/o_1btb9jp6pqu5tpq17dk123g1ug2r.png" class="bannerIcon"></image>
+        <view class="content">
+          <view class="txt">奖金大作战活动进行中</view>
+          <view class="nowPot">
+            当前奖金：<text>{{data.money}}</text> 元
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="loading" hidden="{{loading}}">
+    <image src="/img/loading.png" background="cover"></image>努力加载中...
+  </view>
+  <view class="pageBottom" hidden="{{pageBottom}}">已经到底啦</view>
+</view>
+<view class="nullData" hidden="{{nulldata}}" style="height:{{wheight}}px">
+  <import src="../nulldata/nulldata.wxml" />
+  <template is="nulldata" data="{{...pagenulldata}}" />
+</view>
+<view wx:if="{{rechargeDrawInfo.rechargeDrawStatus}}">
+  <view class="drawBox">
+    <import src="../drawBox/drawBox.wxml" />
+    <template is="drawBox" data="{{...rechargeDrawInfo}}" />
+  </view>
+  <view class="drawBoxBg"></view>
+</view>

@@ -1,0 +1,17 @@
+<!--pages/callCenter/callCenter.wxml-->
+<view class="centerBox">
+  <navigator url="../coinReturn/coinReturn" class="queryCoin">
+    <view class="left">
+      <image src="/img/kabi.png"></image>
+      <text>卡币查询</text>
+    </view>
+    <image src="/img/btn_left.png"></image>
+  </navigator>
+  <navigator url="../contactUs/contactUs" class="contactUs">
+    <view class="left">
+      <image src="/img/phone.png"></image>
+      <text>联系我们</text>
+    </view>
+    <image src="/img/btn_left.png"></image>
+  </navigator>
+</view>

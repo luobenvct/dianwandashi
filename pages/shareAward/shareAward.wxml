@@ -1,0 +1,66 @@
+<!--pages/shareAward/shareAward.wxml-->
+<view class="shareContainer">
+  <view wx:if="{{activityFinish==false}}">
+    <image src="https://metadata.zhutech.net/o_1bvjsopniqa218a91opa1qn3injr.png" class="title"></image>
+    <view class="content">
+      <image class="cloud" src="https://metadata.zhutech.net/o_1bvjt425bgk8b32gbtjclcg310.png"></image>
+      <image src="https://metadata.zhutech.net/o_1bvk1fvnh1cm6s421l0p1pnd1tt035.png" class="mountain"></image>
+      <view class="pro fst" wx:if="{{shareEvery.showShareCoins}}">
+        <image src="https://metadata.zhutech.net/o_1bvjtg0qrfcj1v3vaa5oql119417.png" class="proImg"></image>
+        <view class="txt">
+          <view>每次分享，您可得
+            <text>{{shareEvery.coins}}</text>个游戏币，</view>
+          <view>最多可得
+            <text>{{shareEvery.limitCoins}}</text>个。</view>
+        </view>
+      </view>
+      <view class="pro" wx:if="{{shareNewUser.showNewUser}}">
+        <image src="https://metadata.zhutech.net/o_1bvjtg0qr1d6gc9o1jmb1ofm1sj919.png" class="proImg"></image>
+        <view class="txt">
+          <view>新用户接受分享，</view>
+          <view wx:if="{{shareNewUser.sharetype==0}}">双方得
+            <text>{{shareNewUser.coins}}</text>元优惠券。</view>
+          <view wx:else>新用户得
+            <text>{{shareNewUser.coins}}</text>元优惠券。</view>
+        </view>
+      </view>
+      <view class="pro" wx:if="{{newUserRecharge.showThis}}">
+        <image src="https://metadata.zhutech.net/o_1bvjtg0qr19vh6dt1qv4kd2f7j18.png" class="proImg"></image>
+        <view class="txt">
+          <view>新用户充值，向您返现
+            <text>{{newUserRecharge.returnMoney}}</text>
+          </view>
+          <view wx:if="{{newUserRecharge.day}}">{{newUserRecharge.day}}内有效</view>
+          <view wx:else>活动期间有效。</view>
+        </view>
+      </view>
+    </view>
+    <button id="shareShop" hover-class="shareShopHover" open-type="share">分享本店</button>
+    <view class="shareCode">
+      <canvas bindtap="previewImg" hidden="{{canvasHidden}}" style="background:#f1f1f1;" canvas-id="mycanvas" id="scanCode" />
+    </view>
+    <view class="rules">
+      <image src="https://metadata.zhutech.net/o_1bvk0bcevt69jhs1l8n1f441u3e2f.png" class="title"></image>
+      <view class="p">
+        <text>1</text>点【分享本店】键或扫码分享，向新用户分享本店，立得奖励。
+      </view>
+      <view class="p">
+        <text>2</text>同一微信号、设备、手机号、银行账户视为同一用户；新用户需从未在本店充值；新用户只能接受分享一次；不能互相分享。
+      </view>
+      <view class="p">
+        <text>3</text>如有不正当行为，查实后取消活动资格和未发奖励，电玩大师保留追溯已发奖励的权利，并视情况追究法律责任。
+      </view>
+      <view class="p">
+        <text>4</text>最终解释权归电玩大师所有。
+      </view>
+    </view>
+    <view hidden="{{maskHidden}}" class="mask"></view>
+    <view class="canvas-box"></view>
+  </view>
+  <view wx:else class="finish" style="height:{{wheight}}px">
+    <view class="box">
+      <image src="https://metadata.zhutech.net/o_1bvmm812u1ue1li51o1uj7qg331k.png"></image>
+      <text>该活动已结束</text>
+    </view>
+  </view>
+</view>

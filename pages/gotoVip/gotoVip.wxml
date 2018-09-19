@@ -1,0 +1,52 @@
+<!--pages/gotoVip/gotoVip.wxml-->
+<view class="ul">
+  <view class="li">
+    <image class="lefttop" src="https://metadata.zhutech.net/o_1bttokdfj1sn01blbjkkm7itrs1c.png"></image>
+    <view class="title">会员特权</view>
+    <view class="birthday">
+      <view class="pro">
+        <image src="https://metadata.zhutech.net/o_1bttounod1vmk1lft1gtdeef1p1h.png"></image>
+        <view class="textBox">
+          <view class="onetxt">充值更优惠</view>
+          <view>专享会员套餐，</view>
+          <view>更多选择，更多优惠</view>
+        </view>
+      </view>
+      <view class="pro">
+        <image src="https://metadata.zhutech.net/o_1bttpkjij1t7iup21hq8f4r1eh81n.png"></image>
+        <view class="textBox">
+          <view class="onetxt">生日大礼包</view>
+          <view>生日当天，</view>
+          <view>为您送上一份小礼物</view>
+        </view>
+      </view>
+      <view class="pro">
+        <image src="https://metadata.zhutech.net/o_1bttpkjij1r8217h714621vva11qk1o.png"></image>
+        <view class="textBox">
+          <view class="onetxt">推荐拿返现</view>
+          <view>分享给好友，好友充值，</view>
+          <view>商户让利，您拿返现</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="li">
+    <image src="https://metadata.zhutech.net/o_1bttqrb43cml1f3717u71ink1r862a.png" class="rightBottom"></image>
+    <view class="title">下载电玩大师
+      <text>升级会员</text>
+    </view>
+    <view class="downLoadApp">
+      <view class="contentOne">
+        <text class="num">1</text>
+        扫码下载
+        <image src="https://metadata.zhutech.net/o_1bsptj986g471vr87911aqc1h87m.png" class="scancode" bindtap='previewPic'></image>
+      </view>
+      <image class="saveImg" bindtap='saveImg' src="https://metadata.zhutech.net/o_1bttqgt3d10un18a41djccn4jp325.png"></image>
+      <view class="contentTwo">
+        <text class="num">2</text>
+        或应用市场下载
+        <image src="https://metadata.zhutech.net/o_1bttq9hea10junsk1kpf81b1fqf20.png" class="search"></image>
+      </view>
+    </view>
+  </view>
+</view>

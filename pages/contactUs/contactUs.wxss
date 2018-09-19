@@ -1,0 +1,45 @@
+/* pages/contactUs/contactUs.wxss */
+page {
+  background: #f3f3f3;
+}
+
+image {
+  width: 560rpx;
+  height: 560rpx;
+  margin-top: 138rpx;
+}
+
+.com {
+  line-height: 80rpx;
+}
+
+.com, .phone {
+  font-size: 28rpx;
+  color: #3a3a3a;
+  line-height: 40rpx;
+}
+
+.phone text {
+  font-size: 28rpx;
+  color: #fe7606;
+}
+
+.call {
+  margin-top: 50rpx;
+  width: 274rpx;
+  height: 94rpx;
+  line-height: 94rpx;
+  text-align: center;
+  border: 2rpx solid #fe7606;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+  color: #fe7606;
+  letter-spacing: 2rpx;
+  margin: 44rpx auto 0;
+  outline: none;
+}
+
+.checkBtn {
+  color: #fff;
+  background: #fe7606;
+}

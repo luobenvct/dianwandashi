@@ -1,0 +1,11 @@
+<!--pages/contactUs/contactUs.wxml-->
+<view class="container">
+  <image src="/img/contact_us.png"></image>
+  <view class="text_info">
+    <view class="com">杭州游艺科技有限公司</view>
+    <view class="phone">客服电话：
+      <text>400-069-8068</text>
+    </view>
+  </view>
+  <button class="call" type="button" hover-class="checkBtn" bindtap="callphone">立即拨打</button>
+</view>

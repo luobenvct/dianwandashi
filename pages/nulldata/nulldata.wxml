@@ -1,0 +1,6 @@
+<!--pages/nulldata/nulldata.wxml-->
+<template name="nulldata">
+  <image src="{{imgurl}}" class="err_img"></image>
+  <view wx:for="{{text}}" wx:key="{{index}}">{{item}}</view>
+  <view hover hover-class="checkBtn" class="reloadBtn" bindtap="reload" wx:if="{{showRefresh}}">点击刷新</view>
+</template>

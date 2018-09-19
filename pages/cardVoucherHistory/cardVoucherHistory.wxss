@@ -1,0 +1,94 @@
+/* pages/cardVoucherHistory/cardVoucherHistory.wxss */
+
+page {
+  background: #f3f3f3;
+}
+
+.swiper-tab{
+  width: 100%;
+  border-bottom: 1rpx solid #eaeaea;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-weight: bold;
+  background: #fff;
+  display: flex;
+  flex-flow: row;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  z-index: 999;
+}
+
+.swiper-tab-item {
+  display: inline-block;
+  width: 50%;
+  font-size: 14px;
+  color: #999;
+  vertical-align: bottom;
+}
+
+.active {
+  color: #fe7606;
+  border-bottom: 4rpx solid #fe7606;
+}
+
+.card_history_list{
+  position: relative;
+  top: 88rpx;
+  width: 100%;
+  padding: 34rpx 32rpx 44rpx 24rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  background: #FFF;
+}
+
+.list_top_view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44rpx;
+}
+
+.list_top_view>text:nth-child(1) {
+  font-size: 28rpx;
+  color: #343434;
+}
+
+.list_top_view>text:nth-child(2) {
+  font-size: 32rpx;
+  color: #FE7606;
+}
+
+.list_name_view {
+  margin-top: 28rpx;
+  height: 40rpx;
+}
+
+.list_name_view>text:nth-child(1) {
+  font-weight: bold;
+  font-size: 28rpx;
+  color: #343434;
+}
+
+.list_count {
+  margin-top: 14rpx;
+  height: 34rpx;
+  font-size: 24rpx;
+  color: #343434;
+}
+
+.list_date {
+  height: 34rpx;
+  font-size: 24rpx;
+  color: #343434;
+}
+
+.pageBottom {
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top:100rpx;
+}

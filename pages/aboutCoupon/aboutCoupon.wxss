@@ -1,0 +1,45 @@
+/* pages/aboutCoupon/aboutCoupon.wxss */
+page {
+  background-color: #f3f3f3;
+}
+
+.explain {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.explain::before {
+  content: '';
+  display: table;
+}
+
+.box {
+  background: #fff;
+  box-shadow: 0 1rpx 4rpx 4rpx rgba(195, 195, 195, 0.50);
+  border-radius: 4rpx;
+  padding: 18rpx;
+  margin: 20rpx 0;
+}
+
+.box:first-child {
+  margin-top: 30rpx;
+}
+
+.box:last-child {
+  margin-bottom: 30rpx;
+}
+
+.title {
+  font-size: 32rpx;
+  color: #343434;
+  font-weight: bold;
+}
+
+.answer {
+  border-top: 1px solid #dfdfdf;
+  margin-top: 17rpx;
+  padding-top: 17rpx;
+  font-size: 28rpx;
+  color: #888;
+  line-height: 35rpx;
+}

@@ -1,0 +1,50 @@
+<!--pages/priorJackpot/priorJackpot.wxml-->
+<view class="outContainer">
+  <view class="jackPotScore">
+    本期奖金：
+    <text class="unit">¥</text>
+    <text>{{jackPotScore}}</text>
+  </view>
+  <view class="rank">
+    <view class="title">
+      <text>礼票排行榜</text>
+      <text class="beforeActivy">{{activity_start_time}}至{{activity_end_time}}</text>
+    </view>
+    <view class="rankContentOut">
+      <view class="rankContent">
+        <view class="li" wx:for="{{rankList}}" wx:for-item="data" wx:key="index">
+          <view class="part1">{{index+1}}</view>
+          <view class="part2">
+            <image src="https://metadata.zhutech.net/o_1bt3lo5v7gde1frv9kmnv9n41f.png" class="headBg" wx:if="{{index==0}}"></image>
+            <image src="https://metadata.zhutech.net/o_1bt3smtbj16806rf1qsfce569on.png" class="headBg" wx:if="{{index==1}}"></image>
+            <image src="https://metadata.zhutech.net/o_1bt3smtbj1q961j5d11ug1uiu1qmno.png" class="headBg" wx:if="{{index==2}}"></image>
+            <image src="https://metadata.zhutech.net/o_1bt3t1ncj10o52dq12re1v55gcu1h.png" class="headBg" wx:if="{{index>=3}}"></image>
+            <image src="https://metadata.zhutech.net/o_1bs2lgj9519vjonf1a7ok4u1cvd2f.png" class="headImg" wx:if="{{data.avatar==null ||     data.avatar==''}}"></image>
+            <image src="{{data.avatar}}" class="headImg" wx:if="{{data.avatar!='' && data.avatar!=null}}"></image>
+          </view>
+          <view class="part3">
+            <text>{{data.name}}</text>
+            <image src="https://metadata.zhutech.net/o_1bs2ko0cj1thsise1eb611ro165l1l.png" wx:if="{{data.sex==2}}"></image>
+            <image src="https://metadata.zhutech.net/o_1btb4sqfe8b1spb1gpl1clf3f8m.png" wx:if="{{data.sex==1||data.sex==0||data.sex==null}}"></image>
+          </view>
+          <view class="part4">
+            <image src="https://metadata.zhutech.net/o_1bs7nlan81muv1mu81mqufh81dkko.png"></image>
+            <text>{{data.coupons}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="resultContent">
+        <view class="ticket">
+          <view>您获得的礼票数：
+            <text class="ticketNum">{{ticketNum}}</text>票</view>
+          <view>您的票排名：
+            <text class="rankNum">{{rankNum}}</text>
+          </view>
+        </view>
+        <view class="jackpotContent">
+          <view>请联系客服QQ：3159008102</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

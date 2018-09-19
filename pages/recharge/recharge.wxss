@@ -1,0 +1,167 @@
+/* pages/recharge/recharge.wxss */
+page {
+  background-color: #f3f3f3;
+}
+
+#rechargebox {
+  margin-top: 90rpx;
+}
+
+.containerBox {
+  margin: 30rpx 30rpx 0;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+.containerBox:nth-child(4n+1) {
+  background-color: #f78d36;
+}
+
+.containerBox:nth-child(4n+2) {
+  background-color: #2eb494;
+}
+
+.containerBox:nth-child(4n+3) {
+  background-color: #d9ab1b;
+}
+
+.containerBox:nth-child(4n) {
+  background-color: #0ab0f9;
+}
+
+.listContainer {
+  background-color: transparent;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 178rpx;
+  padding: 0 30rpx 0 28rpx;
+}
+
+.headImg {
+  width: 77rpx;
+  height: 77rpx;
+  border-radius: 50%;
+  position: relative;
+  top: 11rpx;
+}
+
+.textInfo {
+  width: 401rpx;
+  margin-left: 28rpx;
+}
+
+.textInfo>text {
+  font-size: 28rpx;
+  color: #fff;
+  font-weight: 600;
+}
+
+.gameCoins {
+  font-size: 20rpx;
+  color: #fff;
+  font-weight: 600;
+}
+
+.gameCoins>text {
+  font-size: 40rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.gameCoins>.coin {
+  margin-left: 8rpx;
+  font-size: 30rpx;
+}
+
+.address {
+  width: 551rpx;
+  border-top: 1rpx dashed #fff;
+  padding-left: 139rpx;
+  font-size: 26rpx;
+  color: #fff;
+  height: 69rpx;
+  line-height: 69rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#rechargebox .rechargeBtn[plain] {
+  margin-top: 10rpx;
+  border: 2rpx solid #fff;
+  border-radius: 4rpx;
+  width: 120rpx;
+  height: 59rpx;
+  font-size: 26rpx;
+  color: #fff;
+  letter-spacing: 0.39rpx;
+  padding: 0;
+  line-height: 59rpx;
+  position: relative;
+  top: 11rpx;
+}
+
+#rechargebox .rechargeBtn[plain].button-hover {
+  border: 2rpx solid #fff;
+  color: #fe7606;
+  background-color: #fff;
+}
+
+.pageBottom {
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.activity {
+  width: 662rpx;
+  height: 207rpx;
+  margin: 0 auto 10rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  position: relative;
+}
+
+.activityIcon {
+  position: absolute;
+  width: 66rpx;
+  left: 12rpx;
+  top: -8rpx;
+  height: 78rpx;
+}
+
+.bannerIcon {
+  width: 210rpx;
+  height: 176rpx;
+  position: absolute;
+  top: 16rpx;
+  right: 24rpx;
+}
+
+.activity .content {
+  position: absolute;
+  top: 88rpx;
+  left: 16rpx;
+}
+
+.activity .content .txt {
+  font-size: 28rpx;
+  color: #111;
+}
+
+.activity .content .nowPot {
+  font-size: 28rpx;
+  color: #f85844;
+  font-weight: 600;
+}
+
+.activity .content .nowPot text {
+  font-size: 46rpx;
+  color: #f85844;
+}

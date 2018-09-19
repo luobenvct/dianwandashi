@@ -1,0 +1,71 @@
+/* pages/myGameRecord/myGameRecord.wxss */
+page {
+  background: #f3f3f3;
+}
+
+.recordContainer {
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: 98rpx;
+}
+
+.dataBox {
+  padding: 30rpx;
+  padding-bottom: 22rpx;
+  border-bottom: 1px solid #efefef;
+}
+
+.box1, .box2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box1 text:first-child {
+  font-size: 32rpx;
+  color: #343434;
+}
+
+.box1 text:last-child {
+  font-size: 28rpx;
+  color: #fe7606;
+}
+
+.box2 {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.pageBottom {
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 1rpx solid #eaeaea;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-weight: bold;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.swiper-tab-item {
+  display: inline-block;
+  width: 50%;
+  font-size: 14px;
+  color: #999;
+  vertical-align: bottom;
+}
+
+.active {
+  color: #fe7606;
+  border-bottom: 4rpx solid #fe7606;
+}

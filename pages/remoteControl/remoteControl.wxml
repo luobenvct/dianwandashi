@@ -1,0 +1,44 @@
+<view class="head_view">
+  <image src="/img/remote_head.png"></image>
+</view>
+<view class='mode_view'>
+  <view>点击切换模式</view>
+ 
+    <view class='title_bg'>
+      <image class='mode_left' bindtap='modeLeft' src='/img/remote_mode_left.png'></image>
+      <view class='mode_name'>{{modeName}}</view>
+      <image src='/img/remote_mode_right.png' class='mode_right' bindtap='modeRight'></image>
+    </view>
+</view>
+
+<view class="content" style='position: relative;margin:100px auto;left: 0;top:50%;bottom: 0;right:0;width: 542rpx;height: 542rpx;background:{{background}};background-size: 100% 100%;margin: auto;'>
+    <view class="quartercircle divLeft" bindtap='powerPlus' bindtouchstart='powerPlusTouch' bindtouchend='resetBackImg'>
+        
+    </view>
+    <view class="quartercircle divTop" bindtap='lazybackPlus' bindtouchstart='lazybackPlusTouch' bindtouchend='resetBackImg'>
+        
+    </view>
+    <view class="quartercircle divRight" bindtap='powerSub' bindtouchstart='powerSubTouch' bindtouchend='resetBackImg'>
+       
+    </view>
+    <view class="quartercircle divBottom" bindtap='lazybackSub' bindtouchstart='lazybackSubTouch' bindtouchend='resetBackImg'>
+        
+    </view>
+    <view class="circle" bindtap='startPause'>
+      <view class="time_remaining">剩余时间</view>
+      <view class="remaining_time">{{countDownMinute}}:{{countDownSecond}}</view>
+      <view class="btn"><image src='{{startPauseImg}}'></image></view>
+    </view>
+</view>
+
+<view class='foot_view'>
+  <view class='gasbag'>
+    <image src='{{gasbagImage}}' bindtap='gasbag'></image>
+    <view class="foot_tip">气囊</view>
+  </view>
+  <view class='shake'>
+    <image src='{{shockImage}}' bindtap='shock'></image>
+    <view class="foot_tip">震动</view>
+  </view>
+  
+</view>

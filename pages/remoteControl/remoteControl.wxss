@@ -1,0 +1,209 @@
+page {
+  background-color: #f6f6f6;
+}
+
+.head_view{
+  width: 750rpx;
+}
+.head_view image{
+  width: 100%;
+  height: 360rpx;
+}
+
+.mode_view {
+  text-align: center;
+  margin-top: -40rpx;
+  /* height: 120rpx; */
+}
+
+.mode_view view:nth-child(1){
+  font-family: PingFang-SC-Regular;
+  font-size: 10px;
+  color: #848484;
+  letter-spacing: 0;
+}
+
+.mode_view view:nth-child(2){
+  margin-top: 12rpx;
+}
+
+.mode_left {
+  width: 20rpx;
+  height: 24rpx;
+  position: absolute;
+  left: 8rpx;
+  top:12rpx; 
+  padding: 20rpx 30rpx 20rpx 20rpx;
+}
+/* .mode_left image{
+  width: 100%;
+  height: 100%;
+} */
+
+.mode_right {
+  width: 20rpx;
+  height: 24rpx;
+  position: absolute;
+  right: 8rpx;
+  top:12rpx; 
+  padding: 20rpx 20rpx 20rpx 30rpx;
+}
+
+.mode_name {
+  font-family: PingFang-SC-Medium;
+  font-size: 14px;
+  color: #FFFFFF; 
+  letter-spacing: 0;
+  margin-top: 8rpx;
+}
+
+.button_view {
+  margin-top: 54rpx;
+  /* height: 480rpx; */
+}
+
+.foot_view {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+
+.foot_view image {
+  width: 88rpx;
+  height: 88rpx;
+}
+
+.foot_view text {
+  font-family: PingFang-SC-Regular;
+  font-size: 12px;
+  color: #686868;
+  letter-spacing: 0;
+}
+
+/*2.9.0  */
+.title_bg{
+  width: 428rpx;
+  height: 88rpx;
+  background: url('https://metadata.dianwandashi.com/remote_mode_bg.png') no-repeat center;
+  background-size: 100% 100%;
+  margin: auto;
+  position: relative;
+  line-height: 88rpx;
+}
+
+.content{
+    position: relative;
+    margin:100px auto;
+    left: 0;
+    top:50%;
+    bottom: 0;
+    right:0;
+    width: 542rpx;
+    height: 542rpx;
+    /* background: url('https://metadata.dianwandashi.com/armchair_bg02.png') no-repeat center; */
+    background-size: 100% 100%;
+    margin: auto;
+    
+}
+.quartercircle{
+    position:absolute;
+    width: 271rpx;
+    height: 271rpx;
+    -webkit-border-radius: 271rpx 0 0 0;
+}
+.divLeft{
+    top: 25%;
+    left: -10%;
+    transform:rotate(-45deg) ;
+    z-index: 2;
+}
+.divTop{
+    top: -10%;
+    left: 25%;
+    transform:rotate(45deg);
+    z-index: 2;
+    
+}
+.divRight{
+    top: 25%;
+    left: 60%;
+    transform:rotate(135deg);
+    z-index: 2;
+}
+.divBottom{
+    top: 60%;
+    left: 25%;
+    transform:rotate(-135deg);
+    z-index: 2;
+}
+.circle{
+  width:212rpx;
+  height:212rpx;
+  position: absolute;
+  z-index: 100;
+  top:0%;
+  left:0%;
+  bottom:0;
+  right: 0;
+  margin:auto;
+  border-radius: 100%;
+  /* background-color: #889900; */
+  text-align: center;
+}
+.circle span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+    font-size: 24px;
+}
+.quartercircle a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #888888;
+}
+.quartercircle a:hover{
+    background: #8BFF7C;
+}
+
+.time_remaining{
+  font-family: PingFang-SC-Medium;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  margin-top: 40rpx;
+}
+.remaining_time{
+  font-family: PingFang-SC-Medium;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  margin-top: 2rpx;
+}
+.btn{
+  width: 44rpx;
+  height: 44rpx;
+  margin: 10rpx auto;
+  
+}
+.btn image{
+  width: 100%;
+  height: 100%;
+}
+.gasbag{
+  float: left;
+  margin-left: 142rpx;
+  text-align: center;
+}
+.shake{
+  float: left;
+  margin-left: 300rpx;
+  text-align: center;
+}
+.foot_tip{
+  font-family: PingFang-SC-Regular;
+  font-size: 12px;
+  color: #686868;
+  letter-spacing: 0;
+}

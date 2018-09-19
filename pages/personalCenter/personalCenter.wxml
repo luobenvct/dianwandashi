@@ -1,0 +1,67 @@
+<!--pages/personalCenter/personalCenter.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="personalInfo">
+      <image src="{{userImg}}" class="userPhoto"></image>
+      <view class="userPhone">{{userName}}</view>
+      <view class="userId">ID:{{userId}}</view>
+    </view>
+  </view>
+  <view class="infoList">
+    <view class="infoListBlock">
+      <navigator url="/pages/cardVoucher/cardVoucher">
+        <view>
+          <image src="/img/vip.png" mode='widthFix'></image>
+          <text>我的卡券</text>
+        </view>
+        <image src="/img/btn_left.png"></image>
+      </navigator>
+      <navigator url="/pages/couponList/couponList">
+        <view>
+          <image src="/img/mycoupon.png"></image>
+          <text>优惠券</text>
+        </view>
+        <image src="/img/btn_left.png"></image>
+      </navigator>
+      <navigator url="/pages/eggShop/eggShop">
+        <view>
+          <image src="/img/danpian.png"></image>
+          <text>蛋片商城</text>
+        </view>
+        <image src="/img/btn_left.png"></image>
+      </navigator>
+    </view>
+    <view class="infoListBlock">
+      <navigator url="../myGameRecord/myGameRecord">
+        <view>
+          <image src="/img/gameRecord.png"></image>
+          <text>游戏记录</text>
+        </view>
+        <image src="/img/btn_left.png"></image>
+      </navigator>
+      <navigator url="../myRechargeRecord/myRechargeRecord">
+        <view>
+          <image src="/img/myRecharge.png"></image>
+          <text>我的充值</text>
+        </view>
+        <image src="/img/btn_left.png"></image>
+      </navigator>
+      <navigator url="../myExchargeRecord/myExchargeRecord">
+        <view>
+          <image src="/img/myExcharge.png"></image>
+          <text>我的兑换</text>
+        </view>
+        <image src="/img/btn_left.png"></image>
+      </navigator>
+    </view>
+    <view class="infoListBlock">
+      <navigator url="/pages/callCenter/callCenter">
+        <view>
+          <image src="/img/service.png"></image>
+          <text>客服中心</text>
+        </view>
+        <image src="/img/btn_left.png"></image>
+      </navigator>
+    </view>
+  </view>
+</view>

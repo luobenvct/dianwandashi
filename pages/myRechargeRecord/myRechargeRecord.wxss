@@ -1,0 +1,44 @@
+/* pages/myRechargeRecord/myRechargeRecord.wxss */
+page {
+  background: #f3f3f3;
+}
+
+.recordContainer {
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.dataBox {
+  padding: 30rpx;
+  padding-bottom: 22rpx;
+  border-bottom: 1px solid #efefef;
+}
+
+.box1, .box2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box1 text:first-child {
+  font-size: 32rpx;
+  color: #343434;
+}
+
+.box1 text:last-child {
+  font-size: 28rpx;
+  color: #fe7606;
+}
+
+.box2 {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.pageBottom {
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}

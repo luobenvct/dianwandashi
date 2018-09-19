@@ -1,0 +1,39 @@
+<!--pages/payDetails/payDetails.wxml-->
+<view class="rechargeMoney">
+  <view class="money">
+    ¥{{couponAfterMoney}}
+  </view>
+</view>
+<view class="coupon_box" wx:if="{{bargincoupon_id}}" bindtap="goChangeCoupon">
+  <view class="couponOrder">
+    <text>优惠券</text>
+    <text>订单¥{{sum_recharge_money}} 优惠¥{{defaultCouponMoney}}</text>
+  </view>
+  <view class="couponContent">-¥{{defaultCouponMoney}}
+    <image src="/img/btn_left.png"></image>
+  </view>
+</view>
+<view class="noues_coupon_box" wx:if="{{nouse}}" bindtap="goChangeCoupon">
+  <view class="couponOrder">
+    <text>优惠券</text>
+    <text>订单¥{{sum_recharge_money}} 优惠¥0</text>
+  </view>
+  <view class="couponContent">
+    <text>{{canuseCoupon}}张可用</text>
+    <text>请选择</text>
+    <image src="/img/btn_left.png"></image>
+  </view>
+</view>
+
+
+<view class="payMethod">
+  支付方式
+</view>
+<view class="payMethodDetial">
+  <image src="/img/weixin_pay_icon@1.png"></image>
+  <view class="payWX">
+    <text>微信支付</text>
+    <text>微信安全支付</text>
+  </view>
+</view>
+<button type="default" class="rechargeDetail" bindtap="goRecharge" hover-class='rechargeDetailHover'>充值</button>

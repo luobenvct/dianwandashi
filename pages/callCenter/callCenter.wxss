@@ -1,0 +1,35 @@
+/* pages/callCenter/callCenter.wxss */
+page {
+  background: #f3f3f3;
+}
+
+.queryCoin, .contactUs {
+  padding: 0 34rpx;
+  background: #fff;
+  height: 92rpx;
+  line-height: 92rpx;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  color: #333;
+  letter-spacing: 0;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+
+.queryCoin>image, .contactUs>image {
+  width: 16rpx;
+  height: 26rpx;
+}
+
+.queryCoin .left, .contactUs  .left {
+  display: flex;
+  align-items: center;
+}
+
+.queryCoin .left image, .contactUs  .left image {
+  height: 46rpx;
+  width: 46rpx;
+  vertical-align: middle;
+  margin-right: 54rpx;
+}

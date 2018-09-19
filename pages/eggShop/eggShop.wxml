@@ -1,0 +1,50 @@
+<!--pages/eggShop/eggShop.wxml-->
+<view class='head_view'>
+  <view class='user_view'>
+    <image class='head' src='{{headUrl}}'></image>
+    <view class='nick'>{{userName}}</view>
+    <view class='danpian'>蛋片：{{eggBalance}}</view>
+  </view>
+</view>
+
+<view class='product_view'>
+  <view class='product_list' wx:for="{{giftList}}" wx:for-item="item" wx:key="{{item.giftId}}">
+    <!-- {{imgDomain}} -->
+    <image src='https://metadata.dianwandashi.com/{{item.photoUrl}}'></image> 
+    <view class='product_title'>{{item.name}}</view>
+    <view class='product_content'>{{item.points}}蛋片</view>
+    <button bindtap='exchange' data-giftId='{{item.giftId}}' data-giftName='{{item.name}}'>兑换</button>
+  </view>
+</view>
+
+<view class='foot_view'>
+  <view>
+    <view class='line1'></view>
+    <image src='/img/draw_warning.png'></image>
+    <text class='explain_title'>活动说明</text>
+    <view class='line2'></view>
+  </view>
+  <view class='explain_content1'>1.兑换成功后礼品在1个工作日内到账</view>
+  <view class='explain_content2'>2.如有疑问，请致电客服：400-0698-068</view>
+</view>
+
+<view class='alert_view' hidden='{{alertHidden}}'>
+  <view class='alert'>
+    <view class='alert_head'>
+      <image class='alert_photo' src='{{headUrl}}'></image>
+      <view class='alert_title_view'>
+        <view class='alert_tip1'>兑换礼品</view>
+        <view class='alert_name'>{{giftName}}</view>
+      </view>
+    </view>
+    <view class='alert_foot_view'>
+      <view class='alert_line'></view>
+      <view class='alert_tip2'>请输入您的手机号</view>
+      <input class='alert_mobile' bindinput='setMobile' maxlength="11"></input>
+      <view class='alert_btn_view'>
+        <button class='alert_exchange_cancel' bindtap='cancel'>取消兑换</button>
+        <button class='alert_exchange' bindtap='confirm'>兑换</button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<!--pages/myGameRecord/myGameRecord.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">投币记录</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">返礼票记录</view>
+</view>
+<view class="recordContainer" wx:if="{{nulldata}}">
+  <view class="dataBox" wx:for="{{gameRecords}}" wx:key="index" wx:for-item="data">
+    <view class="box1">
+      <text>{{data.name}}</text>
+      <text>{{data.opt_type}}×{{data.amount}}</text>
+    </view>
+    <view class="box2">
+      <text>{{data.create_time}}</text>
+      <view>
+        {{data.model_name}}<text wx:if="{{data.slot_num}}">-{{data.slot_num}}号位</text>
+      </view>
+    </view>
+  </view>
+  <view class="loading" hidden="{{loading}}">
+    <image src="/img/loading.png" background="cover"></image>努力加载中...
+  </view>
+  <view class="pageBottom" hidden="{{pageBottom}}">已经到底啦</view>
+</view>
+<view class="nullData" hidden="{{nulldata}}" style="height:{{wheight}}px">
+  <import src="../nulldata/nulldata.wxml" />
+  <template is="nulldata" data="{{...pagenulldata}}" />
+</view>

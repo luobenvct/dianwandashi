@@ -1,0 +1,10 @@
+<!--pages/drawBox/drawBox.wxml-->
+<template name="drawBox">
+  <view>
+    <image src="https://metadata.zhutech.net/o_1bupk7tkce2a186k17cg5tv2vj1r.png" class="topClose" bindtap='closeDrawBox'></image>
+    <image src="https://metadata.zhutech.net/o_1bvbjimvhui01ke51h1e1r67o5710.png" class="title" wx:if="{{showGetNewTitle==true}}"></image>
+    <image src="https://metadata.zhutech.net/o_1bvbjkumuld216iudi41nafbo15.png" wx:if="{{showGetNewTitle==false}}" class="title"></image>
+    <image src="https://metadata.zhutech.net/o_1bupjv6ka11338f7im917e2142f1i.png" class="drawClose" bindtap='closeDrawBox'></image>
+    <image src="https://metadata.zhutech.net/o_1bupjv6kb3vlgsj1fctkl6nta1j.png" class="drawGo" bindtap='goToRecDraw'></image>
+  </view>
+</template>

@@ -1,0 +1,150 @@
+/* pages/gotoVip/gotoVip.wxss */
+page {
+  background:#FFBB52;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+image {
+  vertical-align: middle;
+}
+
+.ul {
+  background: url('https://metadata.zhutech.net/o_1btto0e1f17nr1ma31oa6blb1477m.png') no-repeat center center;
+  background-size: cover;
+  border-radius: 8rpx;
+}
+
+.li {
+  padding: 0 24rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.lefttop {
+  position: absolute;
+  width: 172rpx;
+  height: 172rpx;
+  left: -10rpx;
+  top: -10rpx;
+}
+
+.li:last-child {
+  padding-bottom: 24rpx;
+}
+
+.title {
+  font-size: 52rpx;
+  color: #7e3b3a;
+  font-weight: 600;
+  line-height: 114rpx;
+  text-align: center;
+}
+
+.title text {
+  margin-left: 52rpx;
+}
+
+.birthday {
+  background: #fff;
+  padding: 20rpx 70rpx;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+}
+
+.pro {
+  border-bottom: 2rpx solid #f5f5f5;
+  height: 184rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+
+.pro:last-child {
+  border: none;
+}
+
+.pro image {
+  width: 124rpx;
+  height: 124rpx;
+}
+
+.pro .onetxt {
+  font-size: 34rpx;
+  color: #f83;
+  line-height: 48rpx;
+  margin-bottom: 8rpx;
+}
+
+.pro .textBox {
+  font-size: 24rpx;
+  color: #c1c1c1;
+  line-height: 34rpx;
+  margin-left: 40rpx;
+  white-space: nowrap;
+}
+
+.downLoadApp {
+  background: #fff;
+  padding: 80rpx;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+}
+
+.li .num {
+  display: inline-block;
+  background: #f83;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.contentOne {
+  margin-top: 10rpx;
+}
+
+.contentOne, .contentTwo {
+  font-size: 32rpx;
+  color: #f83;
+  line-height: 56rpx;
+}
+
+.contentOne text, .contentTwo text {
+  font-size: 26rpx;
+  color: #c1c1c1;
+  margin-left: 10rpx;
+}
+
+.scancode {
+  display: block;
+  margin: 20rpx auto;
+  width: 224rpx;
+  height: 224rpx;
+}
+
+.saveImg {
+  width: 240rpx;
+  height: 56rpx;
+  display: block;
+  margin: 0 auto 80rpx;
+}
+
+.search {
+  width: 364rpx;
+  height: 110rpx;
+  display: block;
+  margin: 44rpx auto 38rpx;
+}
+
+.rightBottom {
+  position: absolute;
+  width: 172rpx;
+  height: 172rpx;
+  right: -10rpx;
+  bottom: -12rpx;
+}

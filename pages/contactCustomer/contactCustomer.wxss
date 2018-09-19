@@ -1,0 +1,90 @@
+page {
+  background: #F3F3F3;
+}
+
+.picker_view {
+  margin-top: 20rpx;
+  background: white;
+  width: 100%;
+  height: 92rpx;
+}
+
+.picker {
+  width: 100%;
+  height: 92rpx;
+  font-weight: bold;
+  font-size: 32rpx;
+  color: #FF8A00;
+  float: left;
+  margin-left: 30rpx;
+  margin-top: 24rpx;
+}
+
+.down_arrow {
+  width: 20rpx;
+  height: 13.2rpx;
+  float: right;
+  margin-right: 60rpx;
+  margin-top: 16rpx;
+}
+
+.coins_view {
+  margin-top: 20rpx;
+  background: white;
+  width: 100%;
+  height: 160rpx;
+}
+
+.coins_title,.img_title {
+  font-size: 28rpx;
+  color: #9A9A9A;
+  margin-left: 30rpx;
+  padding-top: 24rpx;
+}
+
+.coins {
+  height: 56rpx;
+  margin-top: 12rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  font-size: 32rpx;
+  color: #444444;
+}
+
+.img_view {
+  margin-top: 20rpx;
+  background: white;
+  width: 100%;
+  height: 300rpx;
+}
+
+.img {
+  margin-top: 26rpx;
+  margin-left: 30rpx;
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.tip {
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.tip>text {
+  font-size: 12px;
+  color: #FE7606;
+}
+
+.submit {
+  background: #FE7606;
+  border-radius: 4px;
+  width: 690rpx;
+  height: 88rpx;
+  margin-top: 20rpx;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.submit::after {
+  border: none;
+}

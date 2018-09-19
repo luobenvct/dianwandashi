@@ -1,0 +1,63 @@
+/* pages/chosenPosition/chosenPosition.wxss */
+page {
+  background: #f3f3f3;
+}
+
+.choseP {
+  padding: 70rpx 30rpx 0;
+}
+
+.choseP>view {
+  width: 200rpx;
+  height: 118rpx;
+  display: inline-block;
+  text-align: center;
+  margin-right: 45rpx;
+  margin-bottom: 60rpx;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 4rpx;
+  box-sizing: border-box;
+}
+
+.choseP .defaultStatus {
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 4rpx;
+  color: #888;
+}
+
+.choseP .checkStatus {
+  background: #f78d36;
+  box-shadow: -1rpx 2rpx 4rpx 0 #c8c8c8;
+  border-radius: 4rpx;
+  border: 1px solid #f78d36;
+  color: #fff;
+}
+
+.choseP>view:nth-child(3n) {
+  margin-right: 0;
+}
+
+.choseP>view image {
+  width: 36rpx;
+  height: 36rpx;
+  display: block;
+  margin: 23rpx auto 6rpx;
+}
+
+.choseP>view text {
+  font-size: 32rpx;
+}
+
+.checkposition {
+  position: absolute;
+  bottom: 39rpx;
+  font-size: 28rpx;
+  color: #888;
+  left: 269rpx;
+}
+
+.checkposition text {
+  color: #fe7606;
+}
